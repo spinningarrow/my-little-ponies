@@ -95,8 +95,28 @@ window.addEventListener('load', function() {
   } else {
     console.warn("No web3 detected. Falling back to http://localhost:9545. You should remove this fallback when you deploy live, as it's inherently insecure. Consider switching to Metamask for development. More info here: http://truffleframework.com/tutorials/truffle-and-metamask");
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-    window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:9545"));
+    window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8101"));
   }
+
+  const loginForm = document.querySelector('#login')
+
+  loginForm.addEventListener('submit', event => {
+    event.preventDefault()
+
+    const { username, password } = event.target.elements
+
+    // TODO do a proper login
+    if (username.value !== 'alice') {
+      alert('Please enter a valid username. (hint: alice)')
+      return
+    }
+
+    try {
+      web3.personal.unlockAccount(account, password.value)
+    } catch (e) {
+      alert(e)
+    }
+  })
 
   App.start();
 });
