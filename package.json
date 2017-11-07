@@ -5,6 +5,7 @@
   "scripts": {
     "lint": "eslint ./",
     "build": "webpack",
+    "build-prod": "webpack -p",
     "dev": "webpack-dev-server"
   },
   "author": "Douglas von Kohorn",
