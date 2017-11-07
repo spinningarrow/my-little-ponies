@@ -28,6 +28,11 @@ body {
     margin-left: 0.25rem;
 }
 
+.site-logo {
+    color: gold;
+    text-decoration: none;
+}
+
 footer {
     font-size: smaller;
     color: #999;

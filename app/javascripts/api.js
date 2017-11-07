@@ -1,9 +1,11 @@
 import { default as contract } from 'truffle-contract'
+import { default as Web3 } from 'web3'
 
 import metacoinArtifacts from '../../build/contracts/MetaCoin.json'
 
 const MetaCoin = contract(metacoinArtifacts)
 
+window.web3 = new Web3(new Web3.providers.HttpProvider('http://159.89.204.101:8545'))
 const web3 = window.web3
 
 MetaCoin.setProvider(web3.currentProvider)
@@ -23,6 +25,7 @@ export function getAccount () {
         return
       }
 
+      console.log('accounts', accs)
       resolve(accs[0])
     })
   })

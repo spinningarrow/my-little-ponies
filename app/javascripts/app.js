@@ -10,6 +10,7 @@ import { default as jsonQuestions } from './questions.json'
 import moment from 'moment'
 
 import * as api from './api'
+window.api = api
 
 // Import our contract artifacts and turn them into usable abstractions.
 import metacoinArtifacts from '../../build/contracts/MetaCoin.json'
@@ -82,7 +83,7 @@ window.addEventListener('load', function () {
   } else {
     console.warn('No web3 detected. Falling back…')
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-    window.web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8101'))
+    window.web3 = new Web3(new Web3.providers.HttpProvider('http://159.89.204.101:8545'))
   }
 
   window.App.start()
@@ -149,7 +150,7 @@ class App extends Component {
 const Header = ({ profile }) => {
   const { username, coins } = profile
   return h('header.site-header', [
-    h(Link, { to: '/', className: '.site-log' }, 'SiteLogo'),
+    h(Link, { to: '/', className: 'site-logo' }, 'CreditOverflow'),
     h('.profile', [
       h('span', `Welcome, ${username}!`),
       h('span', `You have ${coins} coins.`)
