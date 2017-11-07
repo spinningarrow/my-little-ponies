@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 222);
+/******/ 	return __webpack_require__(__webpack_require__.s = 219);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1914,7 +1914,7 @@ function loadLocale(name) {
         try {
             oldLocale = globalLocale._abbr;
             var aliasedRequire = require;
-            __webpack_require__(270)("./" + name);
+            __webpack_require__(268)("./" + name);
             getSetGlobalLocale(oldLocale);
         } catch (e) {}
     }
@@ -8180,7 +8180,7 @@ module.exports = warning;
 
 
 if (true) {
-  module.exports = __webpack_require__(295);
+  module.exports = __webpack_require__(293);
 } else {
   module.exports = require('./cjs/react.development.js');
 }
@@ -8216,7 +8216,7 @@ if (false) {
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(273)();
+  module.exports = __webpack_require__(271)();
 }
 
 
@@ -8307,7 +8307,7 @@ module.exports = invariant;
 var BigNumber = __webpack_require__(28);
 var utils = __webpack_require__(3);
 var c = __webpack_require__(43);
-var SolidityParam = __webpack_require__(204);
+var SolidityParam = __webpack_require__(201);
 
 
 /**
@@ -8565,7 +8565,7 @@ module.exports = {
 var BigNumber = __webpack_require__(47);
 var utils = __webpack_require__(4);
 var c = __webpack_require__(48);
-var SolidityParam = __webpack_require__(208);
+var SolidityParam = __webpack_require__(205);
 
 
 /**
@@ -8821,7 +8821,7 @@ module.exports = {
 var BigNumber = __webpack_require__(37);
 var utils = __webpack_require__(5);
 var c = __webpack_require__(52);
-var SolidityParam = __webpack_require__(212);
+var SolidityParam = __webpack_require__(209);
 
 
 /**
@@ -9055,7 +9055,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(10);
-var SolidityParam = __webpack_require__(204);
+var SolidityParam = __webpack_require__(201);
 
 /**
  * SolidityType prototype is used to encode/decode solidity params of certain type
@@ -9625,7 +9625,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(11);
-var SolidityParam = __webpack_require__(208);
+var SolidityParam = __webpack_require__(205);
 
 /**
  * SolidityType prototype is used to encode/decode solidity params of certain type
@@ -10181,7 +10181,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(12);
-var SolidityParam = __webpack_require__(212);
+var SolidityParam = __webpack_require__(209);
 
 /**
  * SolidityType prototype is used to encode/decode solidity params of certain type
@@ -18069,9 +18069,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*! bignumber.js v2.0.7 https://github.com/Mik
 
 
 
-var base64 = __webpack_require__(223)
-var ieee754 = __webpack_require__(266)
-var isArray = __webpack_require__(268)
+var base64 = __webpack_require__(221)
+var ieee754 = __webpack_require__(264)
+var isArray = __webpack_require__(266)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -20537,8 +20537,8 @@ module.exports = emptyFunction;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createLocation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return locationsAreEqual; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(30);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -25542,7 +25542,7 @@ module.exports = function(module) {
 ;(function (root, factory, undef) {
 	if (true) {
 		// CommonJS
-		module.exports = exports = factory(__webpack_require__(1), __webpack_require__(40), __webpack_require__(227), __webpack_require__(225), __webpack_require__(21), __webpack_require__(23), __webpack_require__(60), __webpack_require__(76), __webpack_require__(243), __webpack_require__(77), __webpack_require__(244), __webpack_require__(39), __webpack_require__(242), __webpack_require__(58), __webpack_require__(238), __webpack_require__(22), __webpack_require__(2), __webpack_require__(228), __webpack_require__(230), __webpack_require__(229), __webpack_require__(232), __webpack_require__(231), __webpack_require__(233), __webpack_require__(234), __webpack_require__(235), __webpack_require__(237), __webpack_require__(236), __webpack_require__(226), __webpack_require__(224), __webpack_require__(245), __webpack_require__(241), __webpack_require__(240), __webpack_require__(239));
+		module.exports = exports = factory(__webpack_require__(1), __webpack_require__(40), __webpack_require__(225), __webpack_require__(223), __webpack_require__(21), __webpack_require__(23), __webpack_require__(60), __webpack_require__(73), __webpack_require__(241), __webpack_require__(74), __webpack_require__(242), __webpack_require__(39), __webpack_require__(240), __webpack_require__(58), __webpack_require__(236), __webpack_require__(22), __webpack_require__(2), __webpack_require__(226), __webpack_require__(228), __webpack_require__(227), __webpack_require__(230), __webpack_require__(229), __webpack_require__(231), __webpack_require__(232), __webpack_require__(233), __webpack_require__(235), __webpack_require__(234), __webpack_require__(224), __webpack_require__(222), __webpack_require__(243), __webpack_require__(239), __webpack_require__(238), __webpack_require__(237));
 	}
 	else if (typeof define === "function" && define.amd) {
 		// AMD
@@ -25784,11 +25784,11 @@ exports.locationsAreEqual = exports.createLocation = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _resolvePathname = __webpack_require__(203);
+var _resolvePathname = __webpack_require__(200);
 
 var _resolvePathname2 = _interopRequireDefault(_resolvePathname);
 
-var _valueEqual = __webpack_require__(211);
+var _valueEqual = __webpack_require__(208);
 
 var _valueEqual2 = _interopRequireDefault(_valueEqual);
 
@@ -26167,7 +26167,7 @@ Router.childContextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(292);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -26267,15 +26267,15 @@ var matchPath = function matchPath(pathname) {
 
 var f = __webpack_require__(10);
 
-var SolidityTypeAddress = __webpack_require__(303);
-var SolidityTypeBool = __webpack_require__(304);
-var SolidityTypeInt = __webpack_require__(307);
-var SolidityTypeUInt = __webpack_require__(310);
-var SolidityTypeDynamicBytes = __webpack_require__(306);
-var SolidityTypeString = __webpack_require__(309);
-var SolidityTypeReal = __webpack_require__(308);
-var SolidityTypeUReal = __webpack_require__(311);
-var SolidityTypeBytes = __webpack_require__(305);
+var SolidityTypeAddress = __webpack_require__(301);
+var SolidityTypeBool = __webpack_require__(302);
+var SolidityTypeInt = __webpack_require__(305);
+var SolidityTypeUInt = __webpack_require__(308);
+var SolidityTypeDynamicBytes = __webpack_require__(304);
+var SolidityTypeString = __webpack_require__(307);
+var SolidityTypeReal = __webpack_require__(306);
+var SolidityTypeUReal = __webpack_require__(309);
+var SolidityTypeBytes = __webpack_require__(303);
 
 var isDynamic = function (solidityType, type) {
    return solidityType.isDynamicType(type) ||
@@ -26536,15 +26536,15 @@ module.exports = coder;
 
 var f = __webpack_require__(11);
 
-var SolidityTypeAddress = __webpack_require__(342);
-var SolidityTypeBool = __webpack_require__(343);
-var SolidityTypeInt = __webpack_require__(346);
-var SolidityTypeUInt = __webpack_require__(349);
-var SolidityTypeDynamicBytes = __webpack_require__(345);
-var SolidityTypeString = __webpack_require__(348);
-var SolidityTypeReal = __webpack_require__(347);
-var SolidityTypeUReal = __webpack_require__(350);
-var SolidityTypeBytes = __webpack_require__(344);
+var SolidityTypeAddress = __webpack_require__(341);
+var SolidityTypeBool = __webpack_require__(342);
+var SolidityTypeInt = __webpack_require__(345);
+var SolidityTypeUInt = __webpack_require__(348);
+var SolidityTypeDynamicBytes = __webpack_require__(344);
+var SolidityTypeString = __webpack_require__(347);
+var SolidityTypeReal = __webpack_require__(346);
+var SolidityTypeUReal = __webpack_require__(349);
+var SolidityTypeBytes = __webpack_require__(343);
 
 /**
  * SolidityCoder prototype should be used to encode/decode solidity params of any type
@@ -27279,96 +27279,6 @@ module.exports = coder;
 
 /***/ }),
 /* 72 */
-/***/ (function(module, exports) {
-
-module.exports = {"contractName":"MetaCoin","abi":[{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"posts","outputs":[{"name":"id","type":"uint256"},{"name":"title","type":"string"},{"name":"content","type":"string"},{"name":"timestamp","type":"uint256"},{"name":"createdBy","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"answers","outputs":[{"name":"postId","type":"uint256"},{"name":"id","type":"uint256"},{"name":"content","type":"string"},{"name":"createdBy","type":"address"},{"name":"timestamp","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getNumberOfPosts","outputs":[{"name":"num","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"postID","type":"uint256"}],"name":"getPost","outputs":[{"name":"content","type":"string"},{"name":"timestamp","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"},{"name":"content","type":"string"}],"name":"getBalanceInEth","outputs":[{"name":"","type":"int256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"title","type":"string"},{"name":"content","type":"string"}],"name":"postQuestion","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"receiver","type":"address"},{"name":"amount","type":"int256"}],"name":"sendCoin","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"postId","type":"uint256"},{"name":"answer","type":"string"}],"name":"postAnswer","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getLatestPost","outputs":[{"name":"content","type":"string"},{"name":"timestamp","type":"uint256"},{"name":"numberOfPosts","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"getBalance","outputs":[{"name":"","type":"int256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_from","type":"address"},{"indexed":true,"name":"_to","type":"address"},{"indexed":false,"name":"_value","type":"int256"}],"name":"Transfer","type":"event"}],"bytecode":"0x6060604052341561000f57600080fd5b600080819055506000600181905550610e138061002d6000396000f3006060604052600436106100a4576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630b1e7f83146100a957806317599cc51461022c57806337bbcaa01461032d57806340731c24146103565780637bd703e8146103f95780637f34457c14610446578063bc9e7d7f146104fe578063c921d66c14610558578063e04e6d54146105d6578063f8b2cb4f14610672575b600080fd5b34156100b457600080fd5b6100ca60048080359060200190919050506106bf565b6040518086815260200180602001806020018581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018381038352878181546001816001161561010002031660029004815260200191508054600181600116156101000203166002900480156101955780601f1061016a57610100808354040283529160200191610195565b820191906000526020600020905b81548152906001019060200180831161017857829003601f168201915b50508381038252868181546001816001161561010002031660029004815260200191508054600181600116156101000203166002900480156102185780601f106101ed57610100808354040283529160200191610218565b820191906000526020600020905b8154815290600101906020018083116101fb57829003601f168201915b505097505050505050505060405180910390f35b341561023757600080fd5b61024d6004808035906020019091905050610713565b60405180868152602001858152602001806020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200182810382528581815460018160011615610100020316600290048152602001915080546001816001161561010002031660029004801561031a5780601f106102ef5761010080835404028352916020019161031a565b820191906000526020600020905b8154815290600101906020018083116102fd57829003601f168201915b5050965050505050505060405180910390f35b341561033857600080fd5b610340610768565b6040518082815260200191505060405180910390f35b341561036157600080fd5b6103776004808035906020019091905050610771565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156103bd5780820151818401526020810190506103a2565b50505050905090810190601f1680156103ea5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b341561040457600080fd5b610430600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061084a565b6040518082815260200191505060405180910390f35b341561045157600080fd5b6104e4600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506108f2565b604051808215151515815260200191505060405180910390f35b341561050957600080fd5b61053e600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919050506109f6565b604051808215151515815260200191505060405180910390f35b341561056357600080fd5b6105bc600480803590602001909190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610b01565b604051808215151515815260200191505060405180910390f35b34156105e157600080fd5b6105e9610bfc565b6040518080602001848152602001838152602001828103825285818151815260200191508051906020019080838360005b8381101561063557808201518184015260208101905061061a565b50505050905090810190601f1680156106625780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b341561067d57600080fd5b6106a9600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610ce5565b6040518082815260200191505060405180910390f35b6002602052806000526040600020600091509050806000015490806001019080600201908060030154908060040160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905085565b600360205280600052604060002060009150905080600001549080600101549080600201908060030160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060040154905085565b60008054905090565b610779610d2e565b6000600260008481526020019081526020016000206002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108255780601f106107fa57610100808354040283529160200191610825565b820191906000526020600020905b81548152906001019060200180831161080857829003601f168201915b5050505050915060026000848152602001908152602001600020600301549050915091565b600073__ConvertLib____________________________632d2c1d8061086f84610ce5565b60026000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b15156108d057600080fd5b6102c65a03f415156108e157600080fd5b505050604051805190509050919050565b60008054600260008054815260200190815260200160002060000181905550826002600080548152602001908152602001600020600101908051906020019061093c929190610d42565b508160026000805481526020019081526020016000206002019080519060200190610968929190610d42565b504260026000805481526020019081526020016000206003018190555033600260008054815260200190815260200160002060040160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060008081548092919060010191905055506001905092915050565b600081600460003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600460008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8b0c34a52f9e28d78caaa7066cd047b398dae74941a208b77777420f492bd7e1846040518082815260200191505060405180910390a36001905092915050565b6000600154600360006001548152602001908152602001600020600101819055508260036000600154815260200190815260200160002060000181905550816003600060015481526020019081526020016000206002019080519060200190610b6b929190610d42565b503360036000600154815260200190815260200160002060030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555042600360006001548152602001908152602001600020600401819055506001600081548092919060010191905055506001905092915050565b610c04610d2e565b6000806002600060016000540381526020019081526020016000206002018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610cb65780601f10610c8b57610100808354040283529160200191610cb6565b820191906000526020600020905b815481529060010190602001808311610c9957829003601f168201915b505050505092506002600060016000540381526020019081526020016000206003015491506000549050909192565b6000600460008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b602060405190810160405280600081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f10610d8357805160ff1916838001178555610db1565b82800160010185558215610db1579182015b82811115610db0578251825591602001919060010190610d95565b5b509050610dbe9190610dc2565b5090565b610de491905b80821115610de0576000816000905550600101610dc8565b5090565b905600a165627a7a7230582073c272f1837c0dfec84d8331f7ff2d61f5fcae0d8cdf5097143cbcf0e8a19dbf0029","deployedBytecode":"0x6060604052600436106100a4576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630b1e7f83146100a957806317599cc51461022c57806337bbcaa01461032d57806340731c24146103565780637bd703e8146103f95780637f34457c14610446578063bc9e7d7f146104fe578063c921d66c14610558578063e04e6d54146105d6578063f8b2cb4f14610672575b600080fd5b34156100b457600080fd5b6100ca60048080359060200190919050506106bf565b6040518086815260200180602001806020018581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018381038352878181546001816001161561010002031660029004815260200191508054600181600116156101000203166002900480156101955780601f1061016a57610100808354040283529160200191610195565b820191906000526020600020905b81548152906001019060200180831161017857829003601f168201915b50508381038252868181546001816001161561010002031660029004815260200191508054600181600116156101000203166002900480156102185780601f106101ed57610100808354040283529160200191610218565b820191906000526020600020905b8154815290600101906020018083116101fb57829003601f168201915b505097505050505050505060405180910390f35b341561023757600080fd5b61024d6004808035906020019091905050610713565b60405180868152602001858152602001806020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200182810382528581815460018160011615610100020316600290048152602001915080546001816001161561010002031660029004801561031a5780601f106102ef5761010080835404028352916020019161031a565b820191906000526020600020905b8154815290600101906020018083116102fd57829003601f168201915b5050965050505050505060405180910390f35b341561033857600080fd5b610340610768565b6040518082815260200191505060405180910390f35b341561036157600080fd5b6103776004808035906020019091905050610771565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156103bd5780820151818401526020810190506103a2565b50505050905090810190601f1680156103ea5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b341561040457600080fd5b610430600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061084a565b6040518082815260200191505060405180910390f35b341561045157600080fd5b6104e4600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506108f2565b604051808215151515815260200191505060405180910390f35b341561050957600080fd5b61053e600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919050506109f6565b604051808215151515815260200191505060405180910390f35b341561056357600080fd5b6105bc600480803590602001909190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610b01565b604051808215151515815260200191505060405180910390f35b34156105e157600080fd5b6105e9610bfc565b6040518080602001848152602001838152602001828103825285818151815260200191508051906020019080838360005b8381101561063557808201518184015260208101905061061a565b50505050905090810190601f1680156106625780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b341561067d57600080fd5b6106a9600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610ce5565b6040518082815260200191505060405180910390f35b6002602052806000526040600020600091509050806000015490806001019080600201908060030154908060040160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905085565b600360205280600052604060002060009150905080600001549080600101549080600201908060030160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060040154905085565b60008054905090565b610779610d2e565b6000600260008481526020019081526020016000206002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108255780601f106107fa57610100808354040283529160200191610825565b820191906000526020600020905b81548152906001019060200180831161080857829003601f168201915b5050505050915060026000848152602001908152602001600020600301549050915091565b600073__ConvertLib____________________________632d2c1d8061086f84610ce5565b60026000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b15156108d057600080fd5b6102c65a03f415156108e157600080fd5b505050604051805190509050919050565b60008054600260008054815260200190815260200160002060000181905550826002600080548152602001908152602001600020600101908051906020019061093c929190610d42565b508160026000805481526020019081526020016000206002019080519060200190610968929190610d42565b504260026000805481526020019081526020016000206003018190555033600260008054815260200190815260200160002060040160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060008081548092919060010191905055506001905092915050565b600081600460003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600460008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8b0c34a52f9e28d78caaa7066cd047b398dae74941a208b77777420f492bd7e1846040518082815260200191505060405180910390a36001905092915050565b6000600154600360006001548152602001908152602001600020600101819055508260036000600154815260200190815260200160002060000181905550816003600060015481526020019081526020016000206002019080519060200190610b6b929190610d42565b503360036000600154815260200190815260200160002060030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555042600360006001548152602001908152602001600020600401819055506001600081548092919060010191905055506001905092915050565b610c04610d2e565b6000806002600060016000540381526020019081526020016000206002018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610cb65780601f10610c8b57610100808354040283529160200191610cb6565b820191906000526020600020905b815481529060010190602001808311610c9957829003601f168201915b505050505092506002600060016000540381526020019081526020016000206003015491506000549050909192565b6000600460008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b602060405190810160405280600081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f10610d8357805160ff1916838001178555610db1565b82800160010185558215610db1579182015b82811115610db0578251825591602001919060010190610d95565b5b509050610dbe9190610dc2565b5090565b610de491905b80821115610de0576000816000905550600101610dc8565b5090565b905600a165627a7a7230582073c272f1837c0dfec84d8331f7ff2d61f5fcae0d8cdf5097143cbcf0e8a19dbf0029","sourceMap":"54:2153:1:-;;;546:67;;;;;;;;585:1;572:10;:14;;;;607:1;592:12;:16;;;;54:2153;;;;;;","deployedSourceMap":"54:2153:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;348:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;387:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1774:90;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1363:170;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;820:119:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1043:316;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;617:199;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1868:337;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1537:233;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;943:96:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;348:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;387:39::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;1774:90::-;1827:8;1849:10;;1843:16;;1774:90;:::o;1363:170::-;1418:14;;:::i;:::-;1434;1466:5;:13;1472:6;1466:13;;;;;;;;;;;:21;;1456:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1505:5;:13;1511:6;1505:13;;;;;;;;;;;:23;;;1493:35;;1363:170;;;:::o;820:119::-;877:3;895:10;:18;914:16;925:4;914:10;:16::i;:::-;932:1;895:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;888:46;;820:119;;;:::o;1043:316::-;1111:4;1146:10;;1123:5;:17;1129:10;;1123:17;;;;;;;;;;;:20;;:33;;;;1188:5;1162;:17;1168:10;;1162:17;;;;;;;;;;;:23;;:31;;;;;;;;;;;;:::i;:::-;;1227:7;1199:5;:17;1205:10;;1199:17;;;;;;;;;;;:25;;:35;;;;;;;;;;;;:::i;:::-;;1270:3;1240:5;:17;1246:10;;1240:17;;;;;;;;;;;:27;;:33;;;;1309:10;1279:5;:17;1285:10;;1279:17;;;;;;;;;;;:27;;;:40;;;;;;;;;;;;;;;;;;1325:10;;:12;;;;;;;;;;;;;1350:4;1343:11;;1043:316;;;;:::o;617:199::-;674:4;710:6;686:8;:20;695:10;686:20;;;;;;;;;;;;;;;;:30;;;;;;;;;;;744:6;722:8;:18;731:8;722:18;;;;;;;;;;;;;;;;:28;;;;;;;;;;;777:8;756:38;;765:10;756:38;;;787:6;756:38;;;;;;;;;;;;;;;;;;807:4;800:11;;617:199;;;;:::o;1868:337::-;1932:4;1971:12;;1944:7;:21;1952:12;;1944:21;;;;;;;;;;;:24;;:39;;;;2020:6;1989:7;:21;1997:12;;1989:21;;;;;;;;;;;:28;;:37;;;;2064:6;2032:7;:21;2040:12;;2032:21;;;;;;;;;;;:29;;:38;;;;;;;;;;;;:::i;:::-;;2110:10;2076:7;:21;2084:12;;2076:21;;;;;;;;;;;:31;;;:44;;;;;;;;;;;;;;;;;;2160:3;2126:7;:21;2134:12;;2126:21;;;;;;;;;;;:31;;:37;;;;2169:12;;:14;;;;;;;;;;;;;2196:4;2189:11;;1868:337;;;;:::o;1537:233::-;1587:14;;:::i;:::-;1603;1619:18;1655:5;:21;1674:1;1661:10;;:14;1655:21;;;;;;;;;;;:29;;1645:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1702:5;:21;1721:1;1708:10;;:14;1702:21;;;;;;;;;;;:31;;;1690:43;;1755:10;;1739:26;;1537:233;;;:::o;943:96::-;1002:3;1020:8;:14;1029:4;1020:14;;;;;;;;;;;;;;;;1013:21;;943:96;;;:::o;54:2153::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o","source":"pragma solidity ^0.4.11;\n\nimport \"./ConvertLib.sol\";\n\ncontract MetaCoin {\n  struct Post {\n    uint id;\n    string title;\n    string content;\n    uint timestamp;\n    address createdBy;\n  }\n\n  struct Answer {\n    uint postId;\n    uint id;\n    string content;\n    address createdBy;\n    uint timestamp;\n  }\n\n  uint numOfPosts;\n  uint numOfAnswers;\n\n  mapping (uint => Post) public posts;\n  mapping (uint => Answer) public answers;\n  mapping (address => int) balances;\n\n  event Transfer(address indexed _from, address indexed _to, int256 _value);\n\n  function MetaCoin() {\n    numOfPosts = 0;\n    numOfAnswers = 0;\n  }\n\n  function sendCoin(address receiver, int amount) returns (bool) {\n    balances[msg.sender] -= amount;\n    balances[receiver] += amount;\n    Transfer(msg.sender, receiver, amount);\n    return true;\n  }\n\n  function getBalanceInEth(address addr) constant returns (int) {\n    return ConvertLib.convert(getBalance(addr), 2);\n  }\n\n  function getBalance(address addr) constant public returns (int) {\n    return balances[addr];\n  }\n\n  function postQuestion(string title, string content) public returns (bool) {\n    posts[numOfPosts].id = numOfPosts;\n    posts[numOfPosts].title = title;\n    posts[numOfPosts].content = content;\n    posts[numOfPosts].timestamp = now;\n    posts[numOfPosts].createdBy = msg.sender;\n    numOfPosts++;\n    return true;\n  }\n\n  function getPost(uint postID) constant public returns (string content, uint timestamp) {\n    content = posts[postID].content;\n    timestamp = posts[postID].timestamp;\n  }\n\n  function getLatestPost() constant public returns (string content, uint timestamp, uint numberOfPosts) {\n    content = posts[numOfPosts - 1].content;\n    timestamp = posts[numOfPosts - 1].timestamp;\n    numberOfPosts = numOfPosts;\n  }\n\n  function getNumberOfPosts() constant public returns (uint num) {\n    num = numOfPosts;\n  }\n\n  function postAnswer(uint postId, string answer) public returns (bool) {\n    answers[numOfAnswers].id = numOfAnswers;\n    answers[numOfAnswers].postId = postId;\n    answers[numOfAnswers].content = answer;\n    answers[numOfAnswers].createdBy = msg.sender;\n    answers[numOfAnswers].timestamp = now;\n    numOfAnswers++;\n    return true;\n  }\n}\n","sourcePath":"/Users/sunjinlee/workspace/eth/my-little-ponies/contracts/MetaCoin.sol","ast":{"attributes":{"absolutePath":"/Users/sunjinlee/workspace/eth/my-little-ponies/contracts/MetaCoin.sol","exportedSymbols":{"MetaCoin":[306]}},"children":[{"attributes":{"literals":["solidity","^","0.4",".11"]},"id":18,"name":"PragmaDirective","src":"0:24:1"},{"attributes":{"SourceUnit":17,"absolutePath":"/Users/sunjinlee/workspace/eth/my-little-ponies/contracts/ConvertLib.sol","file":"./ConvertLib.sol","scope":307,"symbolAliases":[null],"unitAlias":""},"id":19,"name":"ImportDirective","src":"26:26:1"},{"attributes":{"baseContracts":[null],"contractDependencies":[null],"contractKind":"contract","documentation":null,"fullyImplemented":true,"linearizedBaseContracts":[306],"name":"MetaCoin","scope":307},"children":[{"attributes":{"canonicalName":"MetaCoin.Post","name":"Post","scope":306,"visibility":"public"},"children":[{"attributes":{"constant":false,"name":"id","scope":30,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":20,"name":"ElementaryTypeName","src":"94:4:1"}],"id":21,"name":"VariableDeclaration","src":"94:7:1"},{"attributes":{"constant":false,"name":"title","scope":30,"stateVariable":false,"storageLocation":"default","type":"string storage pointer","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":22,"name":"ElementaryTypeName","src":"107:6:1"}],"id":23,"name":"VariableDeclaration","src":"107:12:1"},{"attributes":{"constant":false,"name":"content","scope":30,"stateVariable":false,"storageLocation":"default","type":"string storage pointer","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":24,"name":"ElementaryTypeName","src":"125:6:1"}],"id":25,"name":"VariableDeclaration","src":"125:14:1"},{"attributes":{"constant":false,"name":"timestamp","scope":30,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":26,"name":"ElementaryTypeName","src":"145:4:1"}],"id":27,"name":"VariableDeclaration","src":"145:14:1"},{"attributes":{"constant":false,"name":"createdBy","scope":30,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":28,"name":"ElementaryTypeName","src":"165:7:1"}],"id":29,"name":"VariableDeclaration","src":"165:17:1"}],"id":30,"name":"StructDefinition","src":"76:111:1"},{"attributes":{"canonicalName":"MetaCoin.Answer","name":"Answer","scope":306,"visibility":"public"},"children":[{"attributes":{"constant":false,"name":"postId","scope":41,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":31,"name":"ElementaryTypeName","src":"211:4:1"}],"id":32,"name":"VariableDeclaration","src":"211:11:1"},{"attributes":{"constant":false,"name":"id","scope":41,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":33,"name":"ElementaryTypeName","src":"228:4:1"}],"id":34,"name":"VariableDeclaration","src":"228:7:1"},{"attributes":{"constant":false,"name":"content","scope":41,"stateVariable":false,"storageLocation":"default","type":"string storage pointer","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":35,"name":"ElementaryTypeName","src":"241:6:1"}],"id":36,"name":"VariableDeclaration","src":"241:14:1"},{"attributes":{"constant":false,"name":"createdBy","scope":41,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":37,"name":"ElementaryTypeName","src":"261:7:1"}],"id":38,"name":"VariableDeclaration","src":"261:17:1"},{"attributes":{"constant":false,"name":"timestamp","scope":41,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":39,"name":"ElementaryTypeName","src":"284:4:1"}],"id":40,"name":"VariableDeclaration","src":"284:14:1"}],"id":41,"name":"StructDefinition","src":"191:112:1"},{"attributes":{"constant":false,"name":"numOfPosts","scope":306,"stateVariable":true,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":42,"name":"ElementaryTypeName","src":"307:4:1"}],"id":43,"name":"VariableDeclaration","src":"307:15:1"},{"attributes":{"constant":false,"name":"numOfAnswers","scope":306,"stateVariable":true,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":44,"name":"ElementaryTypeName","src":"326:4:1"}],"id":45,"name":"VariableDeclaration","src":"326:17:1"},{"attributes":{"constant":false,"name":"posts","scope":306,"stateVariable":true,"storageLocation":"default","type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":null,"visibility":"public"},"children":[{"attributes":{"type":"mapping(uint256 => struct MetaCoin.Post storage ref)"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":46,"name":"ElementaryTypeName","src":"357:4:1"},{"attributes":{"contractScope":null,"name":"Post","referencedDeclaration":30,"type":"struct MetaCoin.Post storage pointer"},"id":47,"name":"UserDefinedTypeName","src":"365:4:1"}],"id":48,"name":"Mapping","src":"348:22:1"}],"id":49,"name":"VariableDeclaration","src":"348:35:1"},{"attributes":{"constant":false,"name":"answers","scope":306,"stateVariable":true,"storageLocation":"default","type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":null,"visibility":"public"},"children":[{"attributes":{"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":50,"name":"ElementaryTypeName","src":"396:4:1"},{"attributes":{"contractScope":null,"name":"Answer","referencedDeclaration":41,"type":"struct MetaCoin.Answer storage pointer"},"id":51,"name":"UserDefinedTypeName","src":"404:6:1"}],"id":52,"name":"Mapping","src":"387:24:1"}],"id":53,"name":"VariableDeclaration","src":"387:39:1"},{"attributes":{"constant":false,"name":"balances","scope":306,"stateVariable":true,"storageLocation":"default","type":"mapping(address => int256)","value":null,"visibility":"internal"},"children":[{"attributes":{"type":"mapping(address => int256)"},"children":[{"attributes":{"name":"address","type":"address"},"id":54,"name":"ElementaryTypeName","src":"439:7:1"},{"attributes":{"name":"int","type":"int256"},"id":55,"name":"ElementaryTypeName","src":"450:3:1"}],"id":56,"name":"Mapping","src":"430:24:1"}],"id":57,"name":"VariableDeclaration","src":"430:33:1"},{"attributes":{"anonymous":false,"name":"Transfer"},"children":[{"children":[{"attributes":{"constant":false,"indexed":true,"name":"_from","scope":65,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":58,"name":"ElementaryTypeName","src":"483:7:1"}],"id":59,"name":"VariableDeclaration","src":"483:21:1"},{"attributes":{"constant":false,"indexed":true,"name":"_to","scope":65,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":60,"name":"ElementaryTypeName","src":"506:7:1"}],"id":61,"name":"VariableDeclaration","src":"506:19:1"},{"attributes":{"constant":false,"indexed":false,"name":"_value","scope":65,"stateVariable":false,"storageLocation":"default","type":"int256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"int256","type":"int256"},"id":62,"name":"ElementaryTypeName","src":"527:6:1"}],"id":63,"name":"VariableDeclaration","src":"527:13:1"}],"id":64,"name":"ParameterList","src":"482:59:1"}],"id":65,"name":"EventDefinition","src":"468:74:1"},{"attributes":{"constant":false,"implemented":true,"isConstructor":true,"modifiers":[null],"name":"MetaCoin","payable":false,"scope":306,"stateMutability":"nonpayable","superFunction":null,"visibility":"public"},"children":[{"attributes":{"parameters":[null]},"children":[],"id":66,"name":"ParameterList","src":"563:2:1"},{"attributes":{"parameters":[null]},"children":[],"id":67,"name":"ParameterList","src":"566:0:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":68,"name":"Identifier","src":"572:10:1"},{"attributes":{"argumentTypes":null,"hexvalue":"30","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"number","type":"int_const 0","value":"0"},"id":69,"name":"Literal","src":"585:1:1"}],"id":70,"name":"Assignment","src":"572:14:1"}],"id":71,"name":"ExpressionStatement","src":"572:14:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":72,"name":"Identifier","src":"592:12:1"},{"attributes":{"argumentTypes":null,"hexvalue":"30","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"number","type":"int_const 0","value":"0"},"id":73,"name":"Literal","src":"607:1:1"}],"id":74,"name":"Assignment","src":"592:16:1"}],"id":75,"name":"ExpressionStatement","src":"592:16:1"}],"id":76,"name":"Block","src":"566:47:1"}],"id":77,"name":"FunctionDefinition","src":"546:67:1"},{"attributes":{"constant":false,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"sendCoin","payable":false,"scope":306,"stateMutability":"nonpayable","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"receiver","scope":109,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":78,"name":"ElementaryTypeName","src":"635:7:1"}],"id":79,"name":"VariableDeclaration","src":"635:16:1"},{"attributes":{"constant":false,"name":"amount","scope":109,"stateVariable":false,"storageLocation":"default","type":"int256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"int","type":"int256"},"id":80,"name":"ElementaryTypeName","src":"653:3:1"}],"id":81,"name":"VariableDeclaration","src":"653:10:1"}],"id":82,"name":"ParameterList","src":"634:30:1"},{"children":[{"attributes":{"constant":false,"name":"","scope":109,"stateVariable":false,"storageLocation":"default","type":"bool","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"bool","type":"bool"},"id":83,"name":"ElementaryTypeName","src":"674:4:1"}],"id":84,"name":"VariableDeclaration","src":"674:4:1"}],"id":85,"name":"ParameterList","src":"673:6:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"-=","type":"int256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"type":"int256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":57,"type":"mapping(address => int256)","value":"balances"},"id":86,"name":"Identifier","src":"686:8:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"sender","referencedDeclaration":null,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":318,"type":"msg","value":"msg"},"id":87,"name":"Identifier","src":"695:3:1"}],"id":88,"name":"MemberAccess","src":"695:10:1"}],"id":89,"name":"IndexAccess","src":"686:20:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":81,"type":"int256","value":"amount"},"id":90,"name":"Identifier","src":"710:6:1"}],"id":91,"name":"Assignment","src":"686:30:1"}],"id":92,"name":"ExpressionStatement","src":"686:30:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"+=","type":"int256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"type":"int256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":57,"type":"mapping(address => int256)","value":"balances"},"id":93,"name":"Identifier","src":"722:8:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":79,"type":"address","value":"receiver"},"id":94,"name":"Identifier","src":"731:8:1"}],"id":95,"name":"IndexAccess","src":"722:18:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":81,"type":"int256","value":"amount"},"id":96,"name":"Identifier","src":"744:6:1"}],"id":97,"name":"Assignment","src":"722:28:1"}],"id":98,"name":"ExpressionStatement","src":"722:28:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"isStructConstructorCall":false,"lValueRequested":false,"names":[null],"type":"tuple()","type_conversion":false},"children":[{"attributes":{"argumentTypes":[{"typeIdentifier":"t_address","typeString":"address"},{"typeIdentifier":"t_address","typeString":"address"},{"typeIdentifier":"t_int256","typeString":"int256"}],"overloadedDeclarations":[null],"referencedDeclaration":65,"type":"function (address,address,int256)","value":"Transfer"},"id":99,"name":"Identifier","src":"756:8:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"sender","referencedDeclaration":null,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":318,"type":"msg","value":"msg"},"id":100,"name":"Identifier","src":"765:3:1"}],"id":101,"name":"MemberAccess","src":"765:10:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":79,"type":"address","value":"receiver"},"id":102,"name":"Identifier","src":"777:8:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":81,"type":"int256","value":"amount"},"id":103,"name":"Identifier","src":"787:6:1"}],"id":104,"name":"FunctionCall","src":"756:38:1"}],"id":105,"name":"ExpressionStatement","src":"756:38:1"},{"attributes":{"functionReturnParameters":85},"children":[{"attributes":{"argumentTypes":null,"hexvalue":"74727565","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"bool","type":"bool","value":"true"},"id":106,"name":"Literal","src":"807:4:1"}],"id":107,"name":"Return","src":"800:11:1"}],"id":108,"name":"Block","src":"680:136:1"}],"id":109,"name":"FunctionDefinition","src":"617:199:1"},{"attributes":{"constant":true,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"getBalanceInEth","payable":false,"scope":306,"stateMutability":"view","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"addr","scope":125,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":110,"name":"ElementaryTypeName","src":"845:7:1"}],"id":111,"name":"VariableDeclaration","src":"845:12:1"}],"id":112,"name":"ParameterList","src":"844:14:1"},{"children":[{"attributes":{"constant":false,"name":"","scope":125,"stateVariable":false,"storageLocation":"default","type":"int256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"int","type":"int256"},"id":113,"name":"ElementaryTypeName","src":"877:3:1"}],"id":114,"name":"VariableDeclaration","src":"877:3:1"}],"id":115,"name":"ParameterList","src":"876:5:1"},{"children":[{"attributes":{"functionReturnParameters":115},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"isStructConstructorCall":false,"lValueRequested":false,"names":[null],"type":"int256","type_conversion":false},"children":[{"attributes":{"argumentTypes":[{"typeIdentifier":"t_int256","typeString":"int256"},{"typeIdentifier":"t_rational_2_by_1","typeString":"int_const 2"}],"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"convert","referencedDeclaration":15,"type":"function (int256,int256) returns (int256)"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":16,"type":"type(library ConvertLib)","value":"ConvertLib"},"id":116,"name":"Identifier","src":"895:10:1"}],"id":117,"name":"MemberAccess","src":"895:18:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"isStructConstructorCall":false,"lValueRequested":false,"names":[null],"type":"int256","type_conversion":false},"children":[{"attributes":{"argumentTypes":[{"typeIdentifier":"t_address","typeString":"address"}],"overloadedDeclarations":[null],"referencedDeclaration":137,"type":"function (address) view returns (int256)","value":"getBalance"},"id":118,"name":"Identifier","src":"914:10:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":111,"type":"address","value":"addr"},"id":119,"name":"Identifier","src":"925:4:1"}],"id":120,"name":"FunctionCall","src":"914:16:1"},{"attributes":{"argumentTypes":null,"hexvalue":"32","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"number","type":"int_const 2","value":"2"},"id":121,"name":"Literal","src":"932:1:1"}],"id":122,"name":"FunctionCall","src":"895:39:1"}],"id":123,"name":"Return","src":"888:46:1"}],"id":124,"name":"Block","src":"882:57:1"}],"id":125,"name":"FunctionDefinition","src":"820:119:1"},{"attributes":{"constant":true,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"getBalance","payable":false,"scope":306,"stateMutability":"view","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"addr","scope":137,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":126,"name":"ElementaryTypeName","src":"963:7:1"}],"id":127,"name":"VariableDeclaration","src":"963:12:1"}],"id":128,"name":"ParameterList","src":"962:14:1"},{"children":[{"attributes":{"constant":false,"name":"","scope":137,"stateVariable":false,"storageLocation":"default","type":"int256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"int","type":"int256"},"id":129,"name":"ElementaryTypeName","src":"1002:3:1"}],"id":130,"name":"VariableDeclaration","src":"1002:3:1"}],"id":131,"name":"ParameterList","src":"1001:5:1"},{"children":[{"attributes":{"functionReturnParameters":131},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"int256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":57,"type":"mapping(address => int256)","value":"balances"},"id":132,"name":"Identifier","src":"1020:8:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":127,"type":"address","value":"addr"},"id":133,"name":"Identifier","src":"1029:4:1"}],"id":134,"name":"IndexAccess","src":"1020:14:1"}],"id":135,"name":"Return","src":"1013:21:1"}],"id":136,"name":"Block","src":"1007:32:1"}],"id":137,"name":"FunctionDefinition","src":"943:96:1"},{"attributes":{"constant":false,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"postQuestion","payable":false,"scope":306,"stateMutability":"nonpayable","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"title","scope":188,"stateVariable":false,"storageLocation":"default","type":"string memory","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":138,"name":"ElementaryTypeName","src":"1065:6:1"}],"id":139,"name":"VariableDeclaration","src":"1065:12:1"},{"attributes":{"constant":false,"name":"content","scope":188,"stateVariable":false,"storageLocation":"default","type":"string memory","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":140,"name":"ElementaryTypeName","src":"1079:6:1"}],"id":141,"name":"VariableDeclaration","src":"1079:14:1"}],"id":142,"name":"ParameterList","src":"1064:30:1"},{"children":[{"attributes":{"constant":false,"name":"","scope":188,"stateVariable":false,"storageLocation":"default","type":"bool","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"bool","type":"bool"},"id":143,"name":"ElementaryTypeName","src":"1111:4:1"}],"id":144,"name":"VariableDeclaration","src":"1111:4:1"}],"id":145,"name":"ParameterList","src":"1110:6:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"id","referencedDeclaration":21,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":146,"name":"Identifier","src":"1123:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":147,"name":"Identifier","src":"1129:10:1"}],"id":148,"name":"IndexAccess","src":"1123:17:1"}],"id":149,"name":"MemberAccess","src":"1123:20:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":150,"name":"Identifier","src":"1146:10:1"}],"id":151,"name":"Assignment","src":"1123:33:1"}],"id":152,"name":"ExpressionStatement","src":"1123:33:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"title","referencedDeclaration":23,"type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":153,"name":"Identifier","src":"1162:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":154,"name":"Identifier","src":"1168:10:1"}],"id":155,"name":"IndexAccess","src":"1162:17:1"}],"id":156,"name":"MemberAccess","src":"1162:23:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":139,"type":"string memory","value":"title"},"id":157,"name":"Identifier","src":"1188:5:1"}],"id":158,"name":"Assignment","src":"1162:31:1"}],"id":159,"name":"ExpressionStatement","src":"1162:31:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"content","referencedDeclaration":25,"type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":160,"name":"Identifier","src":"1199:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":161,"name":"Identifier","src":"1205:10:1"}],"id":162,"name":"IndexAccess","src":"1199:17:1"}],"id":163,"name":"MemberAccess","src":"1199:25:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":141,"type":"string memory","value":"content"},"id":164,"name":"Identifier","src":"1227:7:1"}],"id":165,"name":"Assignment","src":"1199:35:1"}],"id":166,"name":"ExpressionStatement","src":"1199:35:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"timestamp","referencedDeclaration":27,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":167,"name":"Identifier","src":"1240:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":168,"name":"Identifier","src":"1246:10:1"}],"id":169,"name":"IndexAccess","src":"1240:17:1"}],"id":170,"name":"MemberAccess","src":"1240:27:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"sender","referencedDeclaration":320,"type":"uint256","overloadedDeclarations":[null],"value":"now"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":364,"type":"msg","value":"msg"},"id":167,"name":"Identifier","src":"1220:3:1"}],"id":171,"name":"Identifier","src":"1270:3:1"}],"id":172,"name":"Assignment","src":"1240:33:1"}],"id":173,"name":"ExpressionStatement","src":"1240:33:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","prefix":false,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":29,"type":"address","value":"numOfPosts","isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"createdBy"},"id":177,"name":"MemberAccess","src":"1279:27:1","children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":174,"name":"Identifier","src":"1279:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":175,"name":"Identifier","src":"1285:10:1"}],"id":176,"name":"IndexAccess","src":"1279:17:1"}]},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"sender","referencedDeclaration":null,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":318,"type":"msg","value":"msg"},"id":178,"name":"Identifier","src":"1309:3:1"}],"id":179,"name":"MemberAccess","src":"1309:10:1"}],"id":180,"name":"Assignment","src":"1279:40:1"}],"id":181,"name":"ExpressionStatement","src":"1279:40:1"},{"attributes":{"functionReturnParameters":141},"children":[{"attributes":{"argumentTypes":null,"hexvalue":"74727565","isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"subdenomination":null,"token":"bool","type":"uint256","value":"true","operator":"++","prefix":false},"id":183,"name":"UnaryOperation","src":"1325:12:1","children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":182,"name":"Identifier","src":"1325:10:1"}]}],"id":184,"name":"ExpressionStatement","src":"1325:12:1"},{"attributes":{"functionReturnParameters":145},"children":[{"attributes":{"argumentTypes":null,"hexvalue":"74727565","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"bool","type":"bool","value":"true"},"id":185,"name":"Literal","src":"1350:4:1"}],"id":186,"name":"Return","src":"1343:11:1"}],"id":187,"name":"Block","src":"1117:242:1"}],"id":188,"name":"FunctionDefinition","src":"1043:316:1"},{"attributes":{"constant":true,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"getPost","payable":false,"scope":306,"stateMutability":"view","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"postID","scope":212,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":189,"name":"ElementaryTypeName","src":"1380:4:1"}],"id":190,"name":"VariableDeclaration","src":"1380:11:1"}],"id":191,"name":"ParameterList","src":"1379:13:1"},{"children":[{"attributes":{"constant":false,"name":"content","scope":212,"stateVariable":false,"storageLocation":"default","type":"string memory","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":192,"name":"ElementaryTypeName","src":"1418:6:1"}],"id":193,"name":"VariableDeclaration","src":"1418:14:1"},{"attributes":{"constant":false,"name":"timestamp","scope":212,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":194,"name":"ElementaryTypeName","src":"1434:4:1"}],"id":195,"name":"VariableDeclaration","src":"1434:14:1"}],"id":196,"name":"ParameterList","src":"1417:32:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"string memory"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":193,"type":"string memory","value":"content"},"id":197,"name":"Identifier","src":"1456:7:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"member_name":"content","referencedDeclaration":25,"type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":198,"name":"Identifier","src":"1466:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":190,"type":"uint256","value":"postID"},"id":199,"name":"Identifier","src":"1472:6:1"}],"id":200,"name":"IndexAccess","src":"1466:13:1"}],"id":201,"name":"MemberAccess","src":"1466:21:1"}],"id":202,"name":"Assignment","src":"1456:31:1"}],"id":203,"name":"ExpressionStatement","src":"1456:31:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":195,"type":"uint256","value":"timestamp"},"id":204,"name":"Identifier","src":"1493:9:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"member_name":"timestamp","referencedDeclaration":27,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":205,"name":"Identifier","src":"1505:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":190,"type":"uint256","value":"postID"},"id":206,"name":"Identifier","src":"1511:6:1"}],"id":207,"name":"IndexAccess","src":"1505:13:1"}],"id":208,"name":"MemberAccess","src":"1505:23:1"}],"id":209,"name":"Assignment","src":"1493:35:1"}],"id":210,"name":"ExpressionStatement","src":"1493:35:1"}],"id":211,"name":"Block","src":"1450:83:1"}],"id":212,"name":"FunctionDefinition","src":"1363:170:1"},{"attributes":{"constant":true,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"getLatestPost","payable":false,"scope":306,"stateMutability":"view","superFunction":null,"visibility":"public"},"children":[{"attributes":{"parameters":[null]},"children":[],"id":213,"name":"ParameterList","src":"1559:2:1"},{"children":[{"attributes":{"constant":false,"name":"content","scope":244,"stateVariable":false,"storageLocation":"default","type":"string memory","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":214,"name":"ElementaryTypeName","src":"1587:6:1"}],"id":215,"name":"VariableDeclaration","src":"1587:14:1"},{"attributes":{"constant":false,"name":"timestamp","scope":244,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":216,"name":"ElementaryTypeName","src":"1603:4:1"}],"id":217,"name":"VariableDeclaration","src":"1603:14:1"},{"attributes":{"constant":false,"name":"numberOfPosts","scope":244,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":218,"name":"ElementaryTypeName","src":"1619:4:1"}],"id":219,"name":"VariableDeclaration","src":"1619:18:1"}],"id":220,"name":"ParameterList","src":"1586:52:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"string memory"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":215,"type":"string memory","value":"content"},"id":221,"name":"Identifier","src":"1645:7:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"member_name":"content","referencedDeclaration":25,"type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":222,"name":"Identifier","src":"1655:5:1"},{"attributes":{"argumentTypes":null,"commonType":{"typeIdentifier":"t_uint256","typeString":"uint256"},"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"-","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":223,"name":"Identifier","src":"1661:10:1"},{"attributes":{"argumentTypes":null,"hexvalue":"31","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"number","type":"int_const 1","value":"1"},"id":224,"name":"Literal","src":"1674:1:1"}],"id":225,"name":"BinaryOperation","src":"1661:14:1"}],"id":226,"name":"IndexAccess","src":"1655:21:1"}],"id":227,"name":"MemberAccess","src":"1655:29:1"}],"id":228,"name":"Assignment","src":"1645:39:1"}],"id":229,"name":"ExpressionStatement","src":"1645:39:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":217,"type":"uint256","value":"timestamp"},"id":230,"name":"Identifier","src":"1690:9:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"member_name":"timestamp","referencedDeclaration":27,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":231,"name":"Identifier","src":"1702:5:1"},{"attributes":{"argumentTypes":null,"commonType":{"typeIdentifier":"t_uint256","typeString":"uint256"},"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"-","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":232,"name":"Identifier","src":"1708:10:1"},{"attributes":{"argumentTypes":null,"hexvalue":"31","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"number","type":"int_const 1","value":"1"},"id":233,"name":"Literal","src":"1721:1:1"}],"id":234,"name":"BinaryOperation","src":"1708:14:1"}],"id":235,"name":"IndexAccess","src":"1702:21:1"}],"id":236,"name":"MemberAccess","src":"1702:31:1"}],"id":237,"name":"Assignment","src":"1690:43:1"}],"id":238,"name":"ExpressionStatement","src":"1690:43:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":219,"type":"uint256","value":"numberOfPosts"},"id":239,"name":"Identifier","src":"1739:13:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":240,"name":"Identifier","src":"1755:10:1"}],"id":241,"name":"Assignment","src":"1739:26:1"}],"id":242,"name":"ExpressionStatement","src":"1739:26:1"}],"id":243,"name":"Block","src":"1639:131:1"}],"id":244,"name":"FunctionDefinition","src":"1537:233:1"},{"attributes":{"constant":true,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"getNumberOfPosts","payable":false,"scope":306,"stateMutability":"view","superFunction":null,"visibility":"public"},"children":[{"attributes":{"parameters":[null]},"children":[],"id":245,"name":"ParameterList","src":"1799:2:1"},{"children":[{"attributes":{"constant":false,"name":"num","scope":254,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":246,"name":"ElementaryTypeName","src":"1827:4:1"}],"id":247,"name":"VariableDeclaration","src":"1827:8:1"}],"id":248,"name":"ParameterList","src":"1826:10:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":247,"type":"uint256","value":"num"},"id":249,"name":"Identifier","src":"1843:3:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":250,"name":"Identifier","src":"1849:10:1"}],"id":251,"name":"Assignment","src":"1843:16:1"}],"id":252,"name":"ExpressionStatement","src":"1843:16:1"}],"id":253,"name":"Block","src":"1837:27:1"}],"id":254,"name":"FunctionDefinition","src":"1774:90:1"},{"attributes":{"constant":false,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"postAnswer","payable":false,"scope":306,"stateMutability":"nonpayable","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"postId","scope":305,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":255,"name":"ElementaryTypeName","src":"1888:4:1"}],"id":256,"name":"VariableDeclaration","src":"1888:11:1"},{"attributes":{"constant":false,"name":"answer","scope":305,"stateVariable":false,"storageLocation":"default","type":"string memory","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":257,"name":"ElementaryTypeName","src":"1901:6:1"}],"id":258,"name":"VariableDeclaration","src":"1901:13:1"}],"id":259,"name":"ParameterList","src":"1887:28:1"},{"children":[{"attributes":{"constant":false,"name":"","scope":305,"stateVariable":false,"storageLocation":"default","type":"bool","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"bool","type":"bool"},"id":260,"name":"ElementaryTypeName","src":"1932:4:1"}],"id":261,"name":"VariableDeclaration","src":"1932:4:1"}],"id":262,"name":"ParameterList","src":"1931:6:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"id","referencedDeclaration":34,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Answer storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":53,"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":"answers"},"id":263,"name":"Identifier","src":"1944:7:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":264,"name":"Identifier","src":"1952:12:1"}],"id":265,"name":"IndexAccess","src":"1944:21:1"}],"id":266,"name":"MemberAccess","src":"1944:24:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":267,"name":"Identifier","src":"1971:12:1"}],"id":268,"name":"Assignment","src":"1944:39:1"}],"id":269,"name":"ExpressionStatement","src":"1944:39:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"postId","referencedDeclaration":32,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Answer storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":53,"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":"answers"},"id":270,"name":"Identifier","src":"1989:7:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":271,"name":"Identifier","src":"1997:12:1"}],"id":272,"name":"IndexAccess","src":"1989:21:1"}],"id":273,"name":"MemberAccess","src":"1989:28:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":256,"type":"uint256","value":"postId"},"id":274,"name":"Identifier","src":"2020:6:1"}],"id":275,"name":"Assignment","src":"1989:37:1"}],"id":276,"name":"ExpressionStatement","src":"1989:37:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"content","referencedDeclaration":36,"type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Answer storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":53,"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":"answers"},"id":277,"name":"Identifier","src":"2032:7:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":278,"name":"Identifier","src":"2040:12:1"}],"id":279,"name":"IndexAccess","src":"2032:21:1"}],"id":280,"name":"MemberAccess","src":"2032:29:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":258,"type":"string memory","value":"answer"},"id":281,"name":"Identifier","src":"2064:6:1"}],"id":282,"name":"Assignment","src":"2032:38:1"}],"id":283,"name":"ExpressionStatement","src":"2032:38:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"address"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"createdBy","referencedDeclaration":38,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Answer storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":53,"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":"answers"},"id":284,"name":"Identifier","src":"2076:7:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":285,"name":"Identifier","src":"2084:12:1"}],"id":286,"name":"IndexAccess","src":"2076:21:1"}],"id":287,"name":"MemberAccess","src":"2076:31:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"sender","referencedDeclaration":null,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":318,"type":"msg","value":"msg"},"id":288,"name":"Identifier","src":"2110:3:1"}],"id":289,"name":"MemberAccess","src":"2110:10:1"}],"id":290,"name":"Assignment","src":"2076:44:1"}],"id":291,"name":"ExpressionStatement","src":"2076:44:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"timestamp","referencedDeclaration":40,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Answer storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":53,"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":"answers"},"id":292,"name":"Identifier","src":"2126:7:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":293,"name":"Identifier","src":"2134:12:1"}],"id":294,"name":"IndexAccess","src":"2126:21:1"}],"id":295,"name":"MemberAccess","src":"2126:31:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":320,"type":"uint256","value":"now"},"id":296,"name":"Identifier","src":"2160:3:1"}],"id":297,"name":"Assignment","src":"2126:37:1"}],"id":298,"name":"ExpressionStatement","src":"2126:37:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"++","prefix":false,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":299,"name":"Identifier","src":"2169:12:1"}],"id":300,"name":"UnaryOperation","src":"2169:14:1"}],"id":301,"name":"ExpressionStatement","src":"2169:14:1"},{"attributes":{"functionReturnParameters":262},"children":[{"attributes":{"argumentTypes":null,"hexvalue":"74727565","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"bool","type":"bool","value":"true"},"id":302,"name":"Literal","src":"2196:4:1"}],"id":303,"name":"Return","src":"2189:11:1"}],"id":304,"name":"Block","src":"1938:267:1"}],"id":305,"name":"FunctionDefinition","src":"1868:337:1"}],"id":306,"name":"ContractDefinition","src":"54:2153:1"}],"id":307,"name":"SourceUnit","src":"0:2208:1"},"compiler":{"name":"solc","version":"0.4.18+commit.9cf6e910.Emscripten.clang"},"networks":{"47889":{"events":{},"links":{"ConvertLib":"0xd42f266159888276d8458a49c0a767913a5206ad"},"address":"0x80840c43859db4aae9f5d361ffe57758cb8822a0"}},"schemaVersion":"1.0.1","updatedAt":"2017-11-07T09:07:31.698Z"}
-
-/***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Schema = __webpack_require__(333);
-var Contract = __webpack_require__(337);
-
-var contract = function(options) {
-  options = Schema.normalizeOptions(options);
-  var binary = Schema.generateBinary(options, {}, {dirty: false});
-
-  // Note we don't use `new` here at all. This will cause the class to
-  // "mutate" instead of instantiate an instance.
-  return Contract.clone(binary);
-};
-
-// To be used to upgrade old .sol.js abstractions
-contract.fromSolJS = function(soljs_abstraction, ignore_default_network) {
-  if (ignore_default_network == null) {
-    ignore_default_network = false;
-  }
-
-  // Find the latest binary
-  var latest_network = null;
-  var latest_network_updated_at = 0;
-
-  var networks = {};
-
-  Object.keys(soljs_abstraction.all_networks).forEach(function(network_name) {
-
-    if (network_name == "default") {
-      if (ignore_default_network == true ) {
-        return;
-      } else {
-        throw new Error(soljs_abstraction.contract_name + " has legacy 'default' network artifacts stored within it. Generally these artifacts were a result of running Truffle on a development environment -- in order to store contracts with truffle-contract, all networks must have an identified id. If you're sure this default network represents your development environment, you can ignore processing of the default network by passing `true` as the second argument to this function. However, if you think this network represents artifacts you'd like to keep (i.e., addresses deployed to the main network), you'll need to edit your .sol.js file yourself and change the default network id to be the id of your desired network. For most people, ignoring the default network is the correct option.");
-      }
-    }
-
-    if (soljs_abstraction.all_networks[network_name].updated_at > latest_network_updated_at) {
-      latest_network = network_name;
-      latest_network_updated_at = soljs_abstraction.all_networks[network_name].updated_at;
-    }
-
-    networks[network_name] = {};
-
-    ["address", "events", "links", "updated_at"].forEach(function(key) {
-      networks[network_name][key] = soljs_abstraction.all_networks[network_name][key];
-    })
-  });
-
-  latest_network = soljs_abstraction.all_networks[latest_network] || {};
-
-  var json = {
-    contract_name: soljs_abstraction.contract_name,
-    unlinked_binary: latest_network.unlinked_binary,
-    abi: latest_network.abi,
-    networks: networks,
-    updated_at: latest_network_updated_at == 0 ? undefined : latest_network_updated_at
-  };
-
-  return contract(json);
-};
-
-module.exports = contract;
-
-if (typeof window !== "undefined") {
-  window.TruffleContract = contract;
-}
-
-
-/***/ }),
-/* 74 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Web3 = __webpack_require__(385);
-
-// dont override global variable
-if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
-    window.Web3 = Web3;
-}
-
-module.exports = Web3;
-
-
-/***/ }),
-/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {(function (module, exports) {
@@ -30802,7 +30712,7 @@ module.exports = Web3;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(57)(module)))
 
 /***/ }),
-/* 76 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory) {
@@ -31006,7 +30916,7 @@ module.exports = Web3;
 }));
 
 /***/ }),
-/* 77 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -31334,7 +31244,7 @@ module.exports = Web3;
 }));
 
 /***/ }),
-/* 78 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31357,7 +31267,7 @@ if (false) {
 module.exports = emptyObject;
 
 /***/ }),
-/* 79 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31418,7 +31328,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 };
 
 /***/ }),
-/* 80 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31484,7 +31394,7 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 };
 
 /***/ }),
-/* 81 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31562,7 +31472,7 @@ return af;
 
 
 /***/ }),
-/* 82 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31626,7 +31536,7 @@ return arDz;
 
 
 /***/ }),
-/* 83 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31690,7 +31600,7 @@ return arKw;
 
 
 /***/ }),
-/* 84 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31821,7 +31731,7 @@ return arLy;
 
 
 /***/ }),
-/* 85 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31886,7 +31796,7 @@ return arMa;
 
 
 /***/ }),
-/* 86 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -31996,7 +31906,7 @@ return arSa;
 
 
 /***/ }),
-/* 87 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32060,7 +31970,7 @@ return arTn;
 
 
 /***/ }),
-/* 88 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32207,7 +32117,7 @@ return ar;
 
 
 /***/ }),
-/* 89 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32317,7 +32227,7 @@ return az;
 
 
 /***/ }),
-/* 90 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32456,7 +32366,7 @@ return be;
 
 
 /***/ }),
-/* 91 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32551,7 +32461,7 @@ return bg;
 
 
 /***/ }),
-/* 92 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32615,7 +32525,7 @@ return bm;
 
 
 /***/ }),
-/* 93 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32739,7 +32649,7 @@ return bn;
 
 
 /***/ }),
-/* 94 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32863,7 +32773,7 @@ return bo;
 
 
 /***/ }),
-/* 95 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -32976,7 +32886,7 @@ return br;
 
 
 /***/ }),
-/* 96 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33124,7 +33034,7 @@ return bs;
 
 
 /***/ }),
-/* 97 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33217,7 +33127,7 @@ return ca;
 
 
 /***/ }),
-/* 98 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33394,7 +33304,7 @@ return cs;
 
 
 /***/ }),
-/* 99 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33462,7 +33372,7 @@ return cv;
 
 
 /***/ }),
-/* 100 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33548,7 +33458,7 @@ return cy;
 
 
 /***/ }),
-/* 101 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33613,7 +33523,7 @@ return da;
 
 
 /***/ }),
-/* 102 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33697,7 +33607,7 @@ return deAt;
 
 
 /***/ }),
-/* 103 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33780,7 +33690,7 @@ return deCh;
 
 
 /***/ }),
-/* 104 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33863,7 +33773,7 @@ return de;
 
 
 /***/ }),
-/* 105 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -33968,7 +33878,7 @@ return dv;
 
 
 /***/ }),
-/* 106 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34073,7 +33983,7 @@ return el;
 
 
 /***/ }),
-/* 107 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34145,7 +34055,7 @@ return enAu;
 
 
 /***/ }),
-/* 108 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34213,7 +34123,7 @@ return enCa;
 
 
 /***/ }),
-/* 109 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34285,7 +34195,7 @@ return enGb;
 
 
 /***/ }),
-/* 110 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34357,7 +34267,7 @@ return enIe;
 
 
 /***/ }),
-/* 111 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34429,7 +34339,7 @@ return enNz;
 
 
 /***/ }),
-/* 112 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34507,7 +34417,7 @@ return eo;
 
 
 /***/ }),
-/* 113 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34603,7 +34513,7 @@ return esDo;
 
 
 /***/ }),
-/* 114 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34691,7 +34601,7 @@ return esUs;
 
 
 /***/ }),
-/* 115 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34788,7 +34698,7 @@ return es;
 
 
 /***/ }),
-/* 116 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34873,7 +34783,7 @@ return et;
 
 
 /***/ }),
-/* 117 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34944,7 +34854,7 @@ return eu;
 
 
 /***/ }),
-/* 118 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35056,7 +34966,7 @@ return fa;
 
 
 /***/ }),
-/* 119 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35168,7 +35078,7 @@ return fi;
 
 
 /***/ }),
-/* 120 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35233,7 +35143,7 @@ return fo;
 
 
 /***/ }),
-/* 121 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35312,7 +35222,7 @@ return frCa;
 
 
 /***/ }),
-/* 122 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35395,7 +35305,7 @@ return frCh;
 
 
 /***/ }),
-/* 123 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35483,7 +35393,7 @@ return fr;
 
 
 /***/ }),
-/* 124 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35563,7 +35473,7 @@ return fy;
 
 
 /***/ }),
-/* 125 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35644,7 +35554,7 @@ return gd;
 
 
 /***/ }),
-/* 126 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35726,7 +35636,7 @@ return gl;
 
 
 /***/ }),
-/* 127 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35853,7 +35763,7 @@ return gomLatn;
 
 
 /***/ }),
-/* 128 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35982,7 +35892,7 @@ return gu;
 
 
 /***/ }),
-/* 129 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36086,7 +35996,7 @@ return he;
 
 
 /***/ }),
-/* 130 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36215,7 +36125,7 @@ return hi;
 
 
 /***/ }),
-/* 131 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36365,7 +36275,7 @@ return hr;
 
 
 /***/ }),
-/* 132 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36479,7 +36389,7 @@ return hu;
 
 
 /***/ }),
-/* 133 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36579,7 +36489,7 @@ return hyAm;
 
 
 /***/ }),
-/* 134 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36667,7 +36577,7 @@ return id;
 
 
 /***/ }),
-/* 135 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36799,7 +36709,7 @@ return is;
 
 
 /***/ }),
-/* 136 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36874,7 +36784,7 @@ return it;
 
 
 /***/ }),
-/* 137 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36959,7 +36869,7 @@ return ja;
 
 
 /***/ }),
-/* 138 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37047,7 +36957,7 @@ return jv;
 
 
 /***/ }),
-/* 139 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37141,7 +37051,7 @@ return ka;
 
 
 /***/ }),
-/* 140 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37233,7 +37143,7 @@ return kk;
 
 
 /***/ }),
-/* 141 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37296,7 +37206,7 @@ return km;
 
 
 /***/ }),
-/* 142 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37427,7 +37337,7 @@ return kn;
 
 
 /***/ }),
-/* 143 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37515,7 +37425,7 @@ return ko;
 
 
 /***/ }),
-/* 144 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37608,7 +37518,7 @@ return ky;
 
 
 /***/ }),
-/* 145 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37750,7 +37660,7 @@ return lb;
 
 
 /***/ }),
-/* 146 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37825,7 +37735,7 @@ return lo;
 
 
 /***/ }),
-/* 147 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37947,7 +37857,7 @@ return lt;
 
 
 /***/ }),
-/* 148 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38049,7 +37959,7 @@ return lv;
 
 
 /***/ }),
-/* 149 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38165,7 +38075,7 @@ return me;
 
 
 /***/ }),
-/* 150 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38234,7 +38144,7 @@ return mi;
 
 
 /***/ }),
-/* 151 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38329,7 +38239,7 @@ return mk;
 
 
 /***/ }),
-/* 152 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38415,7 +38325,7 @@ return ml;
 
 
 /***/ }),
-/* 153 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38579,7 +38489,7 @@ return mr;
 
 
 /***/ }),
-/* 154 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38667,7 +38577,7 @@ return msMy;
 
 
 /***/ }),
-/* 155 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38754,7 +38664,7 @@ return ms;
 
 
 /***/ }),
-/* 156 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38855,7 +38765,7 @@ return my;
 
 
 /***/ }),
-/* 157 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38923,7 +38833,7 @@ return nb;
 
 
 /***/ }),
-/* 158 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39051,7 +38961,7 @@ return ne;
 
 
 /***/ }),
-/* 159 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39144,7 +39054,7 @@ return nlBe;
 
 
 /***/ }),
-/* 160 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39237,7 +39147,7 @@ return nl;
 
 
 /***/ }),
-/* 161 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39302,7 +39212,7 @@ return nn;
 
 
 /***/ }),
-/* 162 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39431,7 +39341,7 @@ return paIn;
 
 
 /***/ }),
-/* 163 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39560,7 +39470,7 @@ return pl;
 
 
 /***/ }),
-/* 164 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39627,7 +39537,7 @@ return ptBr;
 
 
 /***/ }),
-/* 165 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39697,7 +39607,7 @@ return pt;
 
 
 /***/ }),
-/* 166 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39777,7 +39687,7 @@ return ro;
 
 
 /***/ }),
-/* 167 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39965,7 +39875,7 @@ return ru;
 
 
 /***/ }),
-/* 168 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40068,7 +39978,7 @@ return sd;
 
 
 /***/ }),
-/* 169 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40134,7 +40044,7 @@ return se;
 
 
 /***/ }),
-/* 170 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40210,7 +40120,7 @@ return si;
 
 
 /***/ }),
-/* 171 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40365,7 +40275,7 @@ return sk;
 
 
 /***/ }),
-/* 172 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40532,7 +40442,7 @@ return sl;
 
 
 /***/ }),
-/* 173 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40607,7 +40517,7 @@ return sq;
 
 
 /***/ }),
-/* 174 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40722,7 +40632,7 @@ return srCyrl;
 
 
 /***/ }),
-/* 175 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40837,7 +40747,7 @@ return sr;
 
 
 /***/ }),
-/* 176 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40931,7 +40841,7 @@ return ss;
 
 
 /***/ }),
-/* 177 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41005,7 +40915,7 @@ return sv;
 
 
 /***/ }),
-/* 178 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41069,7 +40979,7 @@ return sw;
 
 
 /***/ }),
-/* 179 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41204,7 +41114,7 @@ return ta;
 
 
 /***/ }),
-/* 180 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41298,7 +41208,7 @@ return te;
 
 
 /***/ }),
-/* 181 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41371,7 +41281,7 @@ return tet;
 
 
 /***/ }),
-/* 182 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41443,7 +41353,7 @@ return th;
 
 
 /***/ }),
-/* 183 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41510,7 +41420,7 @@ return tlPh;
 
 
 /***/ }),
-/* 184 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41635,7 +41545,7 @@ return tlh;
 
 
 /***/ }),
-/* 185 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41730,7 +41640,7 @@ return tr;
 
 
 /***/ }),
-/* 186 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41826,7 +41736,7 @@ return tzl;
 
 
 /***/ }),
-/* 187 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41889,7 +41799,7 @@ return tzmLatn;
 
 
 /***/ }),
-/* 188 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41952,7 +41862,7 @@ return tzm;
 
 
 /***/ }),
-/* 189 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42108,7 +42018,7 @@ return uk;
 
 
 /***/ }),
-/* 190 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42212,7 +42122,7 @@ return ur;
 
 
 /***/ }),
-/* 191 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42275,7 +42185,7 @@ return uzLatn;
 
 
 /***/ }),
-/* 192 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42338,7 +42248,7 @@ return uz;
 
 
 /***/ }),
-/* 193 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42422,7 +42332,7 @@ return vi;
 
 
 /***/ }),
-/* 194 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42495,7 +42405,7 @@ return xPseudo;
 
 
 /***/ }),
-/* 195 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42560,7 +42470,7 @@ return yo;
 
 
 /***/ }),
-/* 196 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42676,7 +42586,7 @@ return zhCn;
 
 
 /***/ }),
-/* 197 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42786,7 +42696,7 @@ return zhHk;
 
 
 /***/ }),
-/* 198 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42895,7 +42805,7 @@ return zhTw;
 
 
 /***/ }),
-/* 199 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42992,7 +42902,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 200 */
+/* 197 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43102,18 +43012,18 @@ Link.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
 /***/ }),
-/* 201 */
+/* 198 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(199);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__["a" /* default */]);
 
 /***/ }),
-/* 202 */
+/* 199 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43262,7 +43172,7 @@ Route.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Route);
 
 /***/ }),
-/* 203 */
+/* 200 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43339,7 +43249,7 @@ function resolvePathname(to) {
 /* harmony default export */ __webpack_exports__["default"] = (resolvePathname);
 
 /***/ }),
-/* 204 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -43497,7 +43407,7 @@ module.exports = SolidityParam;
 
 
 /***/ }),
-/* 205 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -43711,7 +43621,7 @@ module.exports = SolidityEvent;
 
 
 /***/ }),
-/* 206 */
+/* 203 */
 /***/ (function(module, exports) {
 
 /*
@@ -43802,7 +43712,7 @@ module.exports = Jsonrpc;
 
 
 /***/ }),
-/* 207 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory) {
@@ -44567,7 +44477,7 @@ module.exports = Jsonrpc;
 }));
 
 /***/ }),
-/* 208 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -44725,7 +44635,7 @@ module.exports = SolidityParam;
 
 
 /***/ }),
-/* 209 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -44939,7 +44849,7 @@ module.exports = SolidityEvent;
 
 
 /***/ }),
-/* 210 */
+/* 207 */
 /***/ (function(module, exports) {
 
 /*
@@ -45036,7 +44946,7 @@ module.exports = Jsonrpc;
 
 
 /***/ }),
-/* 211 */
+/* 208 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45081,7 +44991,7 @@ function valueEqual(a, b) {
 /* harmony default export */ __webpack_exports__["default"] = (valueEqual);
 
 /***/ }),
-/* 212 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -45239,7 +45149,7 @@ module.exports = SolidityParam;
 
 
 /***/ }),
-/* 213 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -45453,7 +45363,7 @@ module.exports = SolidityEvent;
 
 
 /***/ }),
-/* 214 */
+/* 211 */
 /***/ (function(module, exports) {
 
 /*
@@ -45544,14 +45454,14 @@ module.exports = Jsonrpc;
 
 
 /***/ }),
-/* 215 */
+/* 212 */
 /***/ (function(module, exports) {
 
 module.exports = XMLHttpRequest;
 
 
 /***/ }),
-/* 216 */
+/* 213 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45564,11 +45474,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["getPost"] = getPost;
 /* harmony export (immutable) */ __webpack_exports__["refreshBalance"] = refreshBalance;
 /* harmony export (immutable) */ __webpack_exports__["sendCoin"] = sendCoin;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_truffle_contract__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_truffle_contract__ = __webpack_require__(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_truffle_contract___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_truffle_contract__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_web3__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_web3__ = __webpack_require__(370);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_web3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_web3__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__build_contracts_MetaCoin_json__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__build_contracts_MetaCoin_json__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__build_contracts_MetaCoin_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__build_contracts_MetaCoin_json__);
 
 
@@ -45661,13 +45571,13 @@ async function sendCoin (receiver, amount) {
 
 
 /***/ }),
-/* 217 */
+/* 214 */
 /***/ (function(module, exports) {
 
 module.exports = [{"id":"question-1","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"What is a CIF?","text":"I don't understand what a CIF is.","timestamp":1510022488402,"answers":[{"id":"answer-1a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-1","text":"Customer Identification File","timestamp":1510022488402,"accepted":true},{"id":"answer-1b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-1","text":"It's an abbreviation of Customer Identification File","timestamp":1510022488402}]},{"id":"question-2","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"What is RM?","text":"I've talked to many 'RMs' but I don't actually know what that means.","timestamp":1510022488402,"answers":[{"id":"answer-2a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-2","text":"Relationship Manager","timestamp":1510022488402,"accepted":true},{"id":"answer-2b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-2","text":"It's an abbreviation of Relationship Manager","timestamp":1510022488402}]},{"id":"question-3","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"How many CIFs can an RM manage?","text":"I would like to know the upper limit in our systems. Is it 65,535?","timestamp":1510022488402,"answers":[{"id":"answer-3a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-3","text":"As many as the RM can handle.","timestamp":1510022488402,"accepted":true},{"id":"answer-3b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-3","text":"Unlimited!","timestamp":1510022488402}]},{"id":"question-4","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"What is an Instrument?","text":"Not in the musical sense.","timestamp":1510022488402,"answers":[]},{"id":"question-5","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25sahil","title":"What is the answer to the ultimate question of life, the universe, and everything?","text":"This has been on my mind for a long time.","timestamp":1510022488402,"answers":[{"id":"answer-5a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-5","text":"Forty-two","timestamp":1510022488402},{"id":"answer-5b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-5","text":"Unlimited!","timestamp":1510022488402},{"id":"answer-5c","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-5","text":"42","timestamp":1510022488402}]},{"id":"question-6","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"When was Credit Suisse founded?","text":"I am wondering how long it has been.","timestamp":1510022488402,"answers":[{"id":"answer-6a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-6","text":"1856","timestamp":1510022488402}]}]
 
 /***/ }),
-/* 218 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45705,21 +45615,21 @@ if (true) {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(275);
+  module.exports = __webpack_require__(273);
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
 
 
 /***/ }),
-/* 219 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var React = __webpack_require__(7);
 
-var parseTag = __webpack_require__(276);
+var parseTag = __webpack_require__(274);
 
 module.exports = h;
 
@@ -45769,35 +45679,35 @@ function isChildren(x) {
 
 
 /***/ }),
-/* 220 */
+/* 217 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(275);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(276);
 /* unused harmony reexport HashRouter */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(197);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(277);
 /* unused harmony reexport MemoryRouter */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(278);
 /* unused harmony reexport NavLink */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(279);
 /* unused harmony reexport Prompt */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(280);
 /* unused harmony reexport Redirect */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(198);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(65);
 /* unused harmony reexport Router */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(281);
 /* unused harmony reexport StaticRouter */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(282);
 /* unused harmony reexport Switch */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(283);
 /* unused harmony reexport matchPath */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(284);
 /* unused harmony reexport withRouter */
 
 
@@ -45827,16 +45737,16 @@ function isChildren(x) {
 
 
 /***/ }),
-/* 221 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(246);
+var content = __webpack_require__(244);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(297)(content, {});
+var update = __webpack_require__(295)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -45853,31 +45763,25 @@ if(false) {
 }
 
 /***/ }),
-/* 222 */
+/* 219 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stylesheets_app_css__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stylesheets_app_css__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stylesheets_app_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__stylesheets_app_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_web3__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_web3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_web3__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_truffle_contract__ = __webpack_require__(73);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_truffle_contract___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_truffle_contract__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_dom__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_hyperscript__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react_hyperscript__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_router_dom__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__questions_json__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__questions_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__questions_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_moment__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__api__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__build_contracts_MetaCoin_json__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__build_contracts_MetaCoin_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__build_contracts_MetaCoin_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_hyperscript__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_hyperscript__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_router_dom__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__questions_json__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__questions_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__questions_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_moment__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_moment__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__api__ = __webpack_require__(213);
 
 
 
@@ -45888,75 +45792,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-
-window.api = __WEBPACK_IMPORTED_MODULE_9__api__
-
-// Import our contract artifacts and turn them into usable abstractions.
-
-
-// MetaCoin is our usable abstraction, which we'll use through the code below.
-const MetaCoin = __WEBPACK_IMPORTED_MODULE_2_truffle_contract___default()(__WEBPACK_IMPORTED_MODULE_10__build_contracts_MetaCoin_json___default.a)
-
-// The following code is simple to show off interacting with your contracts.
-// As your needs grow you will likely need to change its form and structure.
-// For application bootstrapping, check out window.addEventListener below.
-let accounts
-let account
-
-window.App = {
-  start: function () {
-    const self = this
-
-    // Bootstrap the MetaCoin abstraction for Use.
-    MetaCoin.setProvider(web3.currentProvider)
-
-    // Get the initial account balance so it can be displayed.
-    web3.eth.getAccounts(function (err, accs) {
-      if (err !== null) {
-        alert('There was an error fetching your accounts.')
-        return
-      }
-
-      if (accs.length === 0) {
-        alert('Couldn\'t get any accounts! Make sure your Ethereum client is configured correctly.')
-        return
-      }
-
-      accounts = accs
-      account = accounts[0]
-    })
-  },
-
-  setStatus: function (message) {
-    const status = document.getElementById('status')
-    status.innerHTML = message
-  },
-
-  sendCoin: function () {
-    const self = this
-
-    const amount = parseInt(document.getElementById('amount').value)
-    const receiver = document.getElementById('receiver').value
-
-    this.setStatus('Initiating transaction... (please wait)')
-
-    let meta
-    MetaCoin.deployed().then(function (instance) {
-      meta = instance
-      return meta.sendCoin(receiver, amount, { from: account })
-    }).then(function () {
-      self.setStatus('Transaction complete!')
-    }).catch(function (e) {
-      console.log(e)
-      self.setStatus('Error sending coin; see log.')
-    })
-  }
-}
+window.api = __WEBPACK_IMPORTED_MODULE_7__api__
 
 const pluralise = (stem, count) => count === 1 ? stem : `${stem}s`
 
-class App extends __WEBPACK_IMPORTED_MODULE_3_react__["Component"] {
+class App extends __WEBPACK_IMPORTED_MODULE_1_react__["Component"] {
   constructor (props) {
     super(props)
 
@@ -45981,7 +45821,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_3_react__["Component"] {
 
   updateBalance () {
     this.setState({ isLoading: true })
-    __WEBPACK_IMPORTED_MODULE_9__api__["refreshBalance"]().then(balance => {
+    __WEBPACK_IMPORTED_MODULE_7__api__["refreshBalance"]().then(balance => {
       const { profile } = this.state
 
       const updatedProfile = Object.assign({}, profile)
@@ -46001,7 +45841,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_3_react__["Component"] {
     const form = event.target
     const { wallet, amount } = form.elements
 
-    __WEBPACK_IMPORTED_MODULE_9__api__["sendCoin"](wallet.value, amount.value)
+    __WEBPACK_IMPORTED_MODULE_7__api__["sendCoin"](wallet.value, amount.value)
       .then(() => this.updateBalance())
       .catch(() => this.setState({ isLoading: false }))
   }
@@ -46009,19 +45849,19 @@ class App extends __WEBPACK_IMPORTED_MODULE_3_react__["Component"] {
   render () {
     const { profile, questions, isLoading } = this.state
 
-    return __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.app', [
-      __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(__WEBPACK_IMPORTED_MODULE_6_react_router_dom__["a" /* BrowserRouter */], [
-        __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('div', [
-          __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(Header, { profile, isLoading, handleSendCoinsFormSubmit: this.handleSendCoinsFormSubmit }),
-          __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(__WEBPACK_IMPORTED_MODULE_6_react_router_dom__["b" /* Route */], {
+    return __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.app', [
+      __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["a" /* BrowserRouter */], [
+        __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('div', [
+          __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(Header, { profile, isLoading, handleSendCoinsFormSubmit: this.handleSendCoinsFormSubmit }),
+          __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["b" /* Route */], {
             path: '/',
             exact: true,
-            render: () => __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(QuestionList, { questions })
+            render: () => __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(QuestionList, { questions })
           }),
-          __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(__WEBPACK_IMPORTED_MODULE_6_react_router_dom__["b" /* Route */], {
+          __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["b" /* Route */], {
             path: '/questions/:id',
             render: ({ match }) =>
-              __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(QuestionView, { question: questions.find(({ id }) => id === match.params.id) })
+              __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(QuestionView, { question: questions.find(({ id }) => id === match.params.id) })
           })
         ])
       ])
@@ -46030,40 +45870,40 @@ class App extends __WEBPACK_IMPORTED_MODULE_3_react__["Component"] {
 }
 
 const Spinner = () => {
-  return __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.spinner', [
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.rect1'),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.rect2'),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.rect3'),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.rect4'),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.rect5')
+  return __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.spinner', [
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.rect1'),
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.rect2'),
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.rect3'),
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.rect4'),
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.rect5')
   ])
 }
 
 const Header = ({ profile, isLoading, handleSendCoinsFormSubmit }) => {
   const { username, coins } = profile
-  return __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('header.site-header', [
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(__WEBPACK_IMPORTED_MODULE_6_react_router_dom__["c" /* Link */], { to: '/', className: 'site-logo' }, 'CreditOverflow'),
-    isLoading && __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(Spinner),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.profile', [
-      __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('span', `Welcome!`),
-      __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('span', `You have ${coins} coins.`),
-      __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('a.send-coins-link', { href: '#' }, 'Send some coins.'),
-      __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(SendCoinsForm, { handleSubmit: handleSendCoinsFormSubmit })
+  return __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('header.site-header', [
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["c" /* Link */], { to: '/', className: 'site-logo' }, 'CreditOverflow'),
+    isLoading && __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(Spinner),
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.profile', [
+      __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('span', `Welcome!`),
+      __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('span', `You have ${coins} coins.`),
+      __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('a.send-coins-link', { href: '#' }, 'Send some coins.'),
+      __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(SendCoinsForm, { handleSubmit: handleSendCoinsFormSubmit })
     ])
   ])
 }
 
 const SendCoinsForm = ({ handleSubmit }) => {
-  return __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('form.send-coins-form', { onSubmit: handleSubmit }, [
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('input#wallet', { placeholder: 'Wallet ID', required: true }),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('input#amount', { placeholder: 'Amount', type: 'number', required: true }),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('button', 'Submit')
+  return __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('form.send-coins-form', { onSubmit: handleSubmit }, [
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('input#wallet', { placeholder: 'Wallet ID', required: true }),
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('input#amount', { placeholder: 'Amount', type: 'number', required: true }),
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('button', 'Submit')
   ])
 }
 
 const QuestionList = ({ questions }) => {
-  return __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.question-list', questions.map(question =>
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(Question, {
+  return __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.question-list', questions.map(question =>
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(Question, {
       question,
       hideDetails: true
     })))
@@ -46072,13 +45912,13 @@ const QuestionList = ({ questions }) => {
 const QuestionView = ({ question }) => {
   const { answers } = question
 
-  return __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.question-view', [
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(Question, { question }),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(Answers, {
+  return __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.question-view', [
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(Question, { question }),
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(Answers, {
       answers,
       canAcceptAnswers: question.isCurrentUserQuestion && !question.answers.find(answer => answer.accepted)
     }),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(AnswerForm)
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(AnswerForm)
   ])
 }
 
@@ -46088,52 +45928,58 @@ const Question = ({ question, hideDetails }) => {
   const hasAcceptedAnswer = !!question.answers.find(answer => answer.accepted)
 
   const details = [
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('p.question-description', text)
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('p.question-description', text)
   ]
 
-  return __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.question', [
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(__WEBPACK_IMPORTED_MODULE_6_react_router_dom__["c" /* Link */], { to: `/questions/${id}` }, [
-      __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.question-title', title)
+  return __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.question', [
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["c" /* Link */], { to: `/questions/${id}` }, [
+      __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.question-title', title)
     ]),
     ...(hideDetails ? [] : details),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('footer', [
-      __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('time', __WEBPACK_IMPORTED_MODULE_8_moment___default()(timestamp).fromNow()),
-      __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('span', `${answerCount} ${pluralise('answer', answerCount)}`),
-      !hasAcceptedAnswer && answerCount ? __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('span.no-accepted-answer', 'no answers accepted') : null,
-      isCurrentUserQuestion && __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('span.current-user-question', 'asked by you!')
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('footer', [
+      __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('time', __WEBPACK_IMPORTED_MODULE_6_moment___default()(timestamp).fromNow()),
+      __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('span', `${answerCount} ${pluralise('answer', answerCount)}`),
+      !hasAcceptedAnswer && answerCount ? __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('span.no-accepted-answer', 'no answers accepted') : null,
+      isCurrentUserQuestion && __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('span.current-user-question', 'asked by you!')
     ])
   ])
 }
 
 const Answers = ({ answers, canAcceptAnswers }) => {
-  return __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.answers', answers.map(answer => __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(Answer, { answer, canAcceptAnswers })))
+  return __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.answers', answers.map(answer => __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(Answer, { answer, canAcceptAnswers })))
 }
 
 const Answer = ({ answer, canAcceptAnswers }) => {
   const { text, timestamp, accepted } = answer
 
-  return __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.answer', { className: accepted ? 'accepted' : '' }, [
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('.answer-text', text),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('footer', [
-      __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('time', __WEBPACK_IMPORTED_MODULE_8_moment___default()(timestamp).fromNow()),
-      canAcceptAnswers && __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('a', { href: '#' }, 'accept')
+  return __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.answer', { className: accepted ? 'accepted' : '' }, [
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('.answer-text', text),
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('footer', [
+      __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('time', __WEBPACK_IMPORTED_MODULE_6_moment___default()(timestamp).fromNow()),
+      canAcceptAnswers && __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('a', { href: '#' }, 'accept')
     ])
   ])
 }
 
 const AnswerForm = () => {
-  return __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('form.answer-form', [
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('label', { htmlFor: 'answer-textarea' }, 'Help by adding your own answer to this question:'),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('textarea', { id: 'answer-textarea' }),
-    __WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()('button.submit-button', 'Submit')
+  return __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('form.answer-form', [
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('label', { htmlFor: 'answer-textarea' }, 'Help by adding your own answer to this question:'),
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('textarea', { id: 'answer-textarea' }),
+    __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('button.submit-button', 'Submit')
   ])
 }
 
-__WEBPACK_IMPORTED_MODULE_4_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_5_react_hyperscript___default()(App, { jsonQuestions: __WEBPACK_IMPORTED_MODULE_7__questions_json___default.a }), document.querySelector('#app'))
+__WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(App, { jsonQuestions: __WEBPACK_IMPORTED_MODULE_5__questions_json___default.a }), document.querySelector('#app'))
 
 
 /***/ }),
-/* 223 */
+/* 220 */
+/***/ (function(module, exports) {
+
+module.exports = {"contractName":"MetaCoin","abi":[{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"posts","outputs":[{"name":"id","type":"uint256"},{"name":"title","type":"string"},{"name":"content","type":"string"},{"name":"timestamp","type":"uint256"},{"name":"createdBy","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"answers","outputs":[{"name":"postId","type":"uint256"},{"name":"id","type":"uint256"},{"name":"content","type":"string"},{"name":"createdBy","type":"address"},{"name":"timestamp","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getNumberOfPosts","outputs":[{"name":"num","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"postID","type":"uint256"}],"name":"getPost","outputs":[{"name":"content","type":"string"},{"name":"timestamp","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"},{"name":"content","type":"string"}],"name":"getBalanceInEth","outputs":[{"name":"","type":"int256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"title","type":"string"},{"name":"content","type":"string"}],"name":"postQuestion","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"receiver","type":"address"},{"name":"amount","type":"int256"}],"name":"sendCoin","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"postId","type":"uint256"},{"name":"answer","type":"string"}],"name":"postAnswer","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getLatestPost","outputs":[{"name":"content","type":"string"},{"name":"timestamp","type":"uint256"},{"name":"numberOfPosts","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"getBalance","outputs":[{"name":"","type":"int256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_from","type":"address"},{"indexed":true,"name":"_to","type":"address"},{"indexed":false,"name":"_value","type":"int256"}],"name":"Transfer","type":"event"}],"bytecode":"0x6060604052341561000f57600080fd5b600080819055506000600181905550610e138061002d6000396000f3006060604052600436106100a4576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630b1e7f83146100a957806317599cc51461022c57806337bbcaa01461032d57806340731c24146103565780637bd703e8146103f95780637f34457c14610446578063bc9e7d7f146104fe578063c921d66c14610558578063e04e6d54146105d6578063f8b2cb4f14610672575b600080fd5b34156100b457600080fd5b6100ca60048080359060200190919050506106bf565b6040518086815260200180602001806020018581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018381038352878181546001816001161561010002031660029004815260200191508054600181600116156101000203166002900480156101955780601f1061016a57610100808354040283529160200191610195565b820191906000526020600020905b81548152906001019060200180831161017857829003601f168201915b50508381038252868181546001816001161561010002031660029004815260200191508054600181600116156101000203166002900480156102185780601f106101ed57610100808354040283529160200191610218565b820191906000526020600020905b8154815290600101906020018083116101fb57829003601f168201915b505097505050505050505060405180910390f35b341561023757600080fd5b61024d6004808035906020019091905050610713565b60405180868152602001858152602001806020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200182810382528581815460018160011615610100020316600290048152602001915080546001816001161561010002031660029004801561031a5780601f106102ef5761010080835404028352916020019161031a565b820191906000526020600020905b8154815290600101906020018083116102fd57829003601f168201915b5050965050505050505060405180910390f35b341561033857600080fd5b610340610768565b6040518082815260200191505060405180910390f35b341561036157600080fd5b6103776004808035906020019091905050610771565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156103bd5780820151818401526020810190506103a2565b50505050905090810190601f1680156103ea5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b341561040457600080fd5b610430600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061084a565b6040518082815260200191505060405180910390f35b341561045157600080fd5b6104e4600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506108f2565b604051808215151515815260200191505060405180910390f35b341561050957600080fd5b61053e600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919050506109f6565b604051808215151515815260200191505060405180910390f35b341561056357600080fd5b6105bc600480803590602001909190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610b01565b604051808215151515815260200191505060405180910390f35b34156105e157600080fd5b6105e9610bfc565b6040518080602001848152602001838152602001828103825285818151815260200191508051906020019080838360005b8381101561063557808201518184015260208101905061061a565b50505050905090810190601f1680156106625780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b341561067d57600080fd5b6106a9600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610ce5565b6040518082815260200191505060405180910390f35b6002602052806000526040600020600091509050806000015490806001019080600201908060030154908060040160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905085565b600360205280600052604060002060009150905080600001549080600101549080600201908060030160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060040154905085565b60008054905090565b610779610d2e565b6000600260008481526020019081526020016000206002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108255780601f106107fa57610100808354040283529160200191610825565b820191906000526020600020905b81548152906001019060200180831161080857829003601f168201915b5050505050915060026000848152602001908152602001600020600301549050915091565b600073__ConvertLib____________________________632d2c1d8061086f84610ce5565b60026000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b15156108d057600080fd5b6102c65a03f415156108e157600080fd5b505050604051805190509050919050565b60008054600260008054815260200190815260200160002060000181905550826002600080548152602001908152602001600020600101908051906020019061093c929190610d42565b508160026000805481526020019081526020016000206002019080519060200190610968929190610d42565b504260026000805481526020019081526020016000206003018190555033600260008054815260200190815260200160002060040160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060008081548092919060010191905055506001905092915050565b600081600460003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600460008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8b0c34a52f9e28d78caaa7066cd047b398dae74941a208b77777420f492bd7e1846040518082815260200191505060405180910390a36001905092915050565b6000600154600360006001548152602001908152602001600020600101819055508260036000600154815260200190815260200160002060000181905550816003600060015481526020019081526020016000206002019080519060200190610b6b929190610d42565b503360036000600154815260200190815260200160002060030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555042600360006001548152602001908152602001600020600401819055506001600081548092919060010191905055506001905092915050565b610c04610d2e565b6000806002600060016000540381526020019081526020016000206002018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610cb65780601f10610c8b57610100808354040283529160200191610cb6565b820191906000526020600020905b815481529060010190602001808311610c9957829003601f168201915b505050505092506002600060016000540381526020019081526020016000206003015491506000549050909192565b6000600460008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b602060405190810160405280600081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f10610d8357805160ff1916838001178555610db1565b82800160010185558215610db1579182015b82811115610db0578251825591602001919060010190610d95565b5b509050610dbe9190610dc2565b5090565b610de491905b80821115610de0576000816000905550600101610dc8565b5090565b905600a165627a7a7230582073c272f1837c0dfec84d8331f7ff2d61f5fcae0d8cdf5097143cbcf0e8a19dbf0029","deployedBytecode":"0x6060604052600436106100a4576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630b1e7f83146100a957806317599cc51461022c57806337bbcaa01461032d57806340731c24146103565780637bd703e8146103f95780637f34457c14610446578063bc9e7d7f146104fe578063c921d66c14610558578063e04e6d54146105d6578063f8b2cb4f14610672575b600080fd5b34156100b457600080fd5b6100ca60048080359060200190919050506106bf565b6040518086815260200180602001806020018581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018381038352878181546001816001161561010002031660029004815260200191508054600181600116156101000203166002900480156101955780601f1061016a57610100808354040283529160200191610195565b820191906000526020600020905b81548152906001019060200180831161017857829003601f168201915b50508381038252868181546001816001161561010002031660029004815260200191508054600181600116156101000203166002900480156102185780601f106101ed57610100808354040283529160200191610218565b820191906000526020600020905b8154815290600101906020018083116101fb57829003601f168201915b505097505050505050505060405180910390f35b341561023757600080fd5b61024d6004808035906020019091905050610713565b60405180868152602001858152602001806020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200182810382528581815460018160011615610100020316600290048152602001915080546001816001161561010002031660029004801561031a5780601f106102ef5761010080835404028352916020019161031a565b820191906000526020600020905b8154815290600101906020018083116102fd57829003601f168201915b5050965050505050505060405180910390f35b341561033857600080fd5b610340610768565b6040518082815260200191505060405180910390f35b341561036157600080fd5b6103776004808035906020019091905050610771565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156103bd5780820151818401526020810190506103a2565b50505050905090810190601f1680156103ea5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b341561040457600080fd5b610430600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061084a565b6040518082815260200191505060405180910390f35b341561045157600080fd5b6104e4600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506108f2565b604051808215151515815260200191505060405180910390f35b341561050957600080fd5b61053e600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919050506109f6565b604051808215151515815260200191505060405180910390f35b341561056357600080fd5b6105bc600480803590602001909190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610b01565b604051808215151515815260200191505060405180910390f35b34156105e157600080fd5b6105e9610bfc565b6040518080602001848152602001838152602001828103825285818151815260200191508051906020019080838360005b8381101561063557808201518184015260208101905061061a565b50505050905090810190601f1680156106625780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b341561067d57600080fd5b6106a9600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610ce5565b6040518082815260200191505060405180910390f35b6002602052806000526040600020600091509050806000015490806001019080600201908060030154908060040160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905085565b600360205280600052604060002060009150905080600001549080600101549080600201908060030160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060040154905085565b60008054905090565b610779610d2e565b6000600260008481526020019081526020016000206002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156108255780601f106107fa57610100808354040283529160200191610825565b820191906000526020600020905b81548152906001019060200180831161080857829003601f168201915b5050505050915060026000848152602001908152602001600020600301549050915091565b600073__ConvertLib____________________________632d2c1d8061086f84610ce5565b60026000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b15156108d057600080fd5b6102c65a03f415156108e157600080fd5b505050604051805190509050919050565b60008054600260008054815260200190815260200160002060000181905550826002600080548152602001908152602001600020600101908051906020019061093c929190610d42565b508160026000805481526020019081526020016000206002019080519060200190610968929190610d42565b504260026000805481526020019081526020016000206003018190555033600260008054815260200190815260200160002060040160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060008081548092919060010191905055506001905092915050565b600081600460003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600460008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8b0c34a52f9e28d78caaa7066cd047b398dae74941a208b77777420f492bd7e1846040518082815260200191505060405180910390a36001905092915050565b6000600154600360006001548152602001908152602001600020600101819055508260036000600154815260200190815260200160002060000181905550816003600060015481526020019081526020016000206002019080519060200190610b6b929190610d42565b503360036000600154815260200190815260200160002060030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555042600360006001548152602001908152602001600020600401819055506001600081548092919060010191905055506001905092915050565b610c04610d2e565b6000806002600060016000540381526020019081526020016000206002018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610cb65780601f10610c8b57610100808354040283529160200191610cb6565b820191906000526020600020905b815481529060010190602001808311610c9957829003601f168201915b505050505092506002600060016000540381526020019081526020016000206003015491506000549050909192565b6000600460008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b602060405190810160405280600081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f10610d8357805160ff1916838001178555610db1565b82800160010185558215610db1579182015b82811115610db0578251825591602001919060010190610d95565b5b509050610dbe9190610dc2565b5090565b610de491905b80821115610de0576000816000905550600101610dc8565b5090565b905600a165627a7a7230582073c272f1837c0dfec84d8331f7ff2d61f5fcae0d8cdf5097143cbcf0e8a19dbf0029","sourceMap":"54:2153:1:-;;;546:67;;;;;;;;585:1;572:10;:14;;;;607:1;592:12;:16;;;;54:2153;;;;;;","deployedSourceMap":"54:2153:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;348:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;387:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1774:90;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1363:170;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;820:119:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1043:316;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;617:199;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1868:337;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1537:233;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;943:96:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;348:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;387:39::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;1774:90::-;1827:8;1849:10;;1843:16;;1774:90;:::o;1363:170::-;1418:14;;:::i;:::-;1434;1466:5;:13;1472:6;1466:13;;;;;;;;;;;:21;;1456:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1505:5;:13;1511:6;1505:13;;;;;;;;;;;:23;;;1493:35;;1363:170;;;:::o;820:119::-;877:3;895:10;:18;914:16;925:4;914:10;:16::i;:::-;932:1;895:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;888:46;;820:119;;;:::o;1043:316::-;1111:4;1146:10;;1123:5;:17;1129:10;;1123:17;;;;;;;;;;;:20;;:33;;;;1188:5;1162;:17;1168:10;;1162:17;;;;;;;;;;;:23;;:31;;;;;;;;;;;;:::i;:::-;;1227:7;1199:5;:17;1205:10;;1199:17;;;;;;;;;;;:25;;:35;;;;;;;;;;;;:::i;:::-;;1270:3;1240:5;:17;1246:10;;1240:17;;;;;;;;;;;:27;;:33;;;;1309:10;1279:5;:17;1285:10;;1279:17;;;;;;;;;;;:27;;;:40;;;;;;;;;;;;;;;;;;1325:10;;:12;;;;;;;;;;;;;1350:4;1343:11;;1043:316;;;;:::o;617:199::-;674:4;710:6;686:8;:20;695:10;686:20;;;;;;;;;;;;;;;;:30;;;;;;;;;;;744:6;722:8;:18;731:8;722:18;;;;;;;;;;;;;;;;:28;;;;;;;;;;;777:8;756:38;;765:10;756:38;;;787:6;756:38;;;;;;;;;;;;;;;;;;807:4;800:11;;617:199;;;;:::o;1868:337::-;1932:4;1971:12;;1944:7;:21;1952:12;;1944:21;;;;;;;;;;;:24;;:39;;;;2020:6;1989:7;:21;1997:12;;1989:21;;;;;;;;;;;:28;;:37;;;;2064:6;2032:7;:21;2040:12;;2032:21;;;;;;;;;;;:29;;:38;;;;;;;;;;;;:::i;:::-;;2110:10;2076:7;:21;2084:12;;2076:21;;;;;;;;;;;:31;;;:44;;;;;;;;;;;;;;;;;;2160:3;2126:7;:21;2134:12;;2126:21;;;;;;;;;;;:31;;:37;;;;2169:12;;:14;;;;;;;;;;;;;2196:4;2189:11;;1868:337;;;;:::o;1537:233::-;1587:14;;:::i;:::-;1603;1619:18;1655:5;:21;1674:1;1661:10;;:14;1655:21;;;;;;;;;;;:29;;1645:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1702:5;:21;1721:1;1708:10;;:14;1702:21;;;;;;;;;;;:31;;;1690:43;;1755:10;;1739:26;;1537:233;;;:::o;943:96::-;1002:3;1020:8;:14;1029:4;1020:14;;;;;;;;;;;;;;;;1013:21;;943:96;;;:::o;54:2153::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o","source":"pragma solidity ^0.4.11;\n\nimport \"./ConvertLib.sol\";\n\ncontract MetaCoin {\n  struct Post {\n    uint id;\n    string title;\n    string content;\n    uint timestamp;\n    address createdBy;\n  }\n\n  struct Answer {\n    uint postId;\n    uint id;\n    string content;\n    address createdBy;\n    uint timestamp;\n  }\n\n  uint numOfPosts;\n  uint numOfAnswers;\n\n  mapping (uint => Post) public posts;\n  mapping (uint => Answer) public answers;\n  mapping (address => int) balances;\n\n  event Transfer(address indexed _from, address indexed _to, int256 _value);\n\n  function MetaCoin() {\n    numOfPosts = 0;\n    numOfAnswers = 0;\n  }\n\n  function sendCoin(address receiver, int amount) returns (bool) {\n    balances[msg.sender] -= amount;\n    balances[receiver] += amount;\n    Transfer(msg.sender, receiver, amount);\n    return true;\n  }\n\n  function getBalanceInEth(address addr) constant returns (int) {\n    return ConvertLib.convert(getBalance(addr), 2);\n  }\n\n  function getBalance(address addr) constant public returns (int) {\n    return balances[addr];\n  }\n\n  function postQuestion(string title, string content) public returns (bool) {\n    posts[numOfPosts].id = numOfPosts;\n    posts[numOfPosts].title = title;\n    posts[numOfPosts].content = content;\n    posts[numOfPosts].timestamp = now;\n    posts[numOfPosts].createdBy = msg.sender;\n    numOfPosts++;\n    return true;\n  }\n\n  function getPost(uint postID) constant public returns (string content, uint timestamp) {\n    content = posts[postID].content;\n    timestamp = posts[postID].timestamp;\n  }\n\n  function getLatestPost() constant public returns (string content, uint timestamp, uint numberOfPosts) {\n    content = posts[numOfPosts - 1].content;\n    timestamp = posts[numOfPosts - 1].timestamp;\n    numberOfPosts = numOfPosts;\n  }\n\n  function getNumberOfPosts() constant public returns (uint num) {\n    num = numOfPosts;\n  }\n\n  function postAnswer(uint postId, string answer) public returns (bool) {\n    answers[numOfAnswers].id = numOfAnswers;\n    answers[numOfAnswers].postId = postId;\n    answers[numOfAnswers].content = answer;\n    answers[numOfAnswers].createdBy = msg.sender;\n    answers[numOfAnswers].timestamp = now;\n    numOfAnswers++;\n    return true;\n  }\n}\n","sourcePath":"/Users/sunjinlee/workspace/eth/my-little-ponies/contracts/MetaCoin.sol","ast":{"attributes":{"absolutePath":"/Users/sunjinlee/workspace/eth/my-little-ponies/contracts/MetaCoin.sol","exportedSymbols":{"MetaCoin":[306]}},"children":[{"attributes":{"literals":["solidity","^","0.4",".11"]},"id":18,"name":"PragmaDirective","src":"0:24:1"},{"attributes":{"SourceUnit":17,"absolutePath":"/Users/sunjinlee/workspace/eth/my-little-ponies/contracts/ConvertLib.sol","file":"./ConvertLib.sol","scope":307,"symbolAliases":[null],"unitAlias":""},"id":19,"name":"ImportDirective","src":"26:26:1"},{"attributes":{"baseContracts":[null],"contractDependencies":[null],"contractKind":"contract","documentation":null,"fullyImplemented":true,"linearizedBaseContracts":[306],"name":"MetaCoin","scope":307},"children":[{"attributes":{"canonicalName":"MetaCoin.Post","name":"Post","scope":306,"visibility":"public"},"children":[{"attributes":{"constant":false,"name":"id","scope":30,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":20,"name":"ElementaryTypeName","src":"94:4:1"}],"id":21,"name":"VariableDeclaration","src":"94:7:1"},{"attributes":{"constant":false,"name":"title","scope":30,"stateVariable":false,"storageLocation":"default","type":"string storage pointer","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":22,"name":"ElementaryTypeName","src":"107:6:1"}],"id":23,"name":"VariableDeclaration","src":"107:12:1"},{"attributes":{"constant":false,"name":"content","scope":30,"stateVariable":false,"storageLocation":"default","type":"string storage pointer","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":24,"name":"ElementaryTypeName","src":"125:6:1"}],"id":25,"name":"VariableDeclaration","src":"125:14:1"},{"attributes":{"constant":false,"name":"timestamp","scope":30,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":26,"name":"ElementaryTypeName","src":"145:4:1"}],"id":27,"name":"VariableDeclaration","src":"145:14:1"},{"attributes":{"constant":false,"name":"createdBy","scope":30,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":28,"name":"ElementaryTypeName","src":"165:7:1"}],"id":29,"name":"VariableDeclaration","src":"165:17:1"}],"id":30,"name":"StructDefinition","src":"76:111:1"},{"attributes":{"canonicalName":"MetaCoin.Answer","name":"Answer","scope":306,"visibility":"public"},"children":[{"attributes":{"constant":false,"name":"postId","scope":41,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":31,"name":"ElementaryTypeName","src":"211:4:1"}],"id":32,"name":"VariableDeclaration","src":"211:11:1"},{"attributes":{"constant":false,"name":"id","scope":41,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":33,"name":"ElementaryTypeName","src":"228:4:1"}],"id":34,"name":"VariableDeclaration","src":"228:7:1"},{"attributes":{"constant":false,"name":"content","scope":41,"stateVariable":false,"storageLocation":"default","type":"string storage pointer","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":35,"name":"ElementaryTypeName","src":"241:6:1"}],"id":36,"name":"VariableDeclaration","src":"241:14:1"},{"attributes":{"constant":false,"name":"createdBy","scope":41,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":37,"name":"ElementaryTypeName","src":"261:7:1"}],"id":38,"name":"VariableDeclaration","src":"261:17:1"},{"attributes":{"constant":false,"name":"timestamp","scope":41,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":39,"name":"ElementaryTypeName","src":"284:4:1"}],"id":40,"name":"VariableDeclaration","src":"284:14:1"}],"id":41,"name":"StructDefinition","src":"191:112:1"},{"attributes":{"constant":false,"name":"numOfPosts","scope":306,"stateVariable":true,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":42,"name":"ElementaryTypeName","src":"307:4:1"}],"id":43,"name":"VariableDeclaration","src":"307:15:1"},{"attributes":{"constant":false,"name":"numOfAnswers","scope":306,"stateVariable":true,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":44,"name":"ElementaryTypeName","src":"326:4:1"}],"id":45,"name":"VariableDeclaration","src":"326:17:1"},{"attributes":{"constant":false,"name":"posts","scope":306,"stateVariable":true,"storageLocation":"default","type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":null,"visibility":"public"},"children":[{"attributes":{"type":"mapping(uint256 => struct MetaCoin.Post storage ref)"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":46,"name":"ElementaryTypeName","src":"357:4:1"},{"attributes":{"contractScope":null,"name":"Post","referencedDeclaration":30,"type":"struct MetaCoin.Post storage pointer"},"id":47,"name":"UserDefinedTypeName","src":"365:4:1"}],"id":48,"name":"Mapping","src":"348:22:1"}],"id":49,"name":"VariableDeclaration","src":"348:35:1"},{"attributes":{"constant":false,"name":"answers","scope":306,"stateVariable":true,"storageLocation":"default","type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":null,"visibility":"public"},"children":[{"attributes":{"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":50,"name":"ElementaryTypeName","src":"396:4:1"},{"attributes":{"contractScope":null,"name":"Answer","referencedDeclaration":41,"type":"struct MetaCoin.Answer storage pointer"},"id":51,"name":"UserDefinedTypeName","src":"404:6:1"}],"id":52,"name":"Mapping","src":"387:24:1"}],"id":53,"name":"VariableDeclaration","src":"387:39:1"},{"attributes":{"constant":false,"name":"balances","scope":306,"stateVariable":true,"storageLocation":"default","type":"mapping(address => int256)","value":null,"visibility":"internal"},"children":[{"attributes":{"type":"mapping(address => int256)"},"children":[{"attributes":{"name":"address","type":"address"},"id":54,"name":"ElementaryTypeName","src":"439:7:1"},{"attributes":{"name":"int","type":"int256"},"id":55,"name":"ElementaryTypeName","src":"450:3:1"}],"id":56,"name":"Mapping","src":"430:24:1"}],"id":57,"name":"VariableDeclaration","src":"430:33:1"},{"attributes":{"anonymous":false,"name":"Transfer"},"children":[{"children":[{"attributes":{"constant":false,"indexed":true,"name":"_from","scope":65,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":58,"name":"ElementaryTypeName","src":"483:7:1"}],"id":59,"name":"VariableDeclaration","src":"483:21:1"},{"attributes":{"constant":false,"indexed":true,"name":"_to","scope":65,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":60,"name":"ElementaryTypeName","src":"506:7:1"}],"id":61,"name":"VariableDeclaration","src":"506:19:1"},{"attributes":{"constant":false,"indexed":false,"name":"_value","scope":65,"stateVariable":false,"storageLocation":"default","type":"int256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"int256","type":"int256"},"id":62,"name":"ElementaryTypeName","src":"527:6:1"}],"id":63,"name":"VariableDeclaration","src":"527:13:1"}],"id":64,"name":"ParameterList","src":"482:59:1"}],"id":65,"name":"EventDefinition","src":"468:74:1"},{"attributes":{"constant":false,"implemented":true,"isConstructor":true,"modifiers":[null],"name":"MetaCoin","payable":false,"scope":306,"stateMutability":"nonpayable","superFunction":null,"visibility":"public"},"children":[{"attributes":{"parameters":[null]},"children":[],"id":66,"name":"ParameterList","src":"563:2:1"},{"attributes":{"parameters":[null]},"children":[],"id":67,"name":"ParameterList","src":"566:0:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":68,"name":"Identifier","src":"572:10:1"},{"attributes":{"argumentTypes":null,"hexvalue":"30","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"number","type":"int_const 0","value":"0"},"id":69,"name":"Literal","src":"585:1:1"}],"id":70,"name":"Assignment","src":"572:14:1"}],"id":71,"name":"ExpressionStatement","src":"572:14:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":72,"name":"Identifier","src":"592:12:1"},{"attributes":{"argumentTypes":null,"hexvalue":"30","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"number","type":"int_const 0","value":"0"},"id":73,"name":"Literal","src":"607:1:1"}],"id":74,"name":"Assignment","src":"592:16:1"}],"id":75,"name":"ExpressionStatement","src":"592:16:1"}],"id":76,"name":"Block","src":"566:47:1"}],"id":77,"name":"FunctionDefinition","src":"546:67:1"},{"attributes":{"constant":false,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"sendCoin","payable":false,"scope":306,"stateMutability":"nonpayable","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"receiver","scope":109,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":78,"name":"ElementaryTypeName","src":"635:7:1"}],"id":79,"name":"VariableDeclaration","src":"635:16:1"},{"attributes":{"constant":false,"name":"amount","scope":109,"stateVariable":false,"storageLocation":"default","type":"int256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"int","type":"int256"},"id":80,"name":"ElementaryTypeName","src":"653:3:1"}],"id":81,"name":"VariableDeclaration","src":"653:10:1"}],"id":82,"name":"ParameterList","src":"634:30:1"},{"children":[{"attributes":{"constant":false,"name":"","scope":109,"stateVariable":false,"storageLocation":"default","type":"bool","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"bool","type":"bool"},"id":83,"name":"ElementaryTypeName","src":"674:4:1"}],"id":84,"name":"VariableDeclaration","src":"674:4:1"}],"id":85,"name":"ParameterList","src":"673:6:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"-=","type":"int256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"type":"int256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":57,"type":"mapping(address => int256)","value":"balances"},"id":86,"name":"Identifier","src":"686:8:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"sender","referencedDeclaration":null,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":318,"type":"msg","value":"msg"},"id":87,"name":"Identifier","src":"695:3:1"}],"id":88,"name":"MemberAccess","src":"695:10:1"}],"id":89,"name":"IndexAccess","src":"686:20:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":81,"type":"int256","value":"amount"},"id":90,"name":"Identifier","src":"710:6:1"}],"id":91,"name":"Assignment","src":"686:30:1"}],"id":92,"name":"ExpressionStatement","src":"686:30:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"+=","type":"int256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"type":"int256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":57,"type":"mapping(address => int256)","value":"balances"},"id":93,"name":"Identifier","src":"722:8:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":79,"type":"address","value":"receiver"},"id":94,"name":"Identifier","src":"731:8:1"}],"id":95,"name":"IndexAccess","src":"722:18:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":81,"type":"int256","value":"amount"},"id":96,"name":"Identifier","src":"744:6:1"}],"id":97,"name":"Assignment","src":"722:28:1"}],"id":98,"name":"ExpressionStatement","src":"722:28:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"isStructConstructorCall":false,"lValueRequested":false,"names":[null],"type":"tuple()","type_conversion":false},"children":[{"attributes":{"argumentTypes":[{"typeIdentifier":"t_address","typeString":"address"},{"typeIdentifier":"t_address","typeString":"address"},{"typeIdentifier":"t_int256","typeString":"int256"}],"overloadedDeclarations":[null],"referencedDeclaration":65,"type":"function (address,address,int256)","value":"Transfer"},"id":99,"name":"Identifier","src":"756:8:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"sender","referencedDeclaration":null,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":318,"type":"msg","value":"msg"},"id":100,"name":"Identifier","src":"765:3:1"}],"id":101,"name":"MemberAccess","src":"765:10:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":79,"type":"address","value":"receiver"},"id":102,"name":"Identifier","src":"777:8:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":81,"type":"int256","value":"amount"},"id":103,"name":"Identifier","src":"787:6:1"}],"id":104,"name":"FunctionCall","src":"756:38:1"}],"id":105,"name":"ExpressionStatement","src":"756:38:1"},{"attributes":{"functionReturnParameters":85},"children":[{"attributes":{"argumentTypes":null,"hexvalue":"74727565","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"bool","type":"bool","value":"true"},"id":106,"name":"Literal","src":"807:4:1"}],"id":107,"name":"Return","src":"800:11:1"}],"id":108,"name":"Block","src":"680:136:1"}],"id":109,"name":"FunctionDefinition","src":"617:199:1"},{"attributes":{"constant":true,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"getBalanceInEth","payable":false,"scope":306,"stateMutability":"view","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"addr","scope":125,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":110,"name":"ElementaryTypeName","src":"845:7:1"}],"id":111,"name":"VariableDeclaration","src":"845:12:1"}],"id":112,"name":"ParameterList","src":"844:14:1"},{"children":[{"attributes":{"constant":false,"name":"","scope":125,"stateVariable":false,"storageLocation":"default","type":"int256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"int","type":"int256"},"id":113,"name":"ElementaryTypeName","src":"877:3:1"}],"id":114,"name":"VariableDeclaration","src":"877:3:1"}],"id":115,"name":"ParameterList","src":"876:5:1"},{"children":[{"attributes":{"functionReturnParameters":115},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"isStructConstructorCall":false,"lValueRequested":false,"names":[null],"type":"int256","type_conversion":false},"children":[{"attributes":{"argumentTypes":[{"typeIdentifier":"t_int256","typeString":"int256"},{"typeIdentifier":"t_rational_2_by_1","typeString":"int_const 2"}],"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"convert","referencedDeclaration":15,"type":"function (int256,int256) returns (int256)"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":16,"type":"type(library ConvertLib)","value":"ConvertLib"},"id":116,"name":"Identifier","src":"895:10:1"}],"id":117,"name":"MemberAccess","src":"895:18:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"isStructConstructorCall":false,"lValueRequested":false,"names":[null],"type":"int256","type_conversion":false},"children":[{"attributes":{"argumentTypes":[{"typeIdentifier":"t_address","typeString":"address"}],"overloadedDeclarations":[null],"referencedDeclaration":137,"type":"function (address) view returns (int256)","value":"getBalance"},"id":118,"name":"Identifier","src":"914:10:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":111,"type":"address","value":"addr"},"id":119,"name":"Identifier","src":"925:4:1"}],"id":120,"name":"FunctionCall","src":"914:16:1"},{"attributes":{"argumentTypes":null,"hexvalue":"32","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"number","type":"int_const 2","value":"2"},"id":121,"name":"Literal","src":"932:1:1"}],"id":122,"name":"FunctionCall","src":"895:39:1"}],"id":123,"name":"Return","src":"888:46:1"}],"id":124,"name":"Block","src":"882:57:1"}],"id":125,"name":"FunctionDefinition","src":"820:119:1"},{"attributes":{"constant":true,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"getBalance","payable":false,"scope":306,"stateMutability":"view","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"addr","scope":137,"stateVariable":false,"storageLocation":"default","type":"address","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"address","type":"address"},"id":126,"name":"ElementaryTypeName","src":"963:7:1"}],"id":127,"name":"VariableDeclaration","src":"963:12:1"}],"id":128,"name":"ParameterList","src":"962:14:1"},{"children":[{"attributes":{"constant":false,"name":"","scope":137,"stateVariable":false,"storageLocation":"default","type":"int256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"int","type":"int256"},"id":129,"name":"ElementaryTypeName","src":"1002:3:1"}],"id":130,"name":"VariableDeclaration","src":"1002:3:1"}],"id":131,"name":"ParameterList","src":"1001:5:1"},{"children":[{"attributes":{"functionReturnParameters":131},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"int256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":57,"type":"mapping(address => int256)","value":"balances"},"id":132,"name":"Identifier","src":"1020:8:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":127,"type":"address","value":"addr"},"id":133,"name":"Identifier","src":"1029:4:1"}],"id":134,"name":"IndexAccess","src":"1020:14:1"}],"id":135,"name":"Return","src":"1013:21:1"}],"id":136,"name":"Block","src":"1007:32:1"}],"id":137,"name":"FunctionDefinition","src":"943:96:1"},{"attributes":{"constant":false,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"postQuestion","payable":false,"scope":306,"stateMutability":"nonpayable","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"title","scope":188,"stateVariable":false,"storageLocation":"default","type":"string memory","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":138,"name":"ElementaryTypeName","src":"1065:6:1"}],"id":139,"name":"VariableDeclaration","src":"1065:12:1"},{"attributes":{"constant":false,"name":"content","scope":188,"stateVariable":false,"storageLocation":"default","type":"string memory","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":140,"name":"ElementaryTypeName","src":"1079:6:1"}],"id":141,"name":"VariableDeclaration","src":"1079:14:1"}],"id":142,"name":"ParameterList","src":"1064:30:1"},{"children":[{"attributes":{"constant":false,"name":"","scope":188,"stateVariable":false,"storageLocation":"default","type":"bool","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"bool","type":"bool"},"id":143,"name":"ElementaryTypeName","src":"1111:4:1"}],"id":144,"name":"VariableDeclaration","src":"1111:4:1"}],"id":145,"name":"ParameterList","src":"1110:6:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"id","referencedDeclaration":21,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":146,"name":"Identifier","src":"1123:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":147,"name":"Identifier","src":"1129:10:1"}],"id":148,"name":"IndexAccess","src":"1123:17:1"}],"id":149,"name":"MemberAccess","src":"1123:20:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":150,"name":"Identifier","src":"1146:10:1"}],"id":151,"name":"Assignment","src":"1123:33:1"}],"id":152,"name":"ExpressionStatement","src":"1123:33:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"title","referencedDeclaration":23,"type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":153,"name":"Identifier","src":"1162:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":154,"name":"Identifier","src":"1168:10:1"}],"id":155,"name":"IndexAccess","src":"1162:17:1"}],"id":156,"name":"MemberAccess","src":"1162:23:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":139,"type":"string memory","value":"title"},"id":157,"name":"Identifier","src":"1188:5:1"}],"id":158,"name":"Assignment","src":"1162:31:1"}],"id":159,"name":"ExpressionStatement","src":"1162:31:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"content","referencedDeclaration":25,"type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":160,"name":"Identifier","src":"1199:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":161,"name":"Identifier","src":"1205:10:1"}],"id":162,"name":"IndexAccess","src":"1199:17:1"}],"id":163,"name":"MemberAccess","src":"1199:25:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":141,"type":"string memory","value":"content"},"id":164,"name":"Identifier","src":"1227:7:1"}],"id":165,"name":"Assignment","src":"1199:35:1"}],"id":166,"name":"ExpressionStatement","src":"1199:35:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"timestamp","referencedDeclaration":27,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":167,"name":"Identifier","src":"1240:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":168,"name":"Identifier","src":"1246:10:1"}],"id":169,"name":"IndexAccess","src":"1240:17:1"}],"id":170,"name":"MemberAccess","src":"1240:27:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"sender","referencedDeclaration":320,"type":"uint256","overloadedDeclarations":[null],"value":"now"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":364,"type":"msg","value":"msg"},"id":167,"name":"Identifier","src":"1220:3:1"}],"id":171,"name":"Identifier","src":"1270:3:1"}],"id":172,"name":"Assignment","src":"1240:33:1"}],"id":173,"name":"ExpressionStatement","src":"1240:33:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","prefix":false,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":29,"type":"address","value":"numOfPosts","isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"createdBy"},"id":177,"name":"MemberAccess","src":"1279:27:1","children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":174,"name":"Identifier","src":"1279:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":175,"name":"Identifier","src":"1285:10:1"}],"id":176,"name":"IndexAccess","src":"1279:17:1"}]},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"sender","referencedDeclaration":null,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":318,"type":"msg","value":"msg"},"id":178,"name":"Identifier","src":"1309:3:1"}],"id":179,"name":"MemberAccess","src":"1309:10:1"}],"id":180,"name":"Assignment","src":"1279:40:1"}],"id":181,"name":"ExpressionStatement","src":"1279:40:1"},{"attributes":{"functionReturnParameters":141},"children":[{"attributes":{"argumentTypes":null,"hexvalue":"74727565","isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"subdenomination":null,"token":"bool","type":"uint256","value":"true","operator":"++","prefix":false},"id":183,"name":"UnaryOperation","src":"1325:12:1","children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":182,"name":"Identifier","src":"1325:10:1"}]}],"id":184,"name":"ExpressionStatement","src":"1325:12:1"},{"attributes":{"functionReturnParameters":145},"children":[{"attributes":{"argumentTypes":null,"hexvalue":"74727565","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"bool","type":"bool","value":"true"},"id":185,"name":"Literal","src":"1350:4:1"}],"id":186,"name":"Return","src":"1343:11:1"}],"id":187,"name":"Block","src":"1117:242:1"}],"id":188,"name":"FunctionDefinition","src":"1043:316:1"},{"attributes":{"constant":true,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"getPost","payable":false,"scope":306,"stateMutability":"view","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"postID","scope":212,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":189,"name":"ElementaryTypeName","src":"1380:4:1"}],"id":190,"name":"VariableDeclaration","src":"1380:11:1"}],"id":191,"name":"ParameterList","src":"1379:13:1"},{"children":[{"attributes":{"constant":false,"name":"content","scope":212,"stateVariable":false,"storageLocation":"default","type":"string memory","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":192,"name":"ElementaryTypeName","src":"1418:6:1"}],"id":193,"name":"VariableDeclaration","src":"1418:14:1"},{"attributes":{"constant":false,"name":"timestamp","scope":212,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":194,"name":"ElementaryTypeName","src":"1434:4:1"}],"id":195,"name":"VariableDeclaration","src":"1434:14:1"}],"id":196,"name":"ParameterList","src":"1417:32:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"string memory"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":193,"type":"string memory","value":"content"},"id":197,"name":"Identifier","src":"1456:7:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"member_name":"content","referencedDeclaration":25,"type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":198,"name":"Identifier","src":"1466:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":190,"type":"uint256","value":"postID"},"id":199,"name":"Identifier","src":"1472:6:1"}],"id":200,"name":"IndexAccess","src":"1466:13:1"}],"id":201,"name":"MemberAccess","src":"1466:21:1"}],"id":202,"name":"Assignment","src":"1456:31:1"}],"id":203,"name":"ExpressionStatement","src":"1456:31:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":195,"type":"uint256","value":"timestamp"},"id":204,"name":"Identifier","src":"1493:9:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"member_name":"timestamp","referencedDeclaration":27,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":205,"name":"Identifier","src":"1505:5:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":190,"type":"uint256","value":"postID"},"id":206,"name":"Identifier","src":"1511:6:1"}],"id":207,"name":"IndexAccess","src":"1505:13:1"}],"id":208,"name":"MemberAccess","src":"1505:23:1"}],"id":209,"name":"Assignment","src":"1493:35:1"}],"id":210,"name":"ExpressionStatement","src":"1493:35:1"}],"id":211,"name":"Block","src":"1450:83:1"}],"id":212,"name":"FunctionDefinition","src":"1363:170:1"},{"attributes":{"constant":true,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"getLatestPost","payable":false,"scope":306,"stateMutability":"view","superFunction":null,"visibility":"public"},"children":[{"attributes":{"parameters":[null]},"children":[],"id":213,"name":"ParameterList","src":"1559:2:1"},{"children":[{"attributes":{"constant":false,"name":"content","scope":244,"stateVariable":false,"storageLocation":"default","type":"string memory","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":214,"name":"ElementaryTypeName","src":"1587:6:1"}],"id":215,"name":"VariableDeclaration","src":"1587:14:1"},{"attributes":{"constant":false,"name":"timestamp","scope":244,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":216,"name":"ElementaryTypeName","src":"1603:4:1"}],"id":217,"name":"VariableDeclaration","src":"1603:14:1"},{"attributes":{"constant":false,"name":"numberOfPosts","scope":244,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":218,"name":"ElementaryTypeName","src":"1619:4:1"}],"id":219,"name":"VariableDeclaration","src":"1619:18:1"}],"id":220,"name":"ParameterList","src":"1586:52:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"string memory"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":215,"type":"string memory","value":"content"},"id":221,"name":"Identifier","src":"1645:7:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"member_name":"content","referencedDeclaration":25,"type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":222,"name":"Identifier","src":"1655:5:1"},{"attributes":{"argumentTypes":null,"commonType":{"typeIdentifier":"t_uint256","typeString":"uint256"},"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"-","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":223,"name":"Identifier","src":"1661:10:1"},{"attributes":{"argumentTypes":null,"hexvalue":"31","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"number","type":"int_const 1","value":"1"},"id":224,"name":"Literal","src":"1674:1:1"}],"id":225,"name":"BinaryOperation","src":"1661:14:1"}],"id":226,"name":"IndexAccess","src":"1655:21:1"}],"id":227,"name":"MemberAccess","src":"1655:29:1"}],"id":228,"name":"Assignment","src":"1645:39:1"}],"id":229,"name":"ExpressionStatement","src":"1645:39:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":217,"type":"uint256","value":"timestamp"},"id":230,"name":"Identifier","src":"1690:9:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"member_name":"timestamp","referencedDeclaration":27,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Post storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":49,"type":"mapping(uint256 => struct MetaCoin.Post storage ref)","value":"posts"},"id":231,"name":"Identifier","src":"1702:5:1"},{"attributes":{"argumentTypes":null,"commonType":{"typeIdentifier":"t_uint256","typeString":"uint256"},"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"-","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":232,"name":"Identifier","src":"1708:10:1"},{"attributes":{"argumentTypes":null,"hexvalue":"31","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"number","type":"int_const 1","value":"1"},"id":233,"name":"Literal","src":"1721:1:1"}],"id":234,"name":"BinaryOperation","src":"1708:14:1"}],"id":235,"name":"IndexAccess","src":"1702:21:1"}],"id":236,"name":"MemberAccess","src":"1702:31:1"}],"id":237,"name":"Assignment","src":"1690:43:1"}],"id":238,"name":"ExpressionStatement","src":"1690:43:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":219,"type":"uint256","value":"numberOfPosts"},"id":239,"name":"Identifier","src":"1739:13:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":240,"name":"Identifier","src":"1755:10:1"}],"id":241,"name":"Assignment","src":"1739:26:1"}],"id":242,"name":"ExpressionStatement","src":"1739:26:1"}],"id":243,"name":"Block","src":"1639:131:1"}],"id":244,"name":"FunctionDefinition","src":"1537:233:1"},{"attributes":{"constant":true,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"getNumberOfPosts","payable":false,"scope":306,"stateMutability":"view","superFunction":null,"visibility":"public"},"children":[{"attributes":{"parameters":[null]},"children":[],"id":245,"name":"ParameterList","src":"1799:2:1"},{"children":[{"attributes":{"constant":false,"name":"num","scope":254,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":246,"name":"ElementaryTypeName","src":"1827:4:1"}],"id":247,"name":"VariableDeclaration","src":"1827:8:1"}],"id":248,"name":"ParameterList","src":"1826:10:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":247,"type":"uint256","value":"num"},"id":249,"name":"Identifier","src":"1843:3:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":43,"type":"uint256","value":"numOfPosts"},"id":250,"name":"Identifier","src":"1849:10:1"}],"id":251,"name":"Assignment","src":"1843:16:1"}],"id":252,"name":"ExpressionStatement","src":"1843:16:1"}],"id":253,"name":"Block","src":"1837:27:1"}],"id":254,"name":"FunctionDefinition","src":"1774:90:1"},{"attributes":{"constant":false,"implemented":true,"isConstructor":false,"modifiers":[null],"name":"postAnswer","payable":false,"scope":306,"stateMutability":"nonpayable","superFunction":null,"visibility":"public"},"children":[{"children":[{"attributes":{"constant":false,"name":"postId","scope":305,"stateVariable":false,"storageLocation":"default","type":"uint256","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"uint","type":"uint256"},"id":255,"name":"ElementaryTypeName","src":"1888:4:1"}],"id":256,"name":"VariableDeclaration","src":"1888:11:1"},{"attributes":{"constant":false,"name":"answer","scope":305,"stateVariable":false,"storageLocation":"default","type":"string memory","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"string","type":"string storage pointer"},"id":257,"name":"ElementaryTypeName","src":"1901:6:1"}],"id":258,"name":"VariableDeclaration","src":"1901:13:1"}],"id":259,"name":"ParameterList","src":"1887:28:1"},{"children":[{"attributes":{"constant":false,"name":"","scope":305,"stateVariable":false,"storageLocation":"default","type":"bool","value":null,"visibility":"internal"},"children":[{"attributes":{"name":"bool","type":"bool"},"id":260,"name":"ElementaryTypeName","src":"1932:4:1"}],"id":261,"name":"VariableDeclaration","src":"1932:4:1"}],"id":262,"name":"ParameterList","src":"1931:6:1"},{"children":[{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"id","referencedDeclaration":34,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Answer storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":53,"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":"answers"},"id":263,"name":"Identifier","src":"1944:7:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":264,"name":"Identifier","src":"1952:12:1"}],"id":265,"name":"IndexAccess","src":"1944:21:1"}],"id":266,"name":"MemberAccess","src":"1944:24:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":267,"name":"Identifier","src":"1971:12:1"}],"id":268,"name":"Assignment","src":"1944:39:1"}],"id":269,"name":"ExpressionStatement","src":"1944:39:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"postId","referencedDeclaration":32,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Answer storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":53,"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":"answers"},"id":270,"name":"Identifier","src":"1989:7:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":271,"name":"Identifier","src":"1997:12:1"}],"id":272,"name":"IndexAccess","src":"1989:21:1"}],"id":273,"name":"MemberAccess","src":"1989:28:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":256,"type":"uint256","value":"postId"},"id":274,"name":"Identifier","src":"2020:6:1"}],"id":275,"name":"Assignment","src":"1989:37:1"}],"id":276,"name":"ExpressionStatement","src":"1989:37:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"content","referencedDeclaration":36,"type":"string storage ref"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Answer storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":53,"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":"answers"},"id":277,"name":"Identifier","src":"2032:7:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":278,"name":"Identifier","src":"2040:12:1"}],"id":279,"name":"IndexAccess","src":"2032:21:1"}],"id":280,"name":"MemberAccess","src":"2032:29:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":258,"type":"string memory","value":"answer"},"id":281,"name":"Identifier","src":"2064:6:1"}],"id":282,"name":"Assignment","src":"2032:38:1"}],"id":283,"name":"ExpressionStatement","src":"2032:38:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"address"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"createdBy","referencedDeclaration":38,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Answer storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":53,"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":"answers"},"id":284,"name":"Identifier","src":"2076:7:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":285,"name":"Identifier","src":"2084:12:1"}],"id":286,"name":"IndexAccess","src":"2076:21:1"}],"id":287,"name":"MemberAccess","src":"2076:31:1"},{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"member_name":"sender","referencedDeclaration":null,"type":"address"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":318,"type":"msg","value":"msg"},"id":288,"name":"Identifier","src":"2110:3:1"}],"id":289,"name":"MemberAccess","src":"2110:10:1"}],"id":290,"name":"Assignment","src":"2076:44:1"}],"id":291,"name":"ExpressionStatement","src":"2076:44:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"=","type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":true,"member_name":"timestamp","referencedDeclaration":40,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":true,"isPure":false,"lValueRequested":false,"type":"struct MetaCoin.Answer storage ref"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":53,"type":"mapping(uint256 => struct MetaCoin.Answer storage ref)","value":"answers"},"id":292,"name":"Identifier","src":"2126:7:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":293,"name":"Identifier","src":"2134:12:1"}],"id":294,"name":"IndexAccess","src":"2126:21:1"}],"id":295,"name":"MemberAccess","src":"2126:31:1"},{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":320,"type":"uint256","value":"now"},"id":296,"name":"Identifier","src":"2160:3:1"}],"id":297,"name":"Assignment","src":"2126:37:1"}],"id":298,"name":"ExpressionStatement","src":"2126:37:1"},{"children":[{"attributes":{"argumentTypes":null,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"operator":"++","prefix":false,"type":"uint256"},"children":[{"attributes":{"argumentTypes":null,"overloadedDeclarations":[null],"referencedDeclaration":45,"type":"uint256","value":"numOfAnswers"},"id":299,"name":"Identifier","src":"2169:12:1"}],"id":300,"name":"UnaryOperation","src":"2169:14:1"}],"id":301,"name":"ExpressionStatement","src":"2169:14:1"},{"attributes":{"functionReturnParameters":262},"children":[{"attributes":{"argumentTypes":null,"hexvalue":"74727565","isConstant":false,"isLValue":false,"isPure":true,"lValueRequested":false,"subdenomination":null,"token":"bool","type":"bool","value":"true"},"id":302,"name":"Literal","src":"2196:4:1"}],"id":303,"name":"Return","src":"2189:11:1"}],"id":304,"name":"Block","src":"1938:267:1"}],"id":305,"name":"FunctionDefinition","src":"1868:337:1"}],"id":306,"name":"ContractDefinition","src":"54:2153:1"}],"id":307,"name":"SourceUnit","src":"0:2208:1"},"compiler":{"name":"solc","version":"0.4.18+commit.9cf6e910.Emscripten.clang"},"networks":{"47889":{"events":{},"links":{"ConvertLib":"0xd42f266159888276d8458a49c0a767913a5206ad"},"address":"0x80840c43859db4aae9f5d361ffe57758cb8822a0"}},"schemaVersion":"1.0.1","updatedAt":"2017-11-07T09:07:31.698Z"}
+
+/***/ }),
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46254,7 +46100,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 224 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -46491,7 +46337,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 225 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory) {
@@ -46645,7 +46491,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 226 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -46716,7 +46562,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 227 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory) {
@@ -46797,7 +46643,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 228 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -46880,7 +46726,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 229 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47001,7 +46847,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 230 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47064,7 +46910,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 231 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47109,7 +46955,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 232 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47168,7 +47014,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 233 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47222,7 +47068,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 234 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47271,7 +47117,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 235 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47316,7 +47162,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 236 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47351,7 +47197,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 237 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47401,7 +47247,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 238 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47551,7 +47397,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 239 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47746,7 +47592,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 240 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -47943,7 +47789,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 241 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -48087,7 +47933,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 242 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory) {
@@ -48359,13 +48205,13 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 243 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
 	if (true) {
 		// CommonJS
-		module.exports = exports = factory(__webpack_require__(1), __webpack_require__(76));
+		module.exports = exports = factory(__webpack_require__(1), __webpack_require__(73));
 	}
 	else if (typeof define === "function" && define.amd) {
 		// AMD
@@ -48444,13 +48290,13 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 244 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
 	if (true) {
 		// CommonJS
-		module.exports = exports = factory(__webpack_require__(1), __webpack_require__(40), __webpack_require__(77));
+		module.exports = exports = factory(__webpack_require__(1), __webpack_require__(40), __webpack_require__(74));
 	}
 	else if (typeof define === "function" && define.amd) {
 		// AMD
@@ -48532,7 +48378,7 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 245 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
@@ -49307,10 +49153,10 @@ function fromByteArray (uint8) {
 }));
 
 /***/ }),
-/* 246 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(247)();
+exports = module.exports = __webpack_require__(245)();
 // imports
 
 
@@ -49321,7 +49167,7 @@ exports.push([module.i, "body{font-family:-apple-system,BlinkMacSystemFont,Segoe
 
 
 /***/ }),
-/* 247 */
+/* 245 */
 /***/ (function(module, exports) {
 
 /*
@@ -49377,7 +49223,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 248 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49385,7 +49231,7 @@ module.exports = function() {
 
 /* eslint-disable */
 
-var utils = __webpack_require__(249);
+var utils = __webpack_require__(247);
 var uint256Coder = utils.uint256Coder;
 var coderBoolean = utils.coderBoolean;
 var coderFixedBytes = utils.coderFixedBytes;
@@ -49517,15 +49363,15 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(38).Buffer))
 
 /***/ }),
-/* 249 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(Buffer) {
 
-var BN = __webpack_require__(75);
-var numberToBN = __webpack_require__(271);
-var keccak256 = __webpack_require__(269).keccak_256;
+var BN = __webpack_require__(72);
+var numberToBN = __webpack_require__(269);
+var keccak256 = __webpack_require__(267).keccak_256;
 
 // from ethereumjs-util
 function stripZeros(aInput) {
@@ -49941,7 +49787,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(38).Buffer))
 
 /***/ }),
-/* 250 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50021,7 +49867,7 @@ var EventListener = {
 module.exports = EventListener;
 
 /***/ }),
-/* 251 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50060,7 +49906,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 252 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50075,7 +49921,7 @@ module.exports = ExecutionEnvironment;
  * 
  */
 
-var isTextNode = __webpack_require__(256);
+var isTextNode = __webpack_require__(254);
 
 /*eslint-disable no-bitwise */
 
@@ -50103,7 +49949,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 253 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50133,7 +49979,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 254 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50175,7 +50021,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 255 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50203,7 +50049,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 256 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50218,7 +50064,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(255);
+var isNode = __webpack_require__(253);
 
 /**
  * @param {*} object The object to check.
@@ -50231,7 +50077,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 257 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50302,7 +50148,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 258 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50330,7 +50176,7 @@ var _createTransitionManager = __webpack_require__(63);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(79);
+var _DOMUtils = __webpack_require__(76);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -50615,7 +50461,7 @@ var createBrowserHistory = function createBrowserHistory() {
 exports.default = createBrowserHistory;
 
 /***/ }),
-/* 259 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50641,7 +50487,7 @@ var _createTransitionManager = __webpack_require__(63);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(79);
+var _DOMUtils = __webpack_require__(76);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -50945,7 +50791,7 @@ var createHashHistory = function createHashHistory() {
 exports.default = createHashHistory;
 
 /***/ }),
-/* 260 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51121,7 +50967,7 @@ var createMemoryHistory = function createMemoryHistory() {
 exports.default = createMemoryHistory;
 
 /***/ }),
-/* 261 */
+/* 259 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51132,7 +50978,7 @@ exports.default = createMemoryHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(77);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -51425,7 +51271,7 @@ var createBrowserHistory = function createBrowserHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createBrowserHistory);
 
 /***/ }),
-/* 262 */
+/* 260 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51436,7 +51282,7 @@ var createBrowserHistory = function createBrowserHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(77);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -51746,7 +51592,7 @@ var createHashHistory = function createHashHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createHashHistory);
 
 /***/ }),
-/* 263 */
+/* 261 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51914,15 +51760,15 @@ var createMemoryHistory = function createMemoryHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createMemoryHistory);
 
 /***/ }),
-/* 264 */
+/* 262 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(259);
 /* unused harmony reexport createBrowserHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(260);
 /* unused harmony reexport createHashHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(261);
 /* unused harmony reexport createMemoryHistory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(42);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
@@ -51941,7 +51787,7 @@ var createMemoryHistory = function createMemoryHistory() {
 
 
 /***/ }),
-/* 265 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52013,7 +51859,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 /***/ }),
-/* 266 */
+/* 264 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -52103,7 +51949,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 267 */
+/* 265 */
 /***/ (function(module, exports) {
 
 /**
@@ -52122,7 +51968,7 @@ module.exports = function isHexPrefixed(str) {
 
 
 /***/ }),
-/* 268 */
+/* 266 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -52133,7 +51979,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 269 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process, global) {/**
@@ -52608,249 +52454,249 @@ module.exports = Array.isArray || function (arr) {
   }
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(272), __webpack_require__(56)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(270), __webpack_require__(56)))
 
 /***/ }),
-/* 270 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 81,
-	"./af.js": 81,
-	"./ar": 88,
-	"./ar-dz": 82,
-	"./ar-dz.js": 82,
-	"./ar-kw": 83,
-	"./ar-kw.js": 83,
-	"./ar-ly": 84,
-	"./ar-ly.js": 84,
-	"./ar-ma": 85,
-	"./ar-ma.js": 85,
-	"./ar-sa": 86,
-	"./ar-sa.js": 86,
-	"./ar-tn": 87,
-	"./ar-tn.js": 87,
-	"./ar.js": 88,
-	"./az": 89,
-	"./az.js": 89,
-	"./be": 90,
-	"./be.js": 90,
-	"./bg": 91,
-	"./bg.js": 91,
-	"./bm": 92,
-	"./bm.js": 92,
-	"./bn": 93,
-	"./bn.js": 93,
-	"./bo": 94,
-	"./bo.js": 94,
-	"./br": 95,
-	"./br.js": 95,
-	"./bs": 96,
-	"./bs.js": 96,
-	"./ca": 97,
-	"./ca.js": 97,
-	"./cs": 98,
-	"./cs.js": 98,
-	"./cv": 99,
-	"./cv.js": 99,
-	"./cy": 100,
-	"./cy.js": 100,
-	"./da": 101,
-	"./da.js": 101,
-	"./de": 104,
-	"./de-at": 102,
-	"./de-at.js": 102,
-	"./de-ch": 103,
-	"./de-ch.js": 103,
-	"./de.js": 104,
-	"./dv": 105,
-	"./dv.js": 105,
-	"./el": 106,
-	"./el.js": 106,
-	"./en-au": 107,
-	"./en-au.js": 107,
-	"./en-ca": 108,
-	"./en-ca.js": 108,
-	"./en-gb": 109,
-	"./en-gb.js": 109,
-	"./en-ie": 110,
-	"./en-ie.js": 110,
-	"./en-nz": 111,
-	"./en-nz.js": 111,
-	"./eo": 112,
-	"./eo.js": 112,
-	"./es": 115,
-	"./es-do": 113,
-	"./es-do.js": 113,
-	"./es-us": 114,
-	"./es-us.js": 114,
-	"./es.js": 115,
-	"./et": 116,
-	"./et.js": 116,
-	"./eu": 117,
-	"./eu.js": 117,
-	"./fa": 118,
-	"./fa.js": 118,
-	"./fi": 119,
-	"./fi.js": 119,
-	"./fo": 120,
-	"./fo.js": 120,
-	"./fr": 123,
-	"./fr-ca": 121,
-	"./fr-ca.js": 121,
-	"./fr-ch": 122,
-	"./fr-ch.js": 122,
-	"./fr.js": 123,
-	"./fy": 124,
-	"./fy.js": 124,
-	"./gd": 125,
-	"./gd.js": 125,
-	"./gl": 126,
-	"./gl.js": 126,
-	"./gom-latn": 127,
-	"./gom-latn.js": 127,
-	"./gu": 128,
-	"./gu.js": 128,
-	"./he": 129,
-	"./he.js": 129,
-	"./hi": 130,
-	"./hi.js": 130,
-	"./hr": 131,
-	"./hr.js": 131,
-	"./hu": 132,
-	"./hu.js": 132,
-	"./hy-am": 133,
-	"./hy-am.js": 133,
-	"./id": 134,
-	"./id.js": 134,
-	"./is": 135,
-	"./is.js": 135,
-	"./it": 136,
-	"./it.js": 136,
-	"./ja": 137,
-	"./ja.js": 137,
-	"./jv": 138,
-	"./jv.js": 138,
-	"./ka": 139,
-	"./ka.js": 139,
-	"./kk": 140,
-	"./kk.js": 140,
-	"./km": 141,
-	"./km.js": 141,
-	"./kn": 142,
-	"./kn.js": 142,
-	"./ko": 143,
-	"./ko.js": 143,
-	"./ky": 144,
-	"./ky.js": 144,
-	"./lb": 145,
-	"./lb.js": 145,
-	"./lo": 146,
-	"./lo.js": 146,
-	"./lt": 147,
-	"./lt.js": 147,
-	"./lv": 148,
-	"./lv.js": 148,
-	"./me": 149,
-	"./me.js": 149,
-	"./mi": 150,
-	"./mi.js": 150,
-	"./mk": 151,
-	"./mk.js": 151,
-	"./ml": 152,
-	"./ml.js": 152,
-	"./mr": 153,
-	"./mr.js": 153,
-	"./ms": 155,
-	"./ms-my": 154,
-	"./ms-my.js": 154,
-	"./ms.js": 155,
-	"./my": 156,
-	"./my.js": 156,
-	"./nb": 157,
-	"./nb.js": 157,
-	"./ne": 158,
-	"./ne.js": 158,
-	"./nl": 160,
-	"./nl-be": 159,
-	"./nl-be.js": 159,
-	"./nl.js": 160,
-	"./nn": 161,
-	"./nn.js": 161,
-	"./pa-in": 162,
-	"./pa-in.js": 162,
-	"./pl": 163,
-	"./pl.js": 163,
-	"./pt": 165,
-	"./pt-br": 164,
-	"./pt-br.js": 164,
-	"./pt.js": 165,
-	"./ro": 166,
-	"./ro.js": 166,
-	"./ru": 167,
-	"./ru.js": 167,
-	"./sd": 168,
-	"./sd.js": 168,
-	"./se": 169,
-	"./se.js": 169,
-	"./si": 170,
-	"./si.js": 170,
-	"./sk": 171,
-	"./sk.js": 171,
-	"./sl": 172,
-	"./sl.js": 172,
-	"./sq": 173,
-	"./sq.js": 173,
-	"./sr": 175,
-	"./sr-cyrl": 174,
-	"./sr-cyrl.js": 174,
-	"./sr.js": 175,
-	"./ss": 176,
-	"./ss.js": 176,
-	"./sv": 177,
-	"./sv.js": 177,
-	"./sw": 178,
-	"./sw.js": 178,
-	"./ta": 179,
-	"./ta.js": 179,
-	"./te": 180,
-	"./te.js": 180,
-	"./tet": 181,
-	"./tet.js": 181,
-	"./th": 182,
-	"./th.js": 182,
-	"./tl-ph": 183,
-	"./tl-ph.js": 183,
-	"./tlh": 184,
-	"./tlh.js": 184,
-	"./tr": 185,
-	"./tr.js": 185,
-	"./tzl": 186,
-	"./tzl.js": 186,
-	"./tzm": 188,
-	"./tzm-latn": 187,
-	"./tzm-latn.js": 187,
-	"./tzm.js": 188,
-	"./uk": 189,
-	"./uk.js": 189,
-	"./ur": 190,
-	"./ur.js": 190,
-	"./uz": 192,
-	"./uz-latn": 191,
-	"./uz-latn.js": 191,
-	"./uz.js": 192,
-	"./vi": 193,
-	"./vi.js": 193,
-	"./x-pseudo": 194,
-	"./x-pseudo.js": 194,
-	"./yo": 195,
-	"./yo.js": 195,
-	"./zh-cn": 196,
-	"./zh-cn.js": 196,
-	"./zh-hk": 197,
-	"./zh-hk.js": 197,
-	"./zh-tw": 198,
-	"./zh-tw.js": 198
+	"./af": 78,
+	"./af.js": 78,
+	"./ar": 85,
+	"./ar-dz": 79,
+	"./ar-dz.js": 79,
+	"./ar-kw": 80,
+	"./ar-kw.js": 80,
+	"./ar-ly": 81,
+	"./ar-ly.js": 81,
+	"./ar-ma": 82,
+	"./ar-ma.js": 82,
+	"./ar-sa": 83,
+	"./ar-sa.js": 83,
+	"./ar-tn": 84,
+	"./ar-tn.js": 84,
+	"./ar.js": 85,
+	"./az": 86,
+	"./az.js": 86,
+	"./be": 87,
+	"./be.js": 87,
+	"./bg": 88,
+	"./bg.js": 88,
+	"./bm": 89,
+	"./bm.js": 89,
+	"./bn": 90,
+	"./bn.js": 90,
+	"./bo": 91,
+	"./bo.js": 91,
+	"./br": 92,
+	"./br.js": 92,
+	"./bs": 93,
+	"./bs.js": 93,
+	"./ca": 94,
+	"./ca.js": 94,
+	"./cs": 95,
+	"./cs.js": 95,
+	"./cv": 96,
+	"./cv.js": 96,
+	"./cy": 97,
+	"./cy.js": 97,
+	"./da": 98,
+	"./da.js": 98,
+	"./de": 101,
+	"./de-at": 99,
+	"./de-at.js": 99,
+	"./de-ch": 100,
+	"./de-ch.js": 100,
+	"./de.js": 101,
+	"./dv": 102,
+	"./dv.js": 102,
+	"./el": 103,
+	"./el.js": 103,
+	"./en-au": 104,
+	"./en-au.js": 104,
+	"./en-ca": 105,
+	"./en-ca.js": 105,
+	"./en-gb": 106,
+	"./en-gb.js": 106,
+	"./en-ie": 107,
+	"./en-ie.js": 107,
+	"./en-nz": 108,
+	"./en-nz.js": 108,
+	"./eo": 109,
+	"./eo.js": 109,
+	"./es": 112,
+	"./es-do": 110,
+	"./es-do.js": 110,
+	"./es-us": 111,
+	"./es-us.js": 111,
+	"./es.js": 112,
+	"./et": 113,
+	"./et.js": 113,
+	"./eu": 114,
+	"./eu.js": 114,
+	"./fa": 115,
+	"./fa.js": 115,
+	"./fi": 116,
+	"./fi.js": 116,
+	"./fo": 117,
+	"./fo.js": 117,
+	"./fr": 120,
+	"./fr-ca": 118,
+	"./fr-ca.js": 118,
+	"./fr-ch": 119,
+	"./fr-ch.js": 119,
+	"./fr.js": 120,
+	"./fy": 121,
+	"./fy.js": 121,
+	"./gd": 122,
+	"./gd.js": 122,
+	"./gl": 123,
+	"./gl.js": 123,
+	"./gom-latn": 124,
+	"./gom-latn.js": 124,
+	"./gu": 125,
+	"./gu.js": 125,
+	"./he": 126,
+	"./he.js": 126,
+	"./hi": 127,
+	"./hi.js": 127,
+	"./hr": 128,
+	"./hr.js": 128,
+	"./hu": 129,
+	"./hu.js": 129,
+	"./hy-am": 130,
+	"./hy-am.js": 130,
+	"./id": 131,
+	"./id.js": 131,
+	"./is": 132,
+	"./is.js": 132,
+	"./it": 133,
+	"./it.js": 133,
+	"./ja": 134,
+	"./ja.js": 134,
+	"./jv": 135,
+	"./jv.js": 135,
+	"./ka": 136,
+	"./ka.js": 136,
+	"./kk": 137,
+	"./kk.js": 137,
+	"./km": 138,
+	"./km.js": 138,
+	"./kn": 139,
+	"./kn.js": 139,
+	"./ko": 140,
+	"./ko.js": 140,
+	"./ky": 141,
+	"./ky.js": 141,
+	"./lb": 142,
+	"./lb.js": 142,
+	"./lo": 143,
+	"./lo.js": 143,
+	"./lt": 144,
+	"./lt.js": 144,
+	"./lv": 145,
+	"./lv.js": 145,
+	"./me": 146,
+	"./me.js": 146,
+	"./mi": 147,
+	"./mi.js": 147,
+	"./mk": 148,
+	"./mk.js": 148,
+	"./ml": 149,
+	"./ml.js": 149,
+	"./mr": 150,
+	"./mr.js": 150,
+	"./ms": 152,
+	"./ms-my": 151,
+	"./ms-my.js": 151,
+	"./ms.js": 152,
+	"./my": 153,
+	"./my.js": 153,
+	"./nb": 154,
+	"./nb.js": 154,
+	"./ne": 155,
+	"./ne.js": 155,
+	"./nl": 157,
+	"./nl-be": 156,
+	"./nl-be.js": 156,
+	"./nl.js": 157,
+	"./nn": 158,
+	"./nn.js": 158,
+	"./pa-in": 159,
+	"./pa-in.js": 159,
+	"./pl": 160,
+	"./pl.js": 160,
+	"./pt": 162,
+	"./pt-br": 161,
+	"./pt-br.js": 161,
+	"./pt.js": 162,
+	"./ro": 163,
+	"./ro.js": 163,
+	"./ru": 164,
+	"./ru.js": 164,
+	"./sd": 165,
+	"./sd.js": 165,
+	"./se": 166,
+	"./se.js": 166,
+	"./si": 167,
+	"./si.js": 167,
+	"./sk": 168,
+	"./sk.js": 168,
+	"./sl": 169,
+	"./sl.js": 169,
+	"./sq": 170,
+	"./sq.js": 170,
+	"./sr": 172,
+	"./sr-cyrl": 171,
+	"./sr-cyrl.js": 171,
+	"./sr.js": 172,
+	"./ss": 173,
+	"./ss.js": 173,
+	"./sv": 174,
+	"./sv.js": 174,
+	"./sw": 175,
+	"./sw.js": 175,
+	"./ta": 176,
+	"./ta.js": 176,
+	"./te": 177,
+	"./te.js": 177,
+	"./tet": 178,
+	"./tet.js": 178,
+	"./th": 179,
+	"./th.js": 179,
+	"./tl-ph": 180,
+	"./tl-ph.js": 180,
+	"./tlh": 181,
+	"./tlh.js": 181,
+	"./tr": 182,
+	"./tr.js": 182,
+	"./tzl": 183,
+	"./tzl.js": 183,
+	"./tzm": 185,
+	"./tzm-latn": 184,
+	"./tzm-latn.js": 184,
+	"./tzm.js": 185,
+	"./uk": 186,
+	"./uk.js": 186,
+	"./ur": 187,
+	"./ur.js": 187,
+	"./uz": 189,
+	"./uz-latn": 188,
+	"./uz-latn.js": 188,
+	"./uz.js": 189,
+	"./vi": 190,
+	"./vi.js": 190,
+	"./x-pseudo": 191,
+	"./x-pseudo.js": 191,
+	"./yo": 192,
+	"./yo.js": 192,
+	"./zh-cn": 193,
+	"./zh-cn.js": 193,
+	"./zh-hk": 194,
+	"./zh-hk.js": 194,
+	"./zh-tw": 195,
+	"./zh-tw.js": 195
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -52866,14 +52712,14 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 270;
+webpackContext.id = 268;
 
 /***/ }),
-/* 271 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var BN = __webpack_require__(75);
-var stripHexPrefix = __webpack_require__(296);
+var BN = __webpack_require__(72);
+var stripHexPrefix = __webpack_require__(294);
 
 /**
  * Returns a BN object, converts a number value to a BN
@@ -52913,7 +52759,7 @@ module.exports = function numberToBN(arg) {
 
 
 /***/ }),
-/* 272 */
+/* 270 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -53103,7 +52949,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 273 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53118,7 +52964,7 @@ process.umask = function() { return 0; };
 
 var emptyFunction = __webpack_require__(41);
 var invariant = __webpack_require__(61);
-var ReactPropTypesSecret = __webpack_require__(274);
+var ReactPropTypesSecret = __webpack_require__(272);
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -53168,7 +53014,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 274 */
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53187,7 +53033,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 275 */
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53201,7 +53047,7 @@ module.exports = ReactPropTypesSecret;
  LICENSE file in the root directory of this source tree.
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(7);__webpack_require__(61);var l=__webpack_require__(251),n=__webpack_require__(199),ba=__webpack_require__(250),ca=__webpack_require__(41),da=__webpack_require__(78),ea=__webpack_require__(257),fa=__webpack_require__(252),ha=__webpack_require__(253),ia=__webpack_require__(254);
+var aa=__webpack_require__(7);__webpack_require__(61);var l=__webpack_require__(249),n=__webpack_require__(196),ba=__webpack_require__(248),ca=__webpack_require__(41),da=__webpack_require__(75),ea=__webpack_require__(255),fa=__webpack_require__(250),ha=__webpack_require__(251),ia=__webpack_require__(252);
 function w(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:w("227");
 function ja(a){switch(a){case "svg":return"http://www.w3.org/2000/svg";case "math":return"http://www.w3.org/1998/Math/MathML";default:return"http://www.w3.org/1999/xhtml"}}
 var ka={Namespaces:{html:"http://www.w3.org/1999/xhtml",mathml:"http://www.w3.org/1998/Math/MathML",svg:"http://www.w3.org/2000/svg"},getIntrinsicNamespace:ja,getChildNamespace:function(a,b){return null==a||"http://www.w3.org/1999/xhtml"===a?ja(b):"http://www.w3.org/2000/svg"===a&&"foreignObject"===b?"http://www.w3.org/1999/xhtml":a}},la=null,oa={};
@@ -53450,7 +53296,7 @@ unstable_deferredUpdates:Xj.deferredUpdates,flushSync:Xj.flushSync,__SECRET_INTE
 
 
 /***/ }),
-/* 276 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53512,7 +53358,7 @@ function parseTag(tag, props) {
 
 
 /***/ }),
-/* 277 */
+/* 275 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53522,7 +53368,7 @@ function parseTag(tag, props) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(65);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53579,7 +53425,7 @@ BrowserRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (BrowserRouter);
 
 /***/ }),
-/* 278 */
+/* 276 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53589,7 +53435,7 @@ BrowserRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__ = __webpack_require__(257);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(65);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53645,18 +53491,18 @@ HashRouter.propTypes = {
 /* unused harmony default export */ var _unused_webpack_default_export = (HashRouter);
 
 /***/ }),
-/* 279 */
+/* 277 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(285);
 // Written in this round about way for babel-transform-imports
 
 
 /* unused harmony default export */ var _unused_webpack_default_export = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__["a" /* default */]);
 
 /***/ }),
-/* 280 */
+/* 278 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53664,8 +53510,8 @@ HashRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(197);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -53737,51 +53583,51 @@ NavLink.defaultProps = {
 /* unused harmony default export */ var _unused_webpack_default_export = (NavLink);
 
 /***/ }),
-/* 281 */
+/* 279 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(286);
 // Written in this round about way for babel-transform-imports
 
 
 /* unused harmony default export */ var _unused_webpack_default_export = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__["a" /* default */]);
 
 /***/ }),
-/* 282 */
+/* 280 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(287);
 // Written in this round about way for babel-transform-imports
 
 
 /* unused harmony default export */ var _unused_webpack_default_export = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__["a" /* default */]);
 
 /***/ }),
-/* 283 */
+/* 281 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(288);
 // Written in this round about way for babel-transform-imports
 
 
 /* unused harmony default export */ var _unused_webpack_default_export = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__["a" /* default */]);
 
 /***/ }),
-/* 284 */
+/* 282 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(289);
 // Written in this round about way for babel-transform-imports
 
 
 /* unused harmony default export */ var _unused_webpack_default_export = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
 
 /***/ }),
-/* 285 */
+/* 283 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53792,18 +53638,18 @@ NavLink.defaultProps = {
 /* unused harmony default export */ var _unused_webpack_default_export = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__["a" /* default */]);
 
 /***/ }),
-/* 286 */
+/* 284 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(290);
 // Written in this round about way for babel-transform-imports
 
 
 /* unused harmony default export */ var _unused_webpack_default_export = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__["a" /* default */]);
 
 /***/ }),
-/* 287 */
+/* 285 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53813,7 +53659,7 @@ NavLink.defaultProps = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__ = __webpack_require__(258);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(66);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53870,7 +53716,7 @@ MemoryRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (MemoryRouter);
 
 /***/ }),
-/* 288 */
+/* 286 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53961,7 +53807,7 @@ Prompt.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Prompt);
 
 /***/ }),
-/* 289 */
+/* 287 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53973,7 +53819,7 @@ Prompt.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(262);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -54069,7 +53915,7 @@ Redirect.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Redirect);
 
 /***/ }),
-/* 290 */
+/* 288 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -54252,7 +54098,7 @@ StaticRouter.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (StaticRouter);
 
 /***/ }),
-/* 291 */
+/* 289 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -54346,7 +54192,7 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Switch);
 
 /***/ }),
-/* 292 */
+/* 290 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -54354,9 +54200,9 @@ Switch.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(199);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -54391,7 +54237,7 @@ var withRouter = function withRouter(Component) {
 /* harmony default export */ __webpack_exports__["a"] = (withRouter);
 
 /***/ }),
-/* 293 */
+/* 291 */
 /***/ (function(module, exports) {
 
 module.exports = Array.isArray || function (arr) {
@@ -54400,10 +54246,10 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 294 */
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(293)
+var isarray = __webpack_require__(291)
 
 /**
  * Expose `pathToRegexp`.
@@ -54832,7 +54678,7 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 295 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54845,7 +54691,7 @@ function pathToRegexp (path, keys, options) {
  This source code is licensed under the MIT license found in the
  LICENSE file in the root directory of this source tree.
 */
-var f=__webpack_require__(199),p=__webpack_require__(78);__webpack_require__(61);var r=__webpack_require__(41);
+var f=__webpack_require__(196),p=__webpack_require__(75);__webpack_require__(61);var r=__webpack_require__(41);
 function t(a){for(var b=arguments.length-1,d="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,e=0;e<b;e++)d+="\x26args[]\x3d"+encodeURIComponent(arguments[e+1]);b=Error(d+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var u={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function v(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}v.prototype.isReactComponent={};v.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?t("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};v.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function w(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}function x(){}x.prototype=v.prototype;var y=w.prototype=new x;y.constructor=w;f(y,v.prototype);y.isPureReactComponent=!0;function z(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}var A=z.prototype=new x;A.constructor=z;f(A,v.prototype);A.unstable_isAsyncReactComponent=!0;A.render=function(){return this.props.children};
@@ -54862,10 +54708,10 @@ module.exports={Children:{map:S.map,forEach:S.forEach,count:S.count,toArray:S.to
 
 
 /***/ }),
-/* 296 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isHexPrefixed = __webpack_require__(267);
+var isHexPrefixed = __webpack_require__(265);
 
 /**
  * Removes '0x' from a given `String` is present
@@ -54882,7 +54728,7 @@ module.exports = function stripHexPrefix(str) {
 
 
 /***/ }),
-/* 297 */
+/* 295 */
 /***/ (function(module, exports) {
 
 /*
@@ -55134,12 +54980,12 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 298 */
+/* 296 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // TODO: remove web3 requirement
 // Call functions directly on the provider.
-var Web3 = __webpack_require__(299);
+var Web3 = __webpack_require__(297);
 
 var Blockchain = {
   parse: function(uri) {
@@ -55201,10 +55047,10 @@ module.exports = Blockchain;
 
 
 /***/ }),
-/* 299 */
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Web3 = __webpack_require__(314);
+var Web3 = __webpack_require__(312);
 
 // dont override global variable
 if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
@@ -55215,25 +55061,25 @@ module.exports = Web3;
 
 
 /***/ }),
-/* 300 */
+/* 298 */
 /***/ (function(module, exports) {
 
 module.exports = [{"constant":true,"inputs":[{"name":"_owner","type":"address"}],"name":"name","outputs":[{"name":"o_name","type":"bytes32"}],"type":"function"},{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"owner","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"content","outputs":[{"name":"","type":"bytes32"}],"type":"function"},{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"addr","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"}],"name":"reserve","outputs":[],"type":"function"},{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"subRegistrar","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_newOwner","type":"address"}],"name":"transfer","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_registrar","type":"address"}],"name":"setSubRegistrar","outputs":[],"type":"function"},{"constant":false,"inputs":[],"name":"Registrar","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_a","type":"address"},{"name":"_primary","type":"bool"}],"name":"setAddress","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_content","type":"bytes32"}],"name":"setContent","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"}],"name":"disown","outputs":[],"type":"function"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_name","type":"bytes32"},{"indexed":false,"name":"_winner","type":"address"}],"name":"AuctionEnded","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_name","type":"bytes32"},{"indexed":false,"name":"_bidder","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"NewBid","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"name","type":"bytes32"}],"name":"Changed","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"name","type":"bytes32"},{"indexed":true,"name":"addr","type":"address"}],"name":"PrimaryChanged","type":"event"}]
 
 /***/ }),
-/* 301 */
+/* 299 */
 /***/ (function(module, exports) {
 
 module.exports = [{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"owner","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_refund","type":"address"}],"name":"disown","outputs":[],"type":"function"},{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"addr","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"}],"name":"reserve","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_newOwner","type":"address"}],"name":"transfer","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_a","type":"address"}],"name":"setAddr","outputs":[],"type":"function"},{"anonymous":false,"inputs":[{"indexed":true,"name":"name","type":"bytes32"}],"name":"Changed","type":"event"}]
 
 /***/ }),
-/* 302 */
+/* 300 */
 /***/ (function(module, exports) {
 
 module.exports = [{"constant":false,"inputs":[{"name":"from","type":"bytes32"},{"name":"to","type":"address"},{"name":"value","type":"uint256"}],"name":"transfer","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"from","type":"bytes32"},{"name":"to","type":"address"},{"name":"indirectId","type":"bytes32"},{"name":"value","type":"uint256"}],"name":"icapTransfer","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"to","type":"bytes32"}],"name":"deposit","outputs":[],"payable":true,"type":"function"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"AnonymousDeposit","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":true,"name":"to","type":"bytes32"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Deposit","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"bytes32"},{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"bytes32"},{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"indirectId","type":"bytes32"},{"indexed":false,"name":"value","type":"uint256"}],"name":"IcapTransfer","type":"event"}]
 
 /***/ }),
-/* 303 */
+/* 301 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(10);
@@ -55265,7 +55111,7 @@ module.exports = SolidityTypeAddress;
 
 
 /***/ }),
-/* 304 */
+/* 302 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(10);
@@ -55297,7 +55143,7 @@ module.exports = SolidityTypeBool;
 
 
 /***/ }),
-/* 305 */
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(10);
@@ -55332,7 +55178,7 @@ module.exports = SolidityTypeBytes;
 
 
 /***/ }),
-/* 306 */
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(10);
@@ -55358,7 +55204,7 @@ module.exports = SolidityTypeDynamicBytes;
 
 
 /***/ }),
-/* 307 */
+/* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(10);
@@ -55396,7 +55242,7 @@ module.exports = SolidityTypeInt;
 
 
 /***/ }),
-/* 308 */
+/* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(10);
@@ -55434,7 +55280,7 @@ module.exports = SolidityTypeReal;
 
 
 /***/ }),
-/* 309 */
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(10);
@@ -55460,7 +55306,7 @@ module.exports = SolidityTypeString;
 
 
 /***/ }),
-/* 310 */
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(10);
@@ -55498,7 +55344,7 @@ module.exports = SolidityTypeUInt;
 
 
 /***/ }),
-/* 311 */
+/* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(10);
@@ -55536,7 +55382,7 @@ module.exports = SolidityTypeUReal;
 
 
 /***/ }),
-/* 312 */
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55552,13 +55398,13 @@ if (typeof XMLHttpRequest === 'undefined') {
 
 
 /***/ }),
-/* 313 */
+/* 311 */
 /***/ (function(module, exports) {
 
 module.exports = {"version":"0.18.4"}
 
 /***/ }),
-/* 314 */
+/* 312 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -55588,23 +55434,23 @@ module.exports = {"version":"0.18.4"}
  * @date 2014
  */
 
-var RequestManager = __webpack_require__(329);
+var RequestManager = __webpack_require__(327);
 var Iban = __webpack_require__(45);
-var Eth = __webpack_require__(323);
-var DB = __webpack_require__(322);
-var Shh = __webpack_require__(326);
-var Net = __webpack_require__(324);
-var Personal = __webpack_require__(325);
-var Swarm = __webpack_require__(327);
-var Settings = __webpack_require__(330);
-var version = __webpack_require__(313);
+var Eth = __webpack_require__(321);
+var DB = __webpack_require__(320);
+var Shh = __webpack_require__(324);
+var Net = __webpack_require__(322);
+var Personal = __webpack_require__(323);
+var Swarm = __webpack_require__(325);
+var Settings = __webpack_require__(328);
+var version = __webpack_require__(311);
 var utils = __webpack_require__(3);
 var sha3 = __webpack_require__(31);
-var extend = __webpack_require__(318);
-var Batch = __webpack_require__(316);
+var extend = __webpack_require__(316);
+var Batch = __webpack_require__(314);
 var Property = __webpack_require__(24);
-var HttpProvider = __webpack_require__(320);
-var IpcProvider = __webpack_require__(321);
+var HttpProvider = __webpack_require__(318);
+var IpcProvider = __webpack_require__(319);
 var BigNumber = __webpack_require__(28);
 
 
@@ -55714,7 +55560,7 @@ module.exports = Web3;
 
 
 /***/ }),
-/* 315 */
+/* 313 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -55740,7 +55586,7 @@ module.exports = Web3;
  */
 
 var sha3 = __webpack_require__(31);
-var SolidityEvent = __webpack_require__(205);
+var SolidityEvent = __webpack_require__(202);
 var formatters = __webpack_require__(14);
 var utils = __webpack_require__(3);
 var Filter = __webpack_require__(44);
@@ -55808,7 +55654,7 @@ module.exports = AllSolidityEvents;
 
 
 /***/ }),
-/* 316 */
+/* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -55833,7 +55679,7 @@ module.exports = AllSolidityEvents;
  * @date 2015
  */
 
-var Jsonrpc = __webpack_require__(206);
+var Jsonrpc = __webpack_require__(203);
 var errors = __webpack_require__(32);
 
 var Batch = function (web3) {
@@ -55880,7 +55726,7 @@ module.exports = Batch;
 
 
 /***/ }),
-/* 317 */
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -55907,9 +55753,9 @@ module.exports = Batch;
 
 var utils = __webpack_require__(3);
 var coder = __webpack_require__(68);
-var SolidityEvent = __webpack_require__(205);
-var SolidityFunction = __webpack_require__(319);
-var AllEvents = __webpack_require__(315);
+var SolidityEvent = __webpack_require__(202);
+var SolidityFunction = __webpack_require__(317);
+var AllEvents = __webpack_require__(313);
 
 /**
  * Should be called to encode constructor params
@@ -56196,7 +56042,7 @@ module.exports = ContractFactory;
 
 
 /***/ }),
-/* 318 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var formatters = __webpack_require__(14);
@@ -56250,7 +56096,7 @@ module.exports = extend;
 
 
 /***/ }),
-/* 319 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -56518,7 +56364,7 @@ module.exports = SolidityFunction;
 
 
 /***/ }),
-/* 320 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -56555,10 +56401,10 @@ if (typeof window !== 'undefined' && window.XMLHttpRequest) {
     XMLHttpRequest = window.XMLHttpRequest; // jshint ignore: line
 // node
 } else {
-    XMLHttpRequest = __webpack_require__(312).XMLHttpRequest; // jshint ignore: line
+    XMLHttpRequest = __webpack_require__(310).XMLHttpRequest; // jshint ignore: line
 }
 
-var XHR2 = __webpack_require__(215); // jshint ignore: line
+var XHR2 = __webpack_require__(212); // jshint ignore: line
 
 /**
  * HttpProvider should be used to send rpc calls over http
@@ -56677,7 +56523,7 @@ module.exports = HttpProvider;
 
 
 /***/ }),
-/* 321 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56891,7 +56737,7 @@ module.exports = IpcProvider;
 
 
 /***/ }),
-/* 322 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -56963,7 +56809,7 @@ module.exports = DB;
 
 
 /***/ }),
-/* 323 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56997,13 +56843,13 @@ var utils = __webpack_require__(3);
 var Method = __webpack_require__(19);
 var Property = __webpack_require__(24);
 var c = __webpack_require__(43);
-var Contract = __webpack_require__(317);
+var Contract = __webpack_require__(315);
 var watches = __webpack_require__(46);
 var Filter = __webpack_require__(44);
-var IsSyncing = __webpack_require__(331);
-var namereg = __webpack_require__(328);
+var IsSyncing = __webpack_require__(329);
+var namereg = __webpack_require__(326);
 var Iban = __webpack_require__(45);
-var transfer = __webpack_require__(332);
+var transfer = __webpack_require__(330);
 
 var blockCall = function (args) {
     return (utils.isString(args[0]) && args[0].indexOf('0x') === 0) ? "eth_getBlockByHash" : "eth_getBlockByNumber";
@@ -57324,7 +57170,7 @@ module.exports = Eth;
 
 
 /***/ }),
-/* 324 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -57382,7 +57228,7 @@ module.exports = Net;
 
 
 /***/ }),
-/* 325 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57482,7 +57328,7 @@ module.exports = Personal;
 
 
 /***/ }),
-/* 326 */
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -57574,7 +57420,7 @@ module.exports = Shh;
 
 
 /***/ }),
-/* 327 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57726,7 +57572,7 @@ module.exports = Swarm;
 
 
 /***/ }),
-/* 328 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -57751,8 +57597,8 @@ module.exports = Swarm;
  * @date 2015
  */
 
-var globalRegistrarAbi = __webpack_require__(300);
-var icapRegistrarAbi= __webpack_require__(301);
+var globalRegistrarAbi = __webpack_require__(298);
+var icapRegistrarAbi= __webpack_require__(299);
 
 var globalNameregAddress = '0xc6d9d2cd449a754c494264e1809c50e34d64562b';
 var icapNameregAddress = '0xa1a111bc074c9cfa781f0c38e63bd51c91b8af00';
@@ -57771,7 +57617,7 @@ module.exports = {
 
 
 /***/ }),
-/* 329 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -57800,7 +57646,7 @@ module.exports = {
  * @date 2014
  */
 
-var Jsonrpc = __webpack_require__(206);
+var Jsonrpc = __webpack_require__(203);
 var utils = __webpack_require__(3);
 var c = __webpack_require__(43);
 var errors = __webpack_require__(32);
@@ -58042,7 +57888,7 @@ module.exports = RequestManager;
 
 
 /***/ }),
-/* 330 */
+/* 328 */
 /***/ (function(module, exports) {
 
 
@@ -58057,7 +57903,7 @@ module.exports = Settings;
 
 
 /***/ }),
-/* 331 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -58156,7 +58002,7 @@ module.exports = IsSyncing;
 
 
 /***/ }),
-/* 332 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -58182,7 +58028,7 @@ module.exports = IsSyncing;
  */
 
 var Iban = __webpack_require__(45);
-var exchangeAbi = __webpack_require__(302);
+var exchangeAbi = __webpack_require__(300);
 
 /**
  * Should be used to make Iban transfer
@@ -58254,11 +58100,11 @@ module.exports = transfer;
 
 
 /***/ }),
-/* 333 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var sha3 = __webpack_require__(334);
-var schema_version = __webpack_require__(336).version;
+var sha3 = __webpack_require__(332);
+var schema_version = __webpack_require__(334).version;
 
 var TruffleSchema = {
   // Normalize options passed in to be the exact options required
@@ -58441,13 +58287,13 @@ module.exports = TruffleSchema;
 
 
 /***/ }),
-/* 334 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory, undef) {
 	if (true) {
 		// CommonJS
-		module.exports = exports = factory(__webpack_require__(207), __webpack_require__(335));
+		module.exports = exports = factory(__webpack_require__(204), __webpack_require__(333));
 	}
 	else if (typeof define === "function" && define.amd) {
 		// AMD
@@ -58769,13 +58615,13 @@ module.exports = TruffleSchema;
 }));
 
 /***/ }),
-/* 335 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 ;(function (root, factory) {
 	if (true) {
 		// CommonJS
-		module.exports = exports = factory(__webpack_require__(207));
+		module.exports = exports = factory(__webpack_require__(204));
 	}
 	else if (typeof define === "function" && define.amd) {
 		// AMD
@@ -59078,18 +58924,18 @@ module.exports = TruffleSchema;
 }));
 
 /***/ }),
-/* 336 */
+/* 334 */
 /***/ (function(module, exports) {
 
 module.exports = {"_from":"truffle-contract-schema@0.0.5","_id":"truffle-contract-schema@0.0.5","_inBundle":false,"_integrity":"sha1-Xp0gvQvyon/pQxB0gknUhO7kmWE=","_location":"/truffle-contract-schema","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"truffle-contract-schema@0.0.5","name":"truffle-contract-schema","escapedName":"truffle-contract-schema","rawSpec":"0.0.5","saveSpec":null,"fetchSpec":"0.0.5"},"_requiredBy":["/truffle-contract"],"_resolved":"https://registry.npmjs.org/truffle-contract-schema/-/truffle-contract-schema-0.0.5.tgz","_shasum":"5e9d20bd0bf2a27fe94310748249d484eee49961","_spec":"truffle-contract-schema@0.0.5","_where":"/Users/sahil/dev.tw/cs/my-little-ponies/node_modules/truffle-contract","author":{"name":"Tim Coulter","email":"tim.coulter@consensys.net"},"bugs":{"url":"https://github.com/trufflesuite/truffle-schema/issues"},"bundleDependencies":false,"dependencies":{"crypto-js":"^3.1.9-1"},"deprecated":false,"description":"JSON schema for contract artifacts","devDependencies":{"mocha":"^3.2.0"},"homepage":"https://github.com/trufflesuite/truffle-schema#readme","keywords":["ethereum","json","schema","contract","artifacts"],"license":"MIT","main":"index.js","name":"truffle-contract-schema","repository":{"type":"git","url":"git+https://github.com/trufflesuite/truffle-schema.git"},"scripts":{"test":"mocha"},"version":"0.0.5"}
 
 /***/ }),
-/* 337 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global, module) {var ethJSABI = __webpack_require__(248);
-var BlockchainUtils = __webpack_require__(298);
-var Web3 = __webpack_require__(338);
+/* WEBPACK VAR INJECTION */(function(global, module) {var ethJSABI = __webpack_require__(246);
+var BlockchainUtils = __webpack_require__(296);
+var Web3 = __webpack_require__(337);
 
 // For browserified version. If browserify gave us an empty version,
 // look for the one provided by the user.
@@ -59886,10 +59732,80 @@ var contract = (function(module) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(56), __webpack_require__(57)(module)))
 
 /***/ }),
-/* 338 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Web3 = __webpack_require__(353);
+var Schema = __webpack_require__(331);
+var Contract = __webpack_require__(335);
+
+var contract = function(options) {
+  options = Schema.normalizeOptions(options);
+  var binary = Schema.generateBinary(options, {}, {dirty: false});
+
+  // Note we don't use `new` here at all. This will cause the class to
+  // "mutate" instead of instantiate an instance.
+  return Contract.clone(binary);
+};
+
+// To be used to upgrade old .sol.js abstractions
+contract.fromSolJS = function(soljs_abstraction, ignore_default_network) {
+  if (ignore_default_network == null) {
+    ignore_default_network = false;
+  }
+
+  // Find the latest binary
+  var latest_network = null;
+  var latest_network_updated_at = 0;
+
+  var networks = {};
+
+  Object.keys(soljs_abstraction.all_networks).forEach(function(network_name) {
+
+    if (network_name == "default") {
+      if (ignore_default_network == true ) {
+        return;
+      } else {
+        throw new Error(soljs_abstraction.contract_name + " has legacy 'default' network artifacts stored within it. Generally these artifacts were a result of running Truffle on a development environment -- in order to store contracts with truffle-contract, all networks must have an identified id. If you're sure this default network represents your development environment, you can ignore processing of the default network by passing `true` as the second argument to this function. However, if you think this network represents artifacts you'd like to keep (i.e., addresses deployed to the main network), you'll need to edit your .sol.js file yourself and change the default network id to be the id of your desired network. For most people, ignoring the default network is the correct option.");
+      }
+    }
+
+    if (soljs_abstraction.all_networks[network_name].updated_at > latest_network_updated_at) {
+      latest_network = network_name;
+      latest_network_updated_at = soljs_abstraction.all_networks[network_name].updated_at;
+    }
+
+    networks[network_name] = {};
+
+    ["address", "events", "links", "updated_at"].forEach(function(key) {
+      networks[network_name][key] = soljs_abstraction.all_networks[network_name][key];
+    })
+  });
+
+  latest_network = soljs_abstraction.all_networks[latest_network] || {};
+
+  var json = {
+    contract_name: soljs_abstraction.contract_name,
+    unlinked_binary: latest_network.unlinked_binary,
+    abi: latest_network.abi,
+    networks: networks,
+    updated_at: latest_network_updated_at == 0 ? undefined : latest_network_updated_at
+  };
+
+  return contract(json);
+};
+
+module.exports = contract;
+
+if (typeof window !== "undefined") {
+  window.TruffleContract = contract;
+}
+
+
+/***/ }),
+/* 337 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Web3 = __webpack_require__(352);
 
 // dont override global variable
 if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
@@ -59900,25 +59816,25 @@ module.exports = Web3;
 
 
 /***/ }),
-/* 339 */
+/* 338 */
 /***/ (function(module, exports) {
 
 module.exports = [{"constant":true,"inputs":[{"name":"_owner","type":"address"}],"name":"name","outputs":[{"name":"o_name","type":"bytes32"}],"type":"function"},{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"owner","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"content","outputs":[{"name":"","type":"bytes32"}],"type":"function"},{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"addr","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"}],"name":"reserve","outputs":[],"type":"function"},{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"subRegistrar","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_newOwner","type":"address"}],"name":"transfer","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_registrar","type":"address"}],"name":"setSubRegistrar","outputs":[],"type":"function"},{"constant":false,"inputs":[],"name":"Registrar","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_a","type":"address"},{"name":"_primary","type":"bool"}],"name":"setAddress","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_content","type":"bytes32"}],"name":"setContent","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"}],"name":"disown","outputs":[],"type":"function"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_name","type":"bytes32"},{"indexed":false,"name":"_winner","type":"address"}],"name":"AuctionEnded","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_name","type":"bytes32"},{"indexed":false,"name":"_bidder","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"NewBid","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"name","type":"bytes32"}],"name":"Changed","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"name","type":"bytes32"},{"indexed":true,"name":"addr","type":"address"}],"name":"PrimaryChanged","type":"event"}]
 
 /***/ }),
-/* 340 */
+/* 339 */
 /***/ (function(module, exports) {
 
 module.exports = [{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"owner","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_refund","type":"address"}],"name":"disown","outputs":[],"type":"function"},{"constant":true,"inputs":[{"name":"_name","type":"bytes32"}],"name":"addr","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"}],"name":"reserve","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_newOwner","type":"address"}],"name":"transfer","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"bytes32"},{"name":"_a","type":"address"}],"name":"setAddr","outputs":[],"type":"function"},{"anonymous":false,"inputs":[{"indexed":true,"name":"name","type":"bytes32"}],"name":"Changed","type":"event"}]
 
 /***/ }),
-/* 341 */
+/* 340 */
 /***/ (function(module, exports) {
 
 module.exports = [{"constant":false,"inputs":[{"name":"from","type":"bytes32"},{"name":"to","type":"address"},{"name":"value","type":"uint256"}],"name":"transfer","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"from","type":"bytes32"},{"name":"to","type":"address"},{"name":"indirectId","type":"bytes32"},{"name":"value","type":"uint256"}],"name":"icapTransfer","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"to","type":"bytes32"}],"name":"deposit","outputs":[],"type":"function"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"AnonymousDeposit","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":true,"name":"to","type":"bytes32"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Deposit","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"bytes32"},{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"bytes32"},{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"indirectId","type":"bytes32"},{"indexed":false,"name":"value","type":"uint256"}],"name":"IcapTransfer","type":"event"}]
 
 /***/ }),
-/* 342 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(11);
@@ -59955,7 +59871,7 @@ module.exports = SolidityTypeAddress;
 
 
 /***/ }),
-/* 343 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(11);
@@ -59991,7 +59907,7 @@ module.exports = SolidityTypeBool;
 
 
 /***/ }),
-/* 344 */
+/* 343 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(11);
@@ -60035,7 +59951,7 @@ module.exports = SolidityTypeBytes;
 
 
 /***/ }),
-/* 345 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(11);
@@ -60066,7 +59982,7 @@ module.exports = SolidityTypeDynamicBytes;
 
 
 /***/ }),
-/* 346 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(11);
@@ -60108,7 +60024,7 @@ module.exports = SolidityTypeInt;
 
 
 /***/ }),
-/* 347 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(11);
@@ -60150,7 +60066,7 @@ module.exports = SolidityTypeReal;
 
 
 /***/ }),
-/* 348 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(11);
@@ -60181,7 +60097,7 @@ module.exports = SolidityTypeString;
 
 
 /***/ }),
-/* 349 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(11);
@@ -60223,7 +60139,7 @@ module.exports = SolidityTypeUInt;
 
 
 /***/ }),
-/* 350 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(11);
@@ -60265,7 +60181,7 @@ module.exports = SolidityTypeUReal;
 
 
 /***/ }),
-/* 351 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60281,13 +60197,13 @@ if (typeof XMLHttpRequest === 'undefined') {
 
 
 /***/ }),
-/* 352 */
+/* 351 */
 /***/ (function(module, exports) {
 
 module.exports = {"version":"0.16.0"}
 
 /***/ }),
-/* 353 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -60317,22 +60233,22 @@ module.exports = {"version":"0.16.0"}
  * @date 2014
  */
 
-var RequestManager = __webpack_require__(367);
+var RequestManager = __webpack_require__(366);
 var Iban = __webpack_require__(50);
-var Eth = __webpack_require__(362);
-var DB = __webpack_require__(361);
-var Shh = __webpack_require__(365);
-var Net = __webpack_require__(363);
-var Personal = __webpack_require__(364);
-var Settings = __webpack_require__(368);
-var version = __webpack_require__(352);
+var Eth = __webpack_require__(361);
+var DB = __webpack_require__(360);
+var Shh = __webpack_require__(364);
+var Net = __webpack_require__(362);
+var Personal = __webpack_require__(363);
+var Settings = __webpack_require__(367);
+var version = __webpack_require__(351);
 var utils = __webpack_require__(4);
 var sha3 = __webpack_require__(33);
-var extend = __webpack_require__(357);
-var Batch = __webpack_require__(355);
+var extend = __webpack_require__(356);
+var Batch = __webpack_require__(354);
 var Property = __webpack_require__(35);
-var HttpProvider = __webpack_require__(359);
-var IpcProvider = __webpack_require__(360);
+var HttpProvider = __webpack_require__(358);
+var IpcProvider = __webpack_require__(359);
 
 
 
@@ -60439,7 +60355,7 @@ module.exports = Web3;
 
 
 /***/ }),
-/* 354 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -60465,7 +60381,7 @@ module.exports = Web3;
  */
 
 var sha3 = __webpack_require__(33);
-var SolidityEvent = __webpack_require__(209);
+var SolidityEvent = __webpack_require__(206);
 var formatters = __webpack_require__(16);
 var utils = __webpack_require__(4);
 var Filter = __webpack_require__(49);
@@ -60533,7 +60449,7 @@ module.exports = AllSolidityEvents;
 
 
 /***/ }),
-/* 355 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -60558,7 +60474,7 @@ module.exports = AllSolidityEvents;
  * @date 2015
  */
 
-var Jsonrpc = __webpack_require__(210);
+var Jsonrpc = __webpack_require__(207);
 var errors = __webpack_require__(34);
 
 var Batch = function (web3) {
@@ -60605,7 +60521,7 @@ module.exports = Batch;
 
 
 /***/ }),
-/* 356 */
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -60632,9 +60548,9 @@ module.exports = Batch;
 
 var utils = __webpack_require__(4);
 var coder = __webpack_require__(69);
-var SolidityEvent = __webpack_require__(209);
-var SolidityFunction = __webpack_require__(358);
-var AllEvents = __webpack_require__(354);
+var SolidityEvent = __webpack_require__(206);
+var SolidityFunction = __webpack_require__(357);
+var AllEvents = __webpack_require__(353);
 
 /**
  * Should be called to encode constructor params
@@ -60909,7 +60825,7 @@ module.exports = ContractFactory;
 
 
 /***/ }),
-/* 357 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var formatters = __webpack_require__(16);
@@ -60963,7 +60879,7 @@ module.exports = extend;
 
 
 /***/ }),
-/* 358 */
+/* 357 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -61216,7 +61132,7 @@ module.exports = SolidityFunction;
 
 
 /***/ }),
-/* 359 */
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61261,7 +61177,7 @@ if (typeof Meteor !== 'undefined' && Meteor.isServer) { // jshint ignore: line
 
 // node
 } else {
-    XMLHttpRequest = __webpack_require__(351).XMLHttpRequest; // jshint ignore: line
+    XMLHttpRequest = __webpack_require__(350).XMLHttpRequest; // jshint ignore: line
 }
 
 /**
@@ -61369,7 +61285,7 @@ module.exports = HttpProvider;
 
 
 /***/ }),
-/* 360 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61583,7 +61499,7 @@ module.exports = IpcProvider;
 
 
 /***/ }),
-/* 361 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -61655,7 +61571,7 @@ module.exports = DB;
 
 
 /***/ }),
-/* 362 */
+/* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61689,13 +61605,13 @@ var utils = __webpack_require__(4);
 var Method = __webpack_require__(25);
 var Property = __webpack_require__(35);
 var c = __webpack_require__(48);
-var Contract = __webpack_require__(356);
+var Contract = __webpack_require__(355);
 var watches = __webpack_require__(51);
 var Filter = __webpack_require__(49);
-var IsSyncing = __webpack_require__(369);
-var namereg = __webpack_require__(366);
+var IsSyncing = __webpack_require__(368);
+var namereg = __webpack_require__(365);
 var Iban = __webpack_require__(50);
-var transfer = __webpack_require__(370);
+var transfer = __webpack_require__(369);
 
 var blockCall = function (args) {
     return (utils.isString(args[0]) && args[0].indexOf('0x') === 0) ? "eth_getBlockByHash" : "eth_getBlockByNumber";
@@ -62005,7 +61921,7 @@ module.exports = Eth;
 
 
 /***/ }),
-/* 363 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -62063,7 +61979,7 @@ module.exports = Net;
 
 
 /***/ }),
-/* 364 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62155,7 +62071,7 @@ module.exports = Personal;
 
 
 /***/ }),
-/* 365 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -62247,7 +62163,7 @@ module.exports = Shh;
 
 
 /***/ }),
-/* 366 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -62272,8 +62188,8 @@ module.exports = Shh;
  * @date 2015
  */
 
-var globalRegistrarAbi = __webpack_require__(339);
-var icapRegistrarAbi= __webpack_require__(340);
+var globalRegistrarAbi = __webpack_require__(338);
+var icapRegistrarAbi= __webpack_require__(339);
 
 var globalNameregAddress = '0xc6d9d2cd449a754c494264e1809c50e34d64562b';
 var icapNameregAddress = '0xa1a111bc074c9cfa781f0c38e63bd51c91b8af00';
@@ -62292,7 +62208,7 @@ module.exports = {
 
 
 /***/ }),
-/* 367 */
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -62321,7 +62237,7 @@ module.exports = {
  * @date 2014
  */
 
-var Jsonrpc = __webpack_require__(210);
+var Jsonrpc = __webpack_require__(207);
 var utils = __webpack_require__(4);
 var c = __webpack_require__(48);
 var errors = __webpack_require__(34);
@@ -62563,7 +62479,7 @@ module.exports = RequestManager;
 
 
 /***/ }),
-/* 368 */
+/* 367 */
 /***/ (function(module, exports) {
 
 
@@ -62578,7 +62494,7 @@ module.exports = Settings;
 
 
 /***/ }),
-/* 369 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -62677,7 +62593,7 @@ module.exports = IsSyncing;
 
 
 /***/ }),
-/* 370 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -62703,7 +62619,7 @@ module.exports = IsSyncing;
  */
 
 var Iban = __webpack_require__(50);
-var exchangeAbi = __webpack_require__(341);
+var exchangeAbi = __webpack_require__(340);
 
 /**
  * Should be used to make Iban transfer
@@ -62772,6 +62688,20 @@ var deposit = function (eth, from, to, value, client, callback) {
 
 module.exports = transfer;
 
+
+
+/***/ }),
+/* 370 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Web3 = __webpack_require__(385);
+
+// dont override global variable
+if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
+    window.Web3 = Web3;
+}
+
+module.exports = Web3;
 
 
 /***/ }),
@@ -63302,7 +63232,7 @@ module.exports = Web3;
  */
 
 var sha3 = __webpack_require__(36);
-var SolidityEvent = __webpack_require__(213);
+var SolidityEvent = __webpack_require__(210);
 var formatters = __webpack_require__(18);
 var utils = __webpack_require__(5);
 var Filter = __webpack_require__(53);
@@ -63395,7 +63325,7 @@ module.exports = AllSolidityEvents;
  * @date 2015
  */
 
-var Jsonrpc = __webpack_require__(214);
+var Jsonrpc = __webpack_require__(211);
 var errors = __webpack_require__(26);
 
 var Batch = function (web3) {
@@ -63469,7 +63399,7 @@ module.exports = Batch;
 
 var utils = __webpack_require__(5);
 var coder = __webpack_require__(71);
-var SolidityEvent = __webpack_require__(213);
+var SolidityEvent = __webpack_require__(210);
 var SolidityFunction = __webpack_require__(390);
 var AllEvents = __webpack_require__(386);
 
@@ -64140,7 +64070,7 @@ if (typeof window !== 'undefined' && window.XMLHttpRequest) {
   XMLHttpRequest = __webpack_require__(383).XMLHttpRequest; // jshint ignore: line
 }
 
-var XHR2 = __webpack_require__(215); // jshint ignore: line
+var XHR2 = __webpack_require__(212); // jshint ignore: line
 
 /**
  * HttpProvider should be used to send rpc calls over http
@@ -65468,7 +65398,7 @@ module.exports = {
  * @date 2014
  */
 
-var Jsonrpc = __webpack_require__(214);
+var Jsonrpc = __webpack_require__(211);
 var utils = __webpack_require__(5);
 var c = __webpack_require__(52);
 var errors = __webpack_require__(26);
