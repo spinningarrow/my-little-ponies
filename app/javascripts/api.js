@@ -31,10 +31,17 @@ export function getAccount () {
   })
 }
 
-export async function createPost (content) {
+export async function postAnswer (question, answer) {
   const account = await getAccount()
   const meta = await MetaCoin.deployed()
-  const posted = await meta.createPost(content, { from: account })
+  const posted = await meta.postAnswer(question, answer, { from: account })
+  return posted.valueOf()
+}
+
+export async function postQuestion (title, content) {
+  const account = await getAccount()
+  const meta = await MetaCoin.deployed()
+  const posted = await meta.postQuestion(title, content, { from: account })
   return posted.valueOf()
 }
 

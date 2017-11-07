@@ -6,12 +6,13 @@ contract MetaCoin {
   struct Post {
     uint id;
     uint timestamp;
+    string title;
     string content;
     address createdBy;
   }
 
   struct Answer {
-    uint postID;
+    uint postId;
     string content;
     address createdBy;
     uint timestamp;
@@ -44,8 +45,9 @@ contract MetaCoin {
     return balances[addr];
   }
 
-  function createPost(string content) public returns (uint id) {
+  function postQuestion(string title, string content) public returns (uint id) {
     posts[numOfPosts].id = id;
+    posts[numOfPosts].title = title;
     posts[numOfPosts].content = content;
     posts[numOfPosts].createdBy = msg.sender;
     posts[numOfPosts].timestamp = now;
@@ -68,6 +70,6 @@ contract MetaCoin {
     num = numOfPosts;
   }
 
-  function createAnswer(uint postID, string content) returns (uint id) {
+  function postAnswer(uint postId, string answer) returns (uint id) {
   }
 }
