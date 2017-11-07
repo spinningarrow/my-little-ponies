@@ -55,6 +55,10 @@ footer > *:first-child {
     color: black;
 }
 
+.question a:hover {
+    color: #3c61dc;
+}
+
 .question-title {
     font-size: x-large;
     font-weight: bold;
