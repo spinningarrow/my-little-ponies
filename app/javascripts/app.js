@@ -4,7 +4,6 @@ import { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { default as h } from 'react-hyperscript'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { default as jsonQuestions } from './questions.json'
 import moment from 'moment'
 
 import * as api from './api'
@@ -16,7 +15,7 @@ class App extends Component {
   constructor (props) {
     super(props)
 
-    const { jsonQuestions } = this.props
+    // const { jsonQuestions } = this.props
 
     const profile = {
       username: 'sahil',
@@ -24,15 +23,16 @@ class App extends Component {
       walletId: ''
     }
 
-    const mappedQuestions = jsonQuestions.map(question => {
-      const updatedQuestion = Object.assign({}, question)
-      updatedQuestion.isCurrentUserQuestion = question.origin === profile.walletId
-      return updatedQuestion
-    })
+    // const mappedQuestions = jsonQuestions.map(question => {
+    //   const updatedQuestion = Object.assign({}, question)
+    //   updatedQuestion.isCurrentUserQuestion = question.origin === profile.walletId
+    //   return updatedQuestion
+    // })
 
-    this.state = { profile, questions: mappedQuestions, isLoading: false }
+    this.state = { profile, questions: [], isLoading: false }
 
     this.handleSendCoinsFormSubmit = this.handleSendCoinsFormSubmit.bind(this)
+    this.handlePostFormSubmit = this.handlePostFormSubmit.bind(this)
   }
 
   mapQuestions () {
@@ -44,6 +44,15 @@ class App extends Component {
     })
 
     this.setState({ questions: mappedQuestions })
+  }
+
+  updatePosts () {
+    this.setState({ isLoading: true })
+    return api.getAllPosts().then(posts => {
+      this.setState({ questions: posts, isLoading: false })
+    }).catch(() => {
+      this.setState({ isLoading: false })
+    })
   }
 
   updateAccount () {
@@ -73,8 +82,9 @@ class App extends Component {
   }
 
   componentDidMount () {
-    this.updateAccount().then(() => this.mapQuestions())
+    this.updateAccount()
     this.updateBalance()
+    this.updatePosts()
   }
 
   handleSendCoinsFormSubmit (event) {
@@ -87,6 +97,21 @@ class App extends Component {
       .catch(() => this.setState({ isLoading: false }))
   }
 
+  handlePostFormSubmit (event) {
+    event.preventDefault()
+
+    this.setState({ isLoading: true })
+    const form = event.target
+    const textarea = form.elements['answer-textarea']
+
+    api.postQuestion(textarea.value)
+      .then(() => {
+        this.updatePosts()
+        textarea.value = ''
+      })
+      .catch(() => this.setState({ loading: false }))
+  }
+
   render () {
     const { profile, questions, isLoading } = this.state
 
@@ -97,13 +122,13 @@ class App extends Component {
           h(Route, {
             path: '/',
             exact: true,
-            render: () => h(QuestionList, { questions })
-          }),
-          h(Route, {
-            path: '/questions/:id',
-            render: ({ match }) =>
-              h(QuestionView, { question: questions.find(({ id }) => id === match.params.id) })
+            render: () => h(QuestionList, { questions, handlePostFormSubmit: this.handlePostFormSubmit })
           })
+          // h(Route, {
+          //   path: '/questions/:id',
+          //   render: ({ match }) =>
+          //     h(QuestionView, { question: questions.find(({ id }) => id === match.params.id) })
+          // })
         ])
       ])
     ])
@@ -142,72 +167,66 @@ const SendCoinsForm = ({ handleSubmit }) => {
   ])
 }
 
-const QuestionList = ({ questions }) => {
-  return h('.question-list', questions.map(question =>
-    h(Question, {
-      question,
-      hideDetails: true
-    })))
-}
-
-const QuestionView = ({ question }) => {
-  const { answers } = question
-
-  return h('.question-view', [
-    h(Question, { question }),
-    h(Answers, {
-      answers,
-      canAcceptAnswers: question.isCurrentUserQuestion && !question.answers.find(answer => answer.accepted)
-    }),
-    h(AnswerForm)
+const QuestionList = ({ questions, handlePostFormSubmit }) => {
+  return h('.question-box', [
+    h('.question-list', questions.map(question =>
+      h(Question, {
+        question,
+        hideDetails: true
+      }))),
+    h(PostForm, { handleSubmit: handlePostFormSubmit })
   ])
 }
 
-const Question = ({ question, hideDetails }) => {
-  const { id, title, text, timestamp, isCurrentUserQuestion } = question
-  const answerCount = question.answers.length
-  const hasAcceptedAnswer = !!question.answers.find(answer => answer.accepted)
+// const QuestionView = ({ question }) => {
+//   const { answers } = question
+//
+//   return h('.question-view', [
+//     h(Question, { question }),
+//     h(Answers, {
+//       answers,
+//       canAcceptAnswers: question.isCurrentUserQuestion && !question.answers.find(answer => answer.accepted)
+//     }),
+//     h(AnswerForm)
+//   ])
+// }
 
-  const details = [
-    h('p.question-description', text)
-  ]
+const Question = ({ question }) => {
+  const { id, content, timestamp } = question
+  const likeCount = 4
 
   return h('.question', [
     h(Link, { to: `/questions/${id}` }, [
-      h('.question-title', title)
+      h('.question-title', content)
     ]),
-    ...(hideDetails ? [] : details),
     h('footer', [
       h('time', moment(timestamp).fromNow()),
-      h('span', `${answerCount} ${pluralise('answer', answerCount)}`),
-      !hasAcceptedAnswer && answerCount ? h('span.no-accepted-answer', 'no answers accepted') : null,
-      isCurrentUserQuestion && h('span.current-user-question', 'asked by you!')
+      h('span.like-count', `❤ ${likeCount}`)
     ])
   ])
 }
 
-const Answers = ({ answers, canAcceptAnswers }) => {
-  return h('.answers', answers.map(answer => h(Answer, { answer, canAcceptAnswers })))
-}
+// const Answers = ({ answers, canAcceptAnswers }) => {
+//   return h('.answers', answers.map(answer => h(Answer, { answer, canAcceptAnswers })))
+// }
+//
+// const Answer = ({ answer, canAcceptAnswers }) => {
+//   const { text, timestamp, accepted } = answer
+//
+//   return h('.answer', { className: accepted ? 'accepted' : '' }, [
+//     h('.answer-text', text),
+//     h('footer', [
+//       h('time', moment(timestamp).fromNow()),
+//       canAcceptAnswers && h('a', { href: '#' }, 'accept')
+//     ])
+//   ])
+// }
 
-const Answer = ({ answer, canAcceptAnswers }) => {
-  const { text, timestamp, accepted } = answer
-
-  return h('.answer', { className: accepted ? 'accepted' : '' }, [
-    h('.answer-text', text),
-    h('footer', [
-      h('time', moment(timestamp).fromNow()),
-      canAcceptAnswers && h('a', { href: '#' }, 'accept')
-    ])
+const PostForm = ({ handleSubmit }) => {
+  return h('form.answer-form', { onSubmit: handleSubmit }, [
+    h('input#answer-textarea', { required: true }),
+    h('button.submit-button', 'Add Post')
   ])
 }
 
-const AnswerForm = () => {
-  return h('form.answer-form', [
-    h('label', { htmlFor: 'answer-textarea' }, 'Help by adding your own answer to this question:'),
-    h('textarea', { id: 'answer-textarea' }),
-    h('button.submit-button', 'Submit')
-  ])
-}
-
-ReactDOM.render(h(App, { jsonQuestions }), document.querySelector('#app'))
+ReactDOM.render(h(App), document.querySelector('#app'))

@@ -56,13 +56,21 @@ export async function getNumberOfPosts () {
   return num.valueOf()
 }
 
+export async function getAllPosts () {
+  const postCount = await getNumberOfPosts()
+  const postPromises = Array(+postCount).fill().map((value, index) => getPost(index + 1))
+  return Promise.all(postPromises)
+}
+
 export async function getPost (postId) {
   const account = await getAccount()
   const meta = await MetaCoin.deployed()
   const post = await meta.getPost(postId, { from: account })
   return {
-    'timestamp': post.timestamp.valueOf(),
-    'content': post.content.valueOf()
+    id: postId,
+    content: post,
+    likes: 5,
+    timestamp: 1510064570379
   }
 }
 
@@ -86,9 +94,9 @@ export async function sendCoin (receiver, amount) {
   return sufficient.valueOf()
 }
 
-export async function likePost(postId) {
+export async function likePost (postId) {
   const account = await getAccount()
   const meta = await MetaCoin.deployed()
   const sufficient = await meta.likePost(postId, { from: account })
-  return sufffcient.valueOf()
+  return sufficient.valueOf()
 }
