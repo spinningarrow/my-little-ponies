@@ -1,0 +1,27 @@
+version: '3'
+services:
+  bootnode:
+    build: bootnode
+    hostname: bootnode
+    ports:
+      - "30301:30301/udp"
+    volumes:
+      - ./data/bootnode.key:/root/bootnode.key
+    entrypoint:
+      - bootnode
+      - --nodekey
+      - /root/bootnode.key
+  miner:
+    image: 'ethereum/client-go'
+    hostname: 'miner'
+    ports:
+      - "30303:30303"
+      - "30303:30303/udp"
+      - "8545:8545"
+    volumes:
+      - ./data/miner:/root/.ethereum
+      - ./data/bootnode.pub:/root/bootnode.pub
+      - ./scripts/run_miner.sh:/root/run_miner.sh
+    entrypoint:
+      - /bin/sh
+      - /root/run_miner.sh
