@@ -160,6 +160,7 @@ const App = ({ data }) => {
 const Header = ({ profile }) => {
   const { username, coins } = profile
   return h('header.site-header', [
+    h(Link, { to: '/' }, 'SiteLogo'),
     h('div', `Welcome, ${username}!`),
     h('div', `You have ${coins} coins.`)
   ])
