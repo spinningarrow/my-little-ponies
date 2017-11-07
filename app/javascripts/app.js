@@ -1,7 +1,5 @@
 import '../stylesheets/app.css'
 
-import { default as Web3 } from 'web3'
-import { default as contract } from 'truffle-contract'
 import { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { default as h } from 'react-hyperscript'
@@ -11,68 +9,6 @@ import moment from 'moment'
 
 import * as api from './api'
 window.api = api
-
-// Import our contract artifacts and turn them into usable abstractions.
-import metacoinArtifacts from '../../build/contracts/MetaCoin.json'
-
-// MetaCoin is our usable abstraction, which we'll use through the code below.
-const MetaCoin = contract(metacoinArtifacts)
-
-// The following code is simple to show off interacting with your contracts.
-// As your needs grow you will likely need to change its form and structure.
-// For application bootstrapping, check out window.addEventListener below.
-let accounts
-let account
-
-window.App = {
-  start: function () {
-    const self = this
-
-    // Bootstrap the MetaCoin abstraction for Use.
-    MetaCoin.setProvider(web3.currentProvider)
-
-    // Get the initial account balance so it can be displayed.
-    web3.eth.getAccounts(function (err, accs) {
-      if (err !== null) {
-        alert('There was an error fetching your accounts.')
-        return
-      }
-
-      if (accs.length === 0) {
-        alert('Couldn\'t get any accounts! Make sure your Ethereum client is configured correctly.')
-        return
-      }
-
-      accounts = accs
-      account = accounts[0]
-    })
-  },
-
-  setStatus: function (message) {
-    const status = document.getElementById('status')
-    status.innerHTML = message
-  },
-
-  sendCoin: function () {
-    const self = this
-
-    const amount = parseInt(document.getElementById('amount').value)
-    const receiver = document.getElementById('receiver').value
-
-    this.setStatus('Initiating transaction... (please wait)')
-
-    let meta
-    MetaCoin.deployed().then(function (instance) {
-      meta = instance
-      return meta.sendCoin(receiver, amount, { from: account })
-    }).then(function () {
-      self.setStatus('Transaction complete!')
-    }).catch(function (e) {
-      console.log(e)
-      self.setStatus('Error sending coin; see log.')
-    })
-  }
-}
 
 const pluralise = (stem, count) => count === 1 ? stem : `${stem}s`
 
