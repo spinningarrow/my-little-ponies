@@ -31,17 +31,10 @@ export function getAccount () {
   })
 }
 
-export async function postAnswer (question, answer) {
+export async function postQuestion (content) {
   const account = await getAccount()
   const meta = await MetaCoin.deployed()
-  const posted = await meta.postAnswer(question, answer, { from: account })
-  return posted.valueOf()
-}
-
-export async function postQuestion (title, content) {
-  const account = await getAccount()
-  const meta = await MetaCoin.deployed()
-  const posted = await meta.postQuestion(title, content, { from: account })
+  const posted = await meta.postQuestion(content, { from: account })
   return posted.valueOf()
 }
 
@@ -76,13 +69,26 @@ export async function getPost (postId) {
 export async function refreshBalance () {
   const account = await getAccount()
   const meta = await MetaCoin.deployed()
-  const balance = await meta.getBalance.call(account, { from: account })
+  const credited = await meta.isUserCredited({ from: account })
+  if (!credited) {
+    await meta.creditForFirstTimeUser({ from: account })
+  }
+
+  const balance = await meta.getBalance(account, { from: account })
   return balance.valueOf()
 }
 
 export async function sendCoin (receiver, amount) {
   const account = await getAccount()
   const meta = await MetaCoin.deployed()
+
   const sufficient = await meta.sendCoin(receiver, amount, { from: account })
   return sufficient.valueOf()
+}
+
+export async function likePost(postId) {
+  const account = await getAccount()
+  const meta = await MetaCoin.deployed()
+  const sufficient = await meta.likePost(postId, { from: account })
+  return sufffcient.valueOf()
 }
