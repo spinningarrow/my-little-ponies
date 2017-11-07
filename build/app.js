@@ -45574,7 +45574,7 @@ async function sendCoin (receiver, amount) {
 /* 214 */
 /***/ (function(module, exports) {
 
-module.exports = [{"id":"question-1","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"What is a CIF?","text":"I don't understand what a CIF is.","timestamp":1510022488402,"answers":[{"id":"answer-1a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-1","text":"Customer Identification File","timestamp":1510022488402,"accepted":true},{"id":"answer-1b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-1","text":"It's an abbreviation of Customer Identification File","timestamp":1510022488402}]},{"id":"question-2","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"What is RM?","text":"I've talked to many 'RMs' but I don't actually know what that means.","timestamp":1510022488402,"answers":[{"id":"answer-2a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-2","text":"Relationship Manager","timestamp":1510022488402,"accepted":true},{"id":"answer-2b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-2","text":"It's an abbreviation of Relationship Manager","timestamp":1510022488402}]},{"id":"question-3","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"How many CIFs can an RM manage?","text":"I would like to know the upper limit in our systems. Is it 65,535?","timestamp":1510022488402,"answers":[{"id":"answer-3a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-3","text":"As many as the RM can handle.","timestamp":1510022488402,"accepted":true},{"id":"answer-3b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-3","text":"Unlimited!","timestamp":1510022488402}]},{"id":"question-4","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"What is an Instrument?","text":"Not in the musical sense.","timestamp":1510022488402,"answers":[]},{"id":"question-5","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25sahil","title":"What is the answer to the ultimate question of life, the universe, and everything?","text":"This has been on my mind for a long time.","timestamp":1510022488402,"answers":[{"id":"answer-5a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-5","text":"Forty-two","timestamp":1510022488402},{"id":"answer-5b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-5","text":"Unlimited!","timestamp":1510022488402},{"id":"answer-5c","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-5","text":"42","timestamp":1510022488402}]},{"id":"question-6","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"When was Credit Suisse founded?","text":"I am wondering how long it has been.","timestamp":1510022488402,"answers":[{"id":"answer-6a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-6","text":"1856","timestamp":1510022488402}]}]
+module.exports = [{"id":"question-1","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"What is a CIF?","text":"I don't understand what a CIF is.","timestamp":1510022488402,"answers":[{"id":"answer-1a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-1","text":"Customer Identification File","timestamp":1510022488402,"accepted":true},{"id":"answer-1b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-1","text":"It's an abbreviation of Customer Identification File","timestamp":1510022488402}]},{"id":"question-2","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"What is RM?","text":"I've talked to many 'RMs' but I don't actually know what that means.","timestamp":1510022488402,"answers":[{"id":"answer-2a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-2","text":"Relationship Manager","timestamp":1510022488402,"accepted":true},{"id":"answer-2b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-2","text":"It's an abbreviation of Relationship Manager","timestamp":1510022488402}]},{"id":"question-3","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"How many CIFs can an RM manage?","text":"I would like to know the upper limit in our systems. Is it 65,535?","timestamp":1510022488402,"answers":[{"id":"answer-3a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-3","text":"As many as the RM can handle.","timestamp":1510022488402,"accepted":true},{"id":"answer-3b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-3","text":"Unlimited!","timestamp":1510022488402}]},{"id":"question-4","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"What is an Instrument?","text":"Not in the musical sense.","timestamp":1510022488402,"answers":[]},{"id":"question-5","origin":"0xcd1da91d2fdfab7e0c43e585d16206926abef596","title":"What is the answer to the ultimate question of life, the universe, and everything?","text":"This has been on my mind for a long time.","timestamp":1510022488402,"answers":[{"id":"answer-5a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-5","text":"Forty-two","timestamp":1510022488402},{"id":"answer-5b","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-5","text":"Unlimited!","timestamp":1510022488402},{"id":"answer-5c","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-5","text":"42","timestamp":1510022488402}]},{"id":"question-6","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","title":"When was Credit Suisse founded?","text":"I am wondering how long it has been.","timestamp":1510022488402,"answers":[{"id":"answer-6a","origin":"0xf25186b5081ff5ce73482ad761db0eb0d25abfbf","question":"question-6","text":"1856","timestamp":1510022488402}]}]
 
 /***/ }),
 /* 215 */
@@ -45805,7 +45805,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_1_react__["Component"] {
     const profile = {
       username: 'sahil',
       coins: 0,
-      walletId: '0xf25186b5081ff5ce73482ad761db0eb0d25sahil'
+      walletId: ''
     }
 
     const mappedQuestions = jsonQuestions.map(question => {
@@ -45819,11 +45819,35 @@ class App extends __WEBPACK_IMPORTED_MODULE_1_react__["Component"] {
     this.handleSendCoinsFormSubmit = this.handleSendCoinsFormSubmit.bind(this)
   }
 
+  mapQuestions () {
+    const { questions, profile: { walletId } } = this.state
+    const mappedQuestions = questions.map(question => {
+      const updatedQuestion = Object.assign({}, question)
+      updatedQuestion.isCurrentUserQuestion = question.origin === walletId
+      return updatedQuestion
+    })
+
+    this.setState({ questions: mappedQuestions })
+  }
+
+  updateAccount () {
+    this.setState({ isLoading: true })
+    return __WEBPACK_IMPORTED_MODULE_7__api__["getAccount"]().then(account => {
+      const { profile } = this.state
+      const updatedProfile = Object.assign({}, profile)
+      updatedProfile.walletId = account
+      this.setState({ profile: updatedProfile, isLoading: false })
+
+      return account
+    }).catch(() => {
+      this.setState({ isLoading: false })
+    })
+  }
+
   updateBalance () {
     this.setState({ isLoading: true })
     __WEBPACK_IMPORTED_MODULE_7__api__["refreshBalance"]().then(balance => {
       const { profile } = this.state
-
       const updatedProfile = Object.assign({}, profile)
       updatedProfile.coins = balance
       this.setState({ profile: updatedProfile, isLoading: false })
@@ -45833,6 +45857,7 @@ class App extends __WEBPACK_IMPORTED_MODULE_1_react__["Component"] {
   }
 
   componentDidMount () {
+    this.updateAccount().then(() => this.mapQuestions())
     this.updateBalance()
   }
 
