@@ -4,6 +4,10 @@ import '../stylesheets/app.css'
 // Import libraries we need.
 import { default as Web3 } from 'web3'
 import { default as contract } from 'truffle-contract'
+import ReactDOM from 'react-dom'
+import { default as h } from 'react-hyperscript'
+import { default as questions } from './questions.json'
+import moment from 'moment'
 
 // Import our contract artifacts and turn them into usable abstractions.
 import metacoinArtifacts from '../../build/contracts/MetaCoin.json'
@@ -119,4 +123,92 @@ window.addEventListener('load', function () {
   })
 
   window.App.start()
+  ReactDOM.render(h(App, { data }), document.querySelector('#app'))
 })
+
+const data = {
+  profile: {
+    username: 'sahil',
+    coins: 20974
+  },
+  questions
+}
+
+const App = ({ data }) => {
+  const { profile, questions } = data
+
+  return h('.app', [
+    h(Header, { profile }),
+    h(QuestionList, { questions }),
+    h('hr'),
+    h('.questions', questions.map(question => h(QuestionView, { question })))
+  ])
+}
+
+const Header = ({ profile }) => {
+  const { username, coins } = profile
+  return h('header.site-header', [
+    h('div', `Welcome, ${username}!`),
+    h('div', `You have ${coins} coins.`)
+  ])
+}
+
+const QuestionList = ({ questions }) => {
+  return h('.question-list', questions.map(question =>
+    h(Question, {
+      question,
+      answerCount: question.answers.length,
+      hasAcceptedAnswer: !!question.answers.find(answer => answer.accepted),
+      hideDetails: true
+    })))
+}
+
+const QuestionView = ({ question }) => {
+  const { answers } = question
+
+  return h('.question-view', [
+    h(Question, { question }),
+    h(Answers, { answers }),
+    h(AnswerForm)
+  ])
+}
+
+const Question = ({ question, answerCount, hasAcceptedAnswer, hideDetails }) => {
+  const { title, text, timestamp } = question
+
+  const details = [
+    h('p.question-description', text)
+  ]
+
+  return h('.question', [
+    h('.question-title', title),
+    ...(hideDetails ? [] : details),
+    h('footer', [
+      h('time', moment(timestamp).fromNow()),
+      h('span', `${answerCount} answer(s)`),
+      hasAcceptedAnswer && h('span.icon-tick'),
+    ])
+  ])
+}
+
+const Answers = ({ answers }) => {
+  return h('.answers', answers.map(answer => h(Answer, { answer })))
+}
+
+const Answer = ({ answer }) => {
+  const { text, timestamp, accepted } = answer
+
+  return h('.answer', { className: accepted ? 'accepted' : '' }, [
+    h('.answer-text', text),
+    h('footer', [
+      h('time', moment(timestamp).fromNow())
+    ])
+  ])
+}
+
+const AnswerForm = () => {
+  return h('form.answer-form', [
+    h('textarea'),
+    h('button.submit-button', 'Submit')
+  ])
+}

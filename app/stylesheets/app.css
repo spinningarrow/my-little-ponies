@@ -1,51 +1,71 @@
 body {
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 10%;
-  font-family: "Open Sans", sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    margin: 5rem 1rem 1rem;
 }
 
-label {
-  display: block;
+.site-header {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 1rem;
 }
 
-input {
-  width: 500px;
-  padding: 5px;
-  font-size: 16px;
+.site-header > * {
+    display: inline-block;
 }
 
-button {
-  font-size: 16px;
-  padding: 5px;
+.question-list footer, .question-view footer {
+    font-size: smaller;
+    color: #999;
 }
 
-h1, h2 {
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 0px;
-  margin-bottom: 10px;
+.question-list footer > * {
+    margin: 0 0.25rem;
 }
 
-h2 {
-  color: #AAA;
-  font-size: 32px;
+.question-list footer > *:first-child {
+    margin-left: 0;
 }
 
-h3 {
-  font-weight: normal;
-  color: #AAA;
-  font-size: 24px;
+.question-list .question {
+    margin-bottom: 1rem;
 }
 
-.black {
-  color: black;
+.question-title {
+    font-size: x-large;
+    font-weight: bold;
 }
 
-#balance {
-  color: black;
+.answer {
+    margin: 1rem 0;
+    padding: 1rem;
 }
 
-.hint {
-  color: #666;
+.answer.accepted {
+    border: 1px dashed lightgreen;
+}
+
+.answer-form * {
+    box-sizing: border-box;
+}
+
+.answer-form textarea {
+    width: 100%;
+    height: 5rem;
+}
+
+.answer-form .submit-button {
+    width: 100%;
+    line-height: 2;
+    font-size: 1rem;
+    background: white;
+    border: 1px solid green;
+}
+
+.icon-tick::before {
+    content: '✔';
+    color: lightgreen;
 }
