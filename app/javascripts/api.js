@@ -28,9 +28,51 @@ export function getAccount () {
   })
 }
 
+export async function createPost (content) {
+  const account = await getAccount()
+  const meta = await MetaCoin.deployed()
+  const posted = await meta.createPost(content, { from: account })
+  return posted.valueOf()
+}
+
+export async function getLatestPost () {
+  const account = await getAccount()
+  const meta = await MetaCoin.deployed()
+  const post = await meta.getLatestPost({ from: account })
+  return {
+    'timestamp': post.timestamp.valueOf(),
+    'content': post.content.valueOf(),
+    'numberOfPosts': post.numberOfPosts.valueOf()
+  }
+}
+
+export async function getNumberOfPosts () {
+  const account = await getAccount()
+  const meta = await MetaCoin.deployed()
+  const num = await meta.getNumberOfPosts({ from: account })
+  return num.valueOf()
+}
+
+export async function getPost (postId) {
+  const account = await getAccount()
+  const meta = await MetaCoin.deployed()
+  const post = await meta.getPost(postId, { from: account })
+  return {
+    'timestamp': post.timestamp.valueOf(),
+    'content': post.content.valueOf()
+  }
+}
+
 export async function refreshBalance () {
   const account = await getAccount()
   const meta = await MetaCoin.deployed()
   const balance = await meta.getBalance.call(account, { from: account })
   return balance.valueOf()
+}
+
+export async function sendCoin (receiver, amount) {
+  const account = await getAccount()
+  const meta = await MetaCoin.deployed()
+  const sufficient = await meta.sendCoin(receiver, amount, { from: account })
+  return sufficient.valueOf()
 }
