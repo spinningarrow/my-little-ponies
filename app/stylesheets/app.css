@@ -24,7 +24,7 @@ body {
     float: right;
 }
 
-.site-header .profile span {
+.site-header .profile > * {
     display: inline-block;
     margin-left: 0.25rem;
 }
@@ -126,4 +126,109 @@ footer > *:first-child {
 
 .no-accepted-answer {
     color: #dc594e;
+}
+
+.send-coins-link {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+.send-coins-link:hover + .send-coins-form {
+    display: block !important;
+}
+
+.send-coins-form:hover {
+    display: block !important;
+}
+
+.send-coins-form {
+    position: absolute;
+    right: 0;
+    top: 2.2rem;
+    background: black;
+    padding: 1rem;
+    display: none !important;
+}
+
+.send-coins-form input {
+    margin: 1rem 0;
+    font-size: 1rem;
+    padding: 5px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    color: white;
+}
+
+.send-coins-form input:focus {
+    outline: 0;
+    border-color: greenyellow;
+}
+
+.send-coins-form button {
+    font-size: 1rem;
+    float: right;
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 2px solid #ccc;
+    color: #ccc;
+    border-radius: 0;
+    padding: 5px 0;
+    margin: 1rem 0;
+}
+
+.spinner {
+    margin-left: 0.5rem;
+    width: 50px;
+    height: 12px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner > div {
+    background-color: #eee;
+    margin-left: 2px;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+    20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }  20% {
+           transform: scaleY(1.0);
+           -webkit-transform: scaleY(1.0);
+       }
 }

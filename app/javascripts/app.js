@@ -84,7 +84,7 @@ class App extends Component {
 
     const profile = {
       username: 'sahil',
-      coins: 20974,
+      coins: 0,
       walletId: '0xf25186b5081ff5ce73482ad761db0eb0d25sahil'
     }
 
@@ -94,26 +94,45 @@ class App extends Component {
       return updatedQuestion
     })
 
-    this.state = { profile, questions: mappedQuestions }
+    this.state = { profile, questions: mappedQuestions, isLoading: false }
+
+    this.handleSendCoinsFormSubmit = this.handleSendCoinsFormSubmit.bind(this)
   }
 
-  componentDidMount () {
+  updateBalance () {
+    this.setState({ isLoading: true })
     api.refreshBalance().then(balance => {
       const { profile } = this.state
 
       const updatedProfile = Object.assign({}, profile)
       updatedProfile.coins = balance
-      this.setState({ profile: updatedProfile })
+      this.setState({ profile: updatedProfile, isLoading: false })
+    }).catch(() => {
+      this.setState({ isLoading: false })
     })
   }
 
+  componentDidMount () {
+    this.updateBalance()
+  }
+
+  handleSendCoinsFormSubmit (event) {
+    this.setState({ isLoading: true })
+    const form = event.target
+    const { wallet, amount } = form.elements
+
+    api.sendCoin(wallet.value, amount.value)
+      .then(() => this.updateBalance())
+      .catch(() => this.setState({ isLoading: false }))
+  }
+
   render () {
-    const { profile, questions } = this.state
+    const { profile, questions, isLoading } = this.state
 
     return h('.app', [
       h(Router, [
         h('div', [
-          h(Header, { profile }),
+          h(Header, { profile, isLoading, handleSendCoinsFormSubmit: this.handleSendCoinsFormSubmit }),
           h(Route, {
             path: '/',
             exact: true,
@@ -130,14 +149,35 @@ class App extends Component {
   }
 }
 
-const Header = ({ profile }) => {
+const Spinner = () => {
+  return h('.spinner', [
+    h('.rect1'),
+    h('.rect2'),
+    h('.rect3'),
+    h('.rect4'),
+    h('.rect5')
+  ])
+}
+
+const Header = ({ profile, isLoading, handleSendCoinsFormSubmit }) => {
   const { username, coins } = profile
   return h('header.site-header', [
     h(Link, { to: '/', className: 'site-logo' }, 'CreditOverflow'),
+    isLoading && h(Spinner),
     h('.profile', [
-      h('span', `Welcome, ${username}!`),
-      h('span', `You have ${coins} coins.`)
+      h('span', `Welcome!`),
+      h('span', `You have ${coins} coins.`),
+      h('a.send-coins-link', { href: '#' }, 'Send some coins.'),
+      h(SendCoinsForm, { handleSubmit: handleSendCoinsFormSubmit })
     ])
+  ])
+}
+
+const SendCoinsForm = ({ handleSubmit }) => {
+  return h('form.send-coins-form', { onSubmit: handleSubmit }, [
+    h('input#wallet', { placeholder: 'Wallet ID', required: true }),
+    h('input#amount', { placeholder: 'Amount', type: 'number', required: true }),
+    h('button', 'Submit')
   ])
 }
 
