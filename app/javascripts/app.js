@@ -129,12 +129,21 @@ window.addEventListener('load', function () {
 
 const pluralise = (stem, count) => count === 1 ? stem : `${stem}s`
 
+const profile = {
+  username: 'sahil',
+  coins: 20974,
+  walletId: '0xf25186b5081ff5ce73482ad761db0eb0d25sahil'
+}
+
+const mappedQuestions = questions.map(question => {
+  const updatedQuestion = Object.assign({}, question)
+  updatedQuestion.isCurrentUserQuestion = question.origin === profile.walletId
+  return updatedQuestion
+})
+
 const data = {
-  profile: {
-    username: 'sahil',
-    coins: 20974
-  },
-  questions
+  profile,
+  questions: mappedQuestions
 }
 
 const App = ({ data }) => {
@@ -183,14 +192,14 @@ const QuestionView = ({ question }) => {
     h(Question, { question }),
     h(Answers, {
       answers,
-      isQuestionAnswered: !!question.answers.find(answer => answer.accepted)
+      canAcceptAnswers: question.isCurrentUserQuestion && !question.answers.find(answer => answer.accepted)
     }),
     h(AnswerForm)
   ])
 }
 
 const Question = ({ question, hideDetails }) => {
-  const { id, title, text, timestamp } = question
+  const { id, title, text, timestamp, isCurrentUserQuestion } = question
   const answerCount = question.answers.length
   const hasAcceptedAnswer = !!question.answers.find(answer => answer.accepted)
 
@@ -206,23 +215,24 @@ const Question = ({ question, hideDetails }) => {
     h('footer', [
       h('time', moment(timestamp).fromNow()),
       h('span', `${answerCount} ${pluralise('answer', answerCount)}`),
-      hasAcceptedAnswer && h('span.icon-tick')
+      hasAcceptedAnswer && h('span.icon-tick'),
+      isCurrentUserQuestion && h('span.current-user-question', 'you asked this question')
     ])
   ])
 }
 
-const Answers = ({ answers, isQuestionAnswered }) => {
-  return h('.answers', answers.map(answer => h(Answer, { answer, isQuestionAnswered })))
+const Answers = ({ answers, canAcceptAnswers }) => {
+  return h('.answers', answers.map(answer => h(Answer, { answer, canAcceptAnswers })))
 }
 
-const Answer = ({ answer, isQuestionAnswered }) => {
+const Answer = ({ answer, canAcceptAnswers }) => {
   const { text, timestamp, accepted } = answer
 
   return h('.answer', { className: accepted ? 'accepted' : '' }, [
     h('.answer-text', text),
     h('footer', [
       h('time', moment(timestamp).fromNow()),
-      !isQuestionAnswered && h('a', { href: '#' }, 'accept')
+      canAcceptAnswers && h('a', { href: '#' }, 'accept')
     ])
   ])
 }

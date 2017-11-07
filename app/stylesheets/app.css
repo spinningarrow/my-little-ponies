@@ -49,6 +49,10 @@ footer > *:first-child {
     font-weight: bold;
 }
 
+.current-user-question {
+    color: #ffc400;
+}
+
 .answer {
     margin: 1rem 0;
 }
