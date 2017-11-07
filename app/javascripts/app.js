@@ -127,6 +127,8 @@ window.addEventListener('load', function () {
   ReactDOM.render(h(App, { data }), document.querySelector('#app'))
 })
 
+const pluralise = (stem, count) => count === 1 ? stem : `${stem}s`
+
 const data = {
   profile: {
     username: 'sahil',
@@ -179,7 +181,10 @@ const QuestionView = ({ question }) => {
 
   return h('.question-view', [
     h(Question, { question }),
-    h(Answers, { answers }),
+    h(Answers, {
+      answers,
+      isQuestionAnswered: !!question.answers.find(answer => answer.accepted)
+    }),
     h(AnswerForm)
   ])
 }
@@ -200,23 +205,24 @@ const Question = ({ question, hideDetails }) => {
     ...(hideDetails ? [] : details),
     h('footer', [
       h('time', moment(timestamp).fromNow()),
-      h('span', `${answerCount} answer(s)`),
+      h('span', `${answerCount} ${pluralise('answer', answerCount)}`),
       hasAcceptedAnswer && h('span.icon-tick')
     ])
   ])
 }
 
-const Answers = ({ answers }) => {
-  return h('.answers', answers.map(answer => h(Answer, { answer })))
+const Answers = ({ answers, isQuestionAnswered }) => {
+  return h('.answers', answers.map(answer => h(Answer, { answer, isQuestionAnswered })))
 }
 
-const Answer = ({ answer }) => {
+const Answer = ({ answer, isQuestionAnswered }) => {
   const { text, timestamp, accepted } = answer
 
   return h('.answer', { className: accepted ? 'accepted' : '' }, [
     h('.answer-text', text),
     h('footer', [
-      h('time', moment(timestamp).fromNow())
+      h('time', moment(timestamp).fromNow()),
+      !isQuestionAnswered && h('a', { href: '#' }, 'accept')
     ])
   ])
 }

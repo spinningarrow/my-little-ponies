@@ -34,6 +34,16 @@ footer > *:first-child {
     margin-bottom: 1rem;
 }
 
+.question-view .question {
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 1rem;
+}
+
+.question a {
+    text-decoration: none;
+    color: black;
+}
+
 .question-title {
     font-size: x-large;
     font-weight: bold;
@@ -41,7 +51,6 @@ footer > *:first-child {
 
 .answer {
     margin: 1rem 0;
-    padding: 1rem;
 }
 
 .answer.accepted {
