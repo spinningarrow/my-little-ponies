@@ -1,7 +1,5 @@
-// Import the page's CSS. Webpack will know what to do with it.
 import '../stylesheets/app.css'
 
-// Import libraries we need.
 import { default as Web3 } from 'web3'
 import { default as contract } from 'truffle-contract'
 import ReactDOM from 'react-dom'
@@ -9,6 +7,8 @@ import { default as h } from 'react-hyperscript'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { default as questions } from './questions.json'
 import moment from 'moment'
+
+import { getAccount, refreshBalance } from './api'
 
 // Import our contract artifacts and turn them into usable abstractions.
 import metacoinArtifacts from '../../build/contracts/MetaCoin.json'
@@ -31,7 +31,7 @@ window.App = {
 
     // Get the initial account balance so it can be displayed.
     web3.eth.getAccounts(function (err, accs) {
-      if (err != null) {
+      if (err !== null) {
         alert('There was an error fetching your accounts.')
         return
       }
@@ -104,6 +104,11 @@ window.addEventListener('load', function () {
   }
 
   window.App.start()
+
+  refreshBalance().then(value => {
+    console.log('your balance is', value)
+  })
+
   ReactDOM.render(h(App, { data }), document.querySelector('#app'))
 })
 
