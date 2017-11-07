@@ -54,11 +54,15 @@ footer > *:first-child {
 }
 
 .answer {
-    margin: 1rem 0;
+    margin: 1rem 0 1rem 2rem;
+    position: relative;
 }
 
-.answer.accepted {
-    border: 1px dashed lightgreen;
+.answer.accepted::before {
+    content: '✔';
+    color: lightgreen;
+    position: absolute;
+    left: -1.5rem;
 }
 
 .answer-form * {
@@ -78,7 +82,6 @@ footer > *:first-child {
     border: 1px solid green;
 }
 
-.icon-tick::before {
-    content: '✔';
-    color: lightgreen;
+.no-accepted-answer {
+    color: #dc594e;
 }

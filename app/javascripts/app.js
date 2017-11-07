@@ -215,7 +215,7 @@ const Question = ({ question, hideDetails }) => {
     h('footer', [
       h('time', moment(timestamp).fromNow()),
       h('span', `${answerCount} ${pluralise('answer', answerCount)}`),
-      hasAcceptedAnswer && h('span.icon-tick'),
+      !hasAcceptedAnswer && answerCount ? h('span.no-accepted-answer', 'no answers accepted') : null,
       isCurrentUserQuestion && h('span.current-user-question', 'you asked this question')
     ])
   ])
