@@ -1,7 +1,7 @@
 pragma solidity ^0.4.11;
 
 library ConvertLib{
-  function convert(uint amount, uint conversionRate) returns (uint convertedAmount)
+  function convert(int amount, int conversionRate) returns (int convertedAmount)
   {
     return amount * conversionRate;
   }

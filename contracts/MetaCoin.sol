@@ -21,26 +21,26 @@ contract MetaCoin {
 
   mapping (uint => Post) public posts;
   mapping (uint => Answer[]) public answers;
-  mapping (address => uint) balances;
+  mapping (address => int) balances;
 
-  event Transfer(address indexed _from, address indexed _to, uint256 _value);
+  event Transfer(address indexed _from, address indexed _to, int256 _value);
 
   function MetaCoin() {
     numOfPosts = 0;
   }
 
-  function sendCoin(address receiver, uint amount) returns (bool sufficient) {
+  function sendCoin(address receiver, int amount) returns (bool sufficient) {
     balances[msg.sender] -= amount;
     balances[receiver] += amount;
     Transfer(msg.sender, receiver, amount);
     return true;
   }
 
-  function getBalanceInEth(address addr) returns (uint) {
+  function getBalanceInEth(address addr) returns (int) {
     return ConvertLib.convert(getBalance(addr), 2);
   }
 
-  function getBalance(address addr) public returns (uint) {
+  function getBalance(address addr) public returns (int) {
     return balances[addr];
   }
 
