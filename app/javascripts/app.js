@@ -2,13 +2,14 @@ import '../stylesheets/app.css'
 
 import { default as Web3 } from 'web3'
 import { default as contract } from 'truffle-contract'
+import { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { default as h } from 'react-hyperscript'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { default as questions } from './questions.json'
+import { default as jsonQuestions } from './questions.json'
 import moment from 'moment'
 
-import { getAccount, refreshBalance } from './api'
+import * as api from './api'
 
 // Import our contract artifacts and turn them into usable abstractions.
 import metacoinArtifacts from '../../build/contracts/MetaCoin.json'
@@ -43,30 +44,12 @@ window.App = {
 
       accounts = accs
       account = accounts[0]
-
-      self.refreshBalance()
     })
   },
 
   setStatus: function (message) {
     const status = document.getElementById('status')
     status.innerHTML = message
-  },
-
-  refreshBalance: function () {
-    const self = this
-
-    let meta
-    MetaCoin.deployed().then(function (instance) {
-      meta = instance
-      return meta.getBalance.call(account, { from: account })
-    }).then(function (value) {
-      const balanceElement = document.getElementById('balance')
-      balanceElement.innerHTML = value.valueOf()
-    }).catch(function (e) {
-      console.log(e)
-      self.setStatus('Error getting balance; see log.')
-    })
   },
 
   sendCoin: function () {
@@ -83,7 +66,6 @@ window.App = {
       return meta.sendCoin(receiver, amount, { from: account })
     }).then(function () {
       self.setStatus('Transaction complete!')
-      self.refreshBalance()
     }).catch(function (e) {
       console.log(e)
       self.setStatus('Error sending coin; see log.')
@@ -105,52 +87,63 @@ window.addEventListener('load', function () {
 
   window.App.start()
 
-  refreshBalance().then(value => {
-    console.log('your balance is', value)
-  })
-
-  ReactDOM.render(h(App, { data }), document.querySelector('#app'))
+  ReactDOM.render(h(App, { jsonQuestions }), document.querySelector('#app'))
 })
 
 const pluralise = (stem, count) => count === 1 ? stem : `${stem}s`
 
-const profile = {
-  username: 'sahil',
-  coins: 20974,
-  walletId: '0xf25186b5081ff5ce73482ad761db0eb0d25sahil'
-}
+class App extends Component {
+  constructor (props) {
+    super(props)
 
-const mappedQuestions = questions.map(question => {
-  const updatedQuestion = Object.assign({}, question)
-  updatedQuestion.isCurrentUserQuestion = question.origin === profile.walletId
-  return updatedQuestion
-})
+    const { jsonQuestions } = this.props
 
-const data = {
-  profile,
-  questions: mappedQuestions
-}
+    const profile = {
+      username: 'sahil',
+      coins: 20974,
+      walletId: '0xf25186b5081ff5ce73482ad761db0eb0d25sahil'
+    }
 
-const App = ({ data }) => {
-  const { profile, questions } = data
+    const mappedQuestions = jsonQuestions.map(question => {
+      const updatedQuestion = Object.assign({}, question)
+      updatedQuestion.isCurrentUserQuestion = question.origin === profile.walletId
+      return updatedQuestion
+    })
 
-  return h('.app', [
-    h(Router, [
-      h('div', [
-        h(Header, { profile }),
-        h(Route, {
-          path: '/',
-          exact: true,
-          render: () => h(QuestionList, { questions })
-        }),
-        h(Route, {
-          path: '/questions/:id',
-          render: ({ match }) =>
-            h(QuestionView, { question: questions.find(({ id }) => id === match.params.id) })
-        })
+    this.state = { profile, questions: mappedQuestions }
+  }
+
+  componentDidMount () {
+    api.refreshBalance().then(balance => {
+      const { profile } = this.state
+
+      const updatedProfile = Object.assign({}, profile)
+      updatedProfile.coins = balance
+      this.setState({ profile: updatedProfile })
+    })
+  }
+
+  render () {
+    const { profile, questions } = this.state
+
+    return h('.app', [
+      h(Router, [
+        h('div', [
+          h(Header, { profile }),
+          h(Route, {
+            path: '/',
+            exact: true,
+            render: () => h(QuestionList, { questions })
+          }),
+          h(Route, {
+            path: '/questions/:id',
+            render: ({ match }) =>
+              h(QuestionView, { question: questions.find(({ id }) => id === match.params.id) })
+          })
+        ])
       ])
     ])
-  ])
+  }
 }
 
 const Header = ({ profile }) => {
