@@ -74,23 +74,6 @@ window.App = {
   }
 }
 
-window.addEventListener('load', function () {
-  // Checking if Web3 has been injected by the browser (Mist/MetaMask)
-  if (typeof web3 !== 'undefined') {
-    console.warn('Using web3 detected from external source.')
-    // Use Mist/MetaMask's provider
-    window.web3 = new Web3(web3.currentProvider)
-  } else {
-    console.warn('No web3 detected. Falling back…')
-    // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-    window.web3 = new Web3(new Web3.providers.HttpProvider('http://159.89.204.101:8545'))
-  }
-
-  window.App.start()
-
-  ReactDOM.render(h(App, { jsonQuestions }), document.querySelector('#app'))
-})
-
 const pluralise = (stem, count) => count === 1 ? stem : `${stem}s`
 
 class App extends Component {
@@ -220,7 +203,10 @@ const Answer = ({ answer, canAcceptAnswers }) => {
 
 const AnswerForm = () => {
   return h('form.answer-form', [
-    h('textarea'),
+    h('label', { htmlFor: 'answer-textarea' }, 'Help by adding your own answer to this question:'),
+    h('textarea', { id: 'answer-textarea' }),
     h('button.submit-button', 'Submit')
   ])
 }
+
+ReactDOM.render(h(App, { jsonQuestions }), document.querySelector('#app'))
