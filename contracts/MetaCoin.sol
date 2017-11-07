@@ -4,11 +4,9 @@ import "./ConvertLib.sol";
 
 contract MetaCoin {
   struct Post {
-    uint id;
     string title;
     string content;
     uint timestamp;
-    address createdBy;
   }
 
   struct Answer {
@@ -22,11 +20,12 @@ contract MetaCoin {
   uint numOfPosts;
   uint numOfAnswers;
 
-  mapping (uint => Post) public posts;
-  mapping (uint => Answer) public answers;
+  mapping (uint => Post) posts;
+  mapping (uint => Answer) answers;
   mapping (address => int) balances;
 
   event Transfer(address indexed _from, address indexed _to, int256 _value);
+  event CreatePost(uint id);
 
   function MetaCoin() {
     numOfPosts = 0;
@@ -44,17 +43,14 @@ contract MetaCoin {
     return ConvertLib.convert(getBalance(addr), 2);
   }
 
-  function getBalance(address addr) constant public returns (int) {
+  function getBalance(address addr) public constant returns (int) {
     return balances[addr];
   }
 
   function postQuestion(string title, string content) public returns (bool) {
-    posts[numOfPosts].id = numOfPosts;
+    numOfPosts += 1;
     posts[numOfPosts].title = title;
     posts[numOfPosts].content = content;
-    posts[numOfPosts].timestamp = now;
-    posts[numOfPosts].createdBy = msg.sender;
-    numOfPosts++;
     return true;
   }
 
@@ -64,13 +60,13 @@ contract MetaCoin {
   }
 
   function getLatestPost() constant public returns (string content, uint timestamp, uint numberOfPosts) {
-    content = posts[numOfPosts - 1].content;
-    timestamp = posts[numOfPosts - 1].timestamp;
+    content = posts[numOfPosts].content;
+    timestamp = posts[numOfPosts].timestamp;
     numberOfPosts = numOfPosts;
   }
 
-  function getNumberOfPosts() constant public returns (uint num) {
-    num = numOfPosts;
+  function getNumberOfPosts() constant public returns (uint) {
+    return numOfPosts;
   }
 
   function postAnswer(uint postId, string answer) public returns (bool) {
@@ -80,6 +76,10 @@ contract MetaCoin {
     answers[numOfAnswers].createdBy = msg.sender;
     answers[numOfAnswers].timestamp = now;
     numOfAnswers++;
+    return true;
+  }
+
+  function chooseAnswer(uint postId, uint answerId) public returns (bool) {
     return true;
   }
 }
