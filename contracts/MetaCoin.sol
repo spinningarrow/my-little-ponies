@@ -4,32 +4,35 @@ import "./ConvertLib.sol";
 
 contract MetaCoin {
   struct Post {
-    string title;
-    string content;
-    uint timestamp;
-  }
-
-  struct Answer {
-    uint postId;
-    uint id;
     string content;
     address createdBy;
-    uint timestamp;
+    mapping (address => bool) isVoted;
   }
 
   uint numOfPosts;
-  uint numOfAnswers;
 
   mapping (uint => Post) posts;
-  mapping (uint => Answer) answers;
   mapping (address => int) balances;
+  mapping (address => bool) isCredited;
 
   event Transfer(address indexed _from, address indexed _to, int256 _value);
   event CreatePost(uint id);
 
   function MetaCoin() {
     numOfPosts = 0;
-    numOfAnswers = 0;
+  }
+
+  function isUserCredited() constant returns (bool) {
+    return isCredited[msg.sender];
+  }
+
+  function creditForFirstTime() returns (bool) {
+    if (!isCredited[msg.sender]) {
+      balances[msg.sender] = 100;
+      isCredited[msg.sender] = true;
+    }
+
+    return true;
   }
 
   function sendCoin(address receiver, int amount) returns (bool) {
@@ -47,39 +50,31 @@ contract MetaCoin {
     return balances[addr];
   }
 
-  function postQuestion(string title, string content) public returns (bool) {
+  function postQuestion(string content) public returns (bool) {
     numOfPosts += 1;
-    posts[numOfPosts].title = title;
     posts[numOfPosts].content = content;
+    posts[numOfPosts].createdBy = msg.sender;
     return true;
   }
 
-  function getPost(uint postID) constant public returns (string content, uint timestamp) {
+  function getPost(uint postID) constant public returns (string content) {
     content = posts[postID].content;
-    timestamp = posts[postID].timestamp;
   }
 
-  function getLatestPost() constant public returns (string content, uint timestamp, uint numberOfPosts) {
+  function getLatestPost() constant public returns (string content) {
     content = posts[numOfPosts].content;
-    timestamp = posts[numOfPosts].timestamp;
-    numberOfPosts = numOfPosts;
   }
 
   function getNumberOfPosts() constant public returns (uint) {
     return numOfPosts;
   }
 
-  function postAnswer(uint postId, string answer) public returns (bool) {
-    answers[numOfAnswers].id = numOfAnswers;
-    answers[numOfAnswers].postId = postId;
-    answers[numOfAnswers].content = answer;
-    answers[numOfAnswers].createdBy = msg.sender;
-    answers[numOfAnswers].timestamp = now;
-    numOfAnswers++;
-    return true;
-  }
+  function likePost(uint postID) public returns (bool) {
+    if (!posts[postID].isVoted[msg.sender]) {
+      balances[posts[postID].createdBy] += 10;
+      posts[postID].isVoted[msg.sender] = true;
+    }
 
-  function chooseAnswer(uint postId, uint answerId) public returns (bool) {
     return true;
   }
 }
