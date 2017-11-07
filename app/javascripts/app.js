@@ -170,8 +170,6 @@ const QuestionList = ({ questions }) => {
   return h('.question-list', questions.map(question =>
     h(Question, {
       question,
-      answerCount: question.answers.length,
-      hasAcceptedAnswer: !!question.answers.find(answer => answer.accepted),
       hideDetails: true
     })))
 }
@@ -186,8 +184,10 @@ const QuestionView = ({ question }) => {
   ])
 }
 
-const Question = ({ question, answerCount, hasAcceptedAnswer, hideDetails }) => {
+const Question = ({ question, hideDetails }) => {
   const { id, title, text, timestamp } = question
+  const answerCount = question.answers.length
+  const hasAcceptedAnswer = !!question.answers.find(answer => answer.accepted)
 
   const details = [
     h('p.question-description', text)

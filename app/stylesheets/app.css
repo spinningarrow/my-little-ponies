@@ -17,16 +17,16 @@ body {
     display: inline-block;
 }
 
-.question-list footer, .question-view footer {
+footer {
     font-size: smaller;
     color: #999;
 }
 
-.question-list footer > * {
+footer > * {
     margin: 0 0.25rem;
 }
 
-.question-list footer > *:first-child {
+footer > *:first-child {
     margin-left: 0;
 }
 
