@@ -5,10 +5,13 @@ import metacoinArtifacts from '../../build/contracts/MetaCoin.json'
 
 const MetaCoin = contract(metacoinArtifacts)
 
-window.web3 = new Web3(new Web3.providers.HttpProvider('http://159.89.204.101:8545'))
+// window.web3 = new Web3(new Web3.providers.HttpProvider('http://159.89.204.101:8545'))
+window.web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'))
 const web3 = window.web3
 
 MetaCoin.setProvider(web3.currentProvider)
+
+window.MC = MetaCoin;
 
 export function getAccount () {
   return new Promise((resolve, reject) => {
@@ -74,6 +77,23 @@ export async function getPost (postId) {
   }
 }
 
+export async function getPosts () {
+  const account = await getAccount()
+  const meta = await MetaCoin.deployed()
+  const posts = [];
+
+  const num = await meta.getNumberOfPosts({ from: account })
+  for (let i = 1; i <= num; ++i) {
+    const content = await meta.getPost(i, { from: account })
+    posts.push({
+      id: i,
+      content
+    })
+  }
+
+  return posts.valueOf()
+}
+
 export async function refreshBalance () {
   const account = await getAccount()
   const meta = await MetaCoin.deployed()
@@ -100,3 +120,11 @@ export async function likePost (postId) {
   const sufficient = await meta.likePost(postId, { from: account })
   return sufficient.valueOf()
 }
+
+export async function getLikes(postId) {
+  const account = await getAccount()
+  const meta = await MetaCoin.deployed()
+  const likes = await meta.getLikes(postId, { from: account })
+  return likes.valueOf()
+}
+

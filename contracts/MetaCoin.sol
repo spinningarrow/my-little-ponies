@@ -12,6 +12,7 @@ contract MetaCoin {
   uint numOfPosts;
 
   mapping (uint => Post) posts;
+  mapping (uint => uint) likes;
   mapping (address => int) balances;
   mapping (address => bool) isCredited;
 
@@ -73,8 +74,13 @@ contract MetaCoin {
     if (!posts[postID].isVoted[msg.sender]) {
       balances[posts[postID].createdBy] += 10;
       posts[postID].isVoted[msg.sender] = true;
+      likes[postID] += 1;
     }
 
     return true;
+  }
+
+  function getLikes(uint postID) public constant returns (uint) {
+    return likes[postID];
   }
 }
