@@ -21,7 +21,7 @@ class App extends Component {
     const profile = {
       username: 'sahil',
       coins: 0,
-      walletId: '0xf25186b5081ff5ce73482ad761db0eb0d25sahil'
+      walletId: ''
     }
 
     const mappedQuestions = jsonQuestions.map(question => {
@@ -35,11 +35,35 @@ class App extends Component {
     this.handleSendCoinsFormSubmit = this.handleSendCoinsFormSubmit.bind(this)
   }
 
+  mapQuestions () {
+    const { questions, profile: { walletId } } = this.state
+    const mappedQuestions = questions.map(question => {
+      const updatedQuestion = Object.assign({}, question)
+      updatedQuestion.isCurrentUserQuestion = question.origin === walletId
+      return updatedQuestion
+    })
+
+    this.setState({ questions: mappedQuestions })
+  }
+
+  updateAccount () {
+    this.setState({ isLoading: true })
+    return api.getAccount().then(account => {
+      const { profile } = this.state
+      const updatedProfile = Object.assign({}, profile)
+      updatedProfile.walletId = account
+      this.setState({ profile: updatedProfile, isLoading: false })
+
+      return account
+    }).catch(() => {
+      this.setState({ isLoading: false })
+    })
+  }
+
   updateBalance () {
     this.setState({ isLoading: true })
     api.refreshBalance().then(balance => {
       const { profile } = this.state
-
       const updatedProfile = Object.assign({}, profile)
       updatedProfile.coins = balance
       this.setState({ profile: updatedProfile, isLoading: false })
@@ -49,6 +73,7 @@ class App extends Component {
   }
 
   componentDidMount () {
+    this.updateAccount().then(() => this.mapQuestions())
     this.updateBalance()
   }
 
