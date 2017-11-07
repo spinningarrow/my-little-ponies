@@ -1,6 +1,7 @@
 body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     margin: 5rem 1rem 1rem;
+    line-height: 1.4;
 }
 
 .site-header {
@@ -11,10 +12,20 @@ body {
     right: 0;
     color: white;
     padding: 1rem;
+    z-index: 1;
 }
 
 .site-header > * {
     display: inline-block;
+}
+
+.site-header .profile {
+    float: right;
+}
+
+.site-header .profile span {
+    display: inline-block;
+    margin-left: 0.25rem;
 }
 
 footer {
