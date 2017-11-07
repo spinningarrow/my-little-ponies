@@ -2,7 +2,8 @@
   {
     "id": "question-1",
     "origin": "0xf25186b5081ff5ce73482ad761db0eb0d25abfbf",
-    "text": "What is a CIF?",
+    "title": "What is a CIF?",
+    "text": "I don't understand what a CIF is.",
     "timestamp": 1510022488402,
     "answers": [
       {
@@ -25,7 +26,8 @@
   {
     "id": "question-2",
     "origin": "0xf25186b5081ff5ce73482ad761db0eb0d25abfbf",
-    "text": "What is RM?",
+    "title": "What is RM?",
+    "text": "I've talked to many 'RMs' but I don't actually know what that means.",
     "timestamp": 1510022488402,
     "answers": [
       {
@@ -48,7 +50,8 @@
   {
     "id": "question-3",
     "origin": "0xf25186b5081ff5ce73482ad761db0eb0d25abfbf",
-    "text": "How many CIFs can an RM manage?",
+    "title": "How many CIFs can an RM manage?",
+    "text": "I would like to know the upper limit in our systems. Is it 65,535?",
     "timestamp": 1510022488402,
     "answers": [
       {
@@ -71,7 +74,8 @@
   {
     "id": "question-4",
     "origin": "0xf25186b5081ff5ce73482ad761db0eb0d25abfbf",
-    "text": "What is an Instrument?",
+    "title": "What is an Instrument?",
+    "text": "Not in the musical sense.",
     "timestamp": 1510022488402,
     "answers": []
   }
