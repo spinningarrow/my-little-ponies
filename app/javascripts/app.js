@@ -6,6 +6,7 @@ import { default as Web3 } from 'web3'
 import { default as contract } from 'truffle-contract'
 import ReactDOM from 'react-dom'
 import { default as h } from 'react-hyperscript'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { default as questions } from './questions.json'
 import moment from 'moment'
 
@@ -138,10 +139,21 @@ const App = ({ data }) => {
   const { profile, questions } = data
 
   return h('.app', [
-    h(Header, { profile }),
-    h(QuestionList, { questions }),
-    h('hr'),
-    h('.questions', questions.map(question => h(QuestionView, { question })))
+    h(Router, [
+      h('div', [
+        h(Header, { profile }),
+        h(Route, {
+          path: '/',
+          exact: true,
+          render: () => h(QuestionList, { questions })
+        }),
+        h(Route, {
+          path: '/questions/:id',
+          render: ({ match }) =>
+            h(QuestionView, { question: questions.find(({ id }) => id === match.params.id) })
+        })
+      ])
+    ])
   ])
 }
 
@@ -174,19 +186,21 @@ const QuestionView = ({ question }) => {
 }
 
 const Question = ({ question, answerCount, hasAcceptedAnswer, hideDetails }) => {
-  const { title, text, timestamp } = question
+  const { id, title, text, timestamp } = question
 
   const details = [
     h('p.question-description', text)
   ]
 
   return h('.question', [
-    h('.question-title', title),
+    h(Link, { to: `/questions/${id}` }, [
+      h('.question-title', title)
+    ]),
     ...(hideDetails ? [] : details),
     h('footer', [
       h('time', moment(timestamp).fromNow()),
       h('span', `${answerCount} answer(s)`),
-      hasAcceptedAnswer && h('span.icon-tick'),
+      hasAcceptedAnswer && h('span.icon-tick')
     ])
   ])
 }
