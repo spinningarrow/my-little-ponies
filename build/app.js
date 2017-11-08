@@ -45829,8 +45829,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 window.api = __WEBPACK_IMPORTED_MODULE_6__api__
 
-const pluralise = (stem, count) => count === 1 ? stem : `${stem}s`
-
 class App extends __WEBPACK_IMPORTED_MODULE_1_react__["Component"] {
   constructor (props) {
     super(props)
@@ -45904,6 +45902,8 @@ class App extends __WEBPACK_IMPORTED_MODULE_1_react__["Component"] {
   }
 
   handleSendCoinsFormSubmit (event) {
+    event.preventDefault()
+
     this.setState({ isLoading: true })
     const form = event.target
     const { wallet, amount } = form.elements
@@ -45985,7 +45985,7 @@ const Spinner = () => {
 }
 
 const Header = ({ profile, isLoading, handleSendCoinsFormSubmit }) => {
-  const { username, coins } = profile
+  const { coins } = profile
   return __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()('header.site-header', [
     __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["c" /* Link */], { to: '/', className: 'site-logo' }, 'CreditOverflow'),
     isLoading && __WEBPACK_IMPORTED_MODULE_3_react_hyperscript___default()(Spinner),

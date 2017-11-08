@@ -9,8 +9,6 @@ import moment from 'moment'
 import * as api from './api'
 window.api = api
 
-const pluralise = (stem, count) => count === 1 ? stem : `${stem}s`
-
 class App extends Component {
   constructor (props) {
     super(props)
@@ -84,6 +82,8 @@ class App extends Component {
   }
 
   handleSendCoinsFormSubmit (event) {
+    event.preventDefault()
+
     this.setState({ isLoading: true })
     const form = event.target
     const { wallet, amount } = form.elements
@@ -165,7 +165,7 @@ const Spinner = () => {
 }
 
 const Header = ({ profile, isLoading, handleSendCoinsFormSubmit }) => {
-  const { username, coins } = profile
+  const { coins } = profile
   return h('header.site-header', [
     h(Link, { to: '/', className: 'site-logo' }, 'CreditOverflow'),
     isLoading && h(Spinner),
