@@ -240,6 +240,10 @@ footer > *:first-child {
        }
 }
 
-.like-count {
+a.like-count {
 	color: hotpink;
+}
+
+a.like-count:hover {
+	color: red;
 }
