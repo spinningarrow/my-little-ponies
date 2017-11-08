@@ -5,8 +5,8 @@ import metacoinArtifacts from '../../build/contracts/MetaCoin.json'
 
 const MetaCoin = contract(metacoinArtifacts)
 
-// window.web3 = new Web3(new Web3.providers.HttpProvider('http://159.89.204.101:8545'))
-window.web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'))
+window.web3 = new Web3(new Web3.providers.HttpProvider('http://159.89.204.101:8545'))
+// window.web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'))
 const web3 = window.web3
 
 MetaCoin.setProvider(web3.currentProvider)
@@ -15,16 +15,14 @@ window.MC = MetaCoin;
 
 export function getAccount () {
   return new Promise((resolve, reject) => {
-    web3.eth.getAccounts(function (err, accs) {
+    web3.eth.getAccounts((err, accs) => {
       if (err !== null) {
-        alert('There was an error fetching your accounts.')
-        reject('There was an error fetching your accounts.')
+        reject(new Error(`Error fetching accounts: ${JSON.stringify(err)}`))
         return
       }
 
       if (accs.length === 0) {
-        alert('Couldn\'t get any accounts! Make sure your Ethereum client is configured correctly.')
-        reject('Couldn\'t get any accounts! Make sure your Ethereum client is configured correctly.')
+        reject(new Error('No accounts found'))
         return
       }
 
@@ -99,7 +97,7 @@ export async function refreshBalance () {
   const meta = await MetaCoin.deployed()
   const credited = await meta.isUserCredited({ from: account })
   if (!credited) {
-    await meta.creditForFirstTimeUser({ from: account })
+    await meta.creditForFirstTime({ from: account })
   }
 
   const balance = await meta.getBalance(account, { from: account })

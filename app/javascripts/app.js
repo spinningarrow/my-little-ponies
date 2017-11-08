@@ -50,8 +50,9 @@ class App extends Component {
     this.setState({ isLoading: true })
     return api.getAllPosts().then(posts => {
       this.setState({ questions: posts, isLoading: false })
-    }).catch(() => {
+    }).catch((err) => {
       this.setState({ isLoading: false })
+      throw err
     })
   }
 
@@ -64,8 +65,9 @@ class App extends Component {
       this.setState({ profile: updatedProfile, isLoading: false })
 
       return account
-    }).catch(() => {
+    }).catch((err) => {
       this.setState({ isLoading: false })
+      throw err
     })
   }
 
@@ -76,8 +78,9 @@ class App extends Component {
       const updatedProfile = Object.assign({}, profile)
       updatedProfile.coins = balance
       this.setState({ profile: updatedProfile, isLoading: false })
-    }).catch(() => {
+    }).catch((err) => {
       this.setState({ isLoading: false })
+      throw err
     })
   }
 
