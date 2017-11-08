@@ -45548,7 +45548,7 @@ async function getAllPosts () {
   return Promise.all(postPromises)
 }
 
-async function getPost (postId) {
+async function getPost (postId, timestamp = new Date().getTime()) {
   const account = await getAccount()
   const meta = await MetaCoin.deployed()
   const post = await meta.getPost(postId, { from: account })
@@ -45557,7 +45557,7 @@ async function getPost (postId) {
     id: postId,
     content: post,
     likes,
-    timestamp: 1510064570379
+    timestamp
   }
 }
 
