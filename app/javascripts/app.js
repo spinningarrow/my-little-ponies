@@ -15,24 +15,17 @@ class App extends Component {
   constructor (props) {
     super(props)
 
-    // const { jsonQuestions } = this.props
-
     const profile = {
       username: 'sahil',
       coins: 0,
       walletId: ''
     }
 
-    // const mappedQuestions = jsonQuestions.map(question => {
-    //   const updatedQuestion = Object.assign({}, question)
-    //   updatedQuestion.isCurrentUserQuestion = question.origin === profile.walletId
-    //   return updatedQuestion
-    // })
-
     this.state = { profile, questions: [], isLoading: false }
 
     this.handleSendCoinsFormSubmit = this.handleSendCoinsFormSubmit.bind(this)
     this.handlePostFormSubmit = this.handlePostFormSubmit.bind(this)
+    this.handleLikeClick = this.handleLikeClick.bind(this)
   }
 
   mapQuestions () {
@@ -73,7 +66,7 @@ class App extends Component {
 
   updateBalance () {
     this.setState({ isLoading: true })
-    api.refreshBalance().then(balance => {
+    return api.refreshBalance().then(balance => {
       const { profile } = this.state
       const updatedProfile = Object.assign({}, profile)
       updatedProfile.coins = balance
@@ -115,6 +108,25 @@ class App extends Component {
       .catch(() => this.setState({ loading: false }))
   }
 
+  handleLikeClick (event) {
+    event.preventDefault()
+
+    this.setState({ isLoading: true })
+
+    const postId = +event.target.dataset.postId
+
+    api.likePost(postId)
+      .then(() => {
+        return this.updatePosts()
+      }).then(() => {
+        return this.updateBalance()
+      })
+      .catch((err) => {
+        this.setState({ loading: false })
+        throw err
+      })
+  }
+
   render () {
     const { profile, questions, isLoading } = this.state
 
@@ -125,7 +137,11 @@ class App extends Component {
           h(Route, {
             path: '/',
             exact: true,
-            render: () => h(QuestionList, { questions, handlePostFormSubmit: this.handlePostFormSubmit })
+            render: () => h(QuestionList, {
+              questions,
+              handlePostFormSubmit: this.handlePostFormSubmit,
+              handleLikeClick: this.handleLikeClick
+            })
           })
           // h(Route, {
           //   path: '/questions/:id',
@@ -170,12 +186,12 @@ const SendCoinsForm = ({ handleSubmit }) => {
   ])
 }
 
-const QuestionList = ({ questions, handlePostFormSubmit }) => {
+const QuestionList = ({ questions, handlePostFormSubmit, handleLikeClick }) => {
   return h('.question-box', [
     h('.question-list', questions.map(question =>
       h(Question, {
         question,
-        hideDetails: true
+        handleLikeClick: handleLikeClick
       }))),
     h(PostForm, { handleSubmit: handlePostFormSubmit })
   ])
@@ -194,17 +210,14 @@ const QuestionList = ({ questions, handlePostFormSubmit }) => {
 //   ])
 // }
 
-const Question = ({ question }) => {
-  const { id, content, timestamp } = question
-  const likeCount = 4
+const Question = ({ question, handleLikeClick }) => {
+  const { id, content, timestamp, likes } = question
 
   return h('.question', [
-    h(Link, { to: `/questions/${id}` }, [
-      h('.question-title', content)
-    ]),
+    h('.question-title', content),
     h('footer', [
       h('time', moment(timestamp).fromNow()),
-      h('span.like-count', `❤ ${likeCount}`)
+      h('a.like-count', { onClick: handleLikeClick, href: '#', 'data-post-id': id }, `❤ ${likes}`)
     ])
   ])
 }

@@ -67,10 +67,11 @@ export async function getPost (postId) {
   const account = await getAccount()
   const meta = await MetaCoin.deployed()
   const post = await meta.getPost(postId, { from: account })
+  const likes = await meta.getLikes(postId, { from: account })
   return {
     id: postId,
     content: post,
-    likes: 5,
+    likes,
     timestamp: 1510064570379
   }
 }
@@ -78,7 +79,7 @@ export async function getPost (postId) {
 export async function getPosts () {
   const account = await getAccount()
   const meta = await MetaCoin.deployed()
-  const posts = [];
+  const posts = []
 
   const num = await meta.getNumberOfPosts({ from: account })
   for (let i = 1; i <= num; ++i) {
