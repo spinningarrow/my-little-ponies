@@ -3842,11 +3842,11 @@
     "47889": {
       "events": {},
       "links": {
-        "ConvertLib": "0x164473a07a9468c74d1bcb9e44dc9ac797071358"
+        "ConvertLib": "0x1f9b8ed86127183dd5ab69505d2d59de0e460bda"
       },
-      "address": "0x225cbf34656c49ac0d943dd660ee3dbf1393e7cc"
+      "address": "0xde29063d5bcdde8f0010784e1dd2b09633e2d85a"
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-07T15:01:18.604Z"
+  "updatedAt": "2017-11-08T02:01:16.314Z"
 }
