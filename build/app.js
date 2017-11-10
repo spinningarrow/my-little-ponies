@@ -46198,7 +46198,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 const MetaCoin = __WEBPACK_IMPORTED_MODULE_0_truffle_contract___default()(__WEBPACK_IMPORTED_MODULE_2__build_contracts_MetaCoin_json___default.a)
 
-window.web3 = new __WEBPACK_IMPORTED_MODULE_1_web3___default.a(new __WEBPACK_IMPORTED_MODULE_1_web3___default.a.providers.HttpProvider('http://backend.overflow.credit:8545'))
+window.web3 = new __WEBPACK_IMPORTED_MODULE_1_web3___default.a(new __WEBPACK_IMPORTED_MODULE_1_web3___default.a.providers.HttpProvider('http://backend.overflow.credit'))
 // window.web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'))
 const web3 = window.web3
 
